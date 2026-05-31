@@ -1,7 +1,7 @@
 ---
 title: "Vertical Leg Press Footplates"
 code: "S3"
-owned: false
+owned: true
 description: "A left/right pair of footplates (S3-L and S3-R) that attach to the machine frame and serve as the pushing surface for the vertical leg press exercise."
 photos:
   # - /assets/images/accessories/vertical-leg-press-footplate-1.jpg

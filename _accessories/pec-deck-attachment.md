@@ -1,7 +1,7 @@
 ---
 title: "Pec Deck Attachment (Option P)"
 code: "P"
-owned: false
+owned: true
 description: "Option P package including the P-1 seat attachment; works with the pec deck arms and cable C11."
 photos: []
 # photos:

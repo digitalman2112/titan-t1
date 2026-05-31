@@ -1,7 +1,7 @@
 ---
 title: "Close-Grip Press Tube (Option N)"
 code: "N"
-owned: false
+owned: true
 description: "Option N tube that slides over and centers between the two exercise handles for close-grip pressing and as a foot anchor."
 photos: []
 # photos:
