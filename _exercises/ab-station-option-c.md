@@ -12,6 +12,7 @@ muscles:
   - Glutes
 cables: []
 accessories:
+  - C
   - S1
 ---
 

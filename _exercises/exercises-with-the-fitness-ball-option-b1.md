@@ -13,6 +13,7 @@ muscles:
   - Lower back
 cables: []
 accessories:
+  - B1
   - S3
 ---
 

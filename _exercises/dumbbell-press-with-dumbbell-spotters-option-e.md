@@ -11,6 +11,7 @@ muscles:
   - Chest
 cables: []
 accessories:
+  - E
   - S1
 ---
 

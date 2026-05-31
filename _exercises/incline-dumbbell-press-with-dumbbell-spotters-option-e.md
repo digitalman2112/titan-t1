@@ -13,6 +13,7 @@ muscles:
   - Shoulders
 cables: []
 accessories:
+  - E
   - S1
 ---
 

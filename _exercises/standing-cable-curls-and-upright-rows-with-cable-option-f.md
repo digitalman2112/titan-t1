@@ -14,6 +14,7 @@ muscles:
 cables:
   - C5
 accessories:
+  - F
   - S8
 ---
 

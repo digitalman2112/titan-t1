@@ -11,7 +11,8 @@ muscles:
   - Chest
   - Triceps
 cables: []
-accessories: []
+accessories:
+  - S
 ---
 
 ## Setup

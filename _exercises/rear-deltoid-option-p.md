@@ -12,7 +12,8 @@ muscles:
   - Triceps
 cables:
   - C2
-accessories: []
+accessories:
+  - P
 ---
 
 ## Setup

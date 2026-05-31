@@ -11,7 +11,8 @@ muscles:
   - Quads
   - Hamstrings
 cables: []
-accessories: []
+accessories:
+  - F
 ---
 
 ## Setup

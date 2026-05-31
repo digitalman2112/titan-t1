@@ -11,7 +11,8 @@ muscles:
   - Stretching
   - Abs
 cables: []
-accessories: []
+accessories:
+  - G
 ---
 
 ## Setup

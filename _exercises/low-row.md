@@ -17,6 +17,7 @@ cables:
   - C4
 accessories:
   - S3
+  - LRH
 ---
 
 ## Setup

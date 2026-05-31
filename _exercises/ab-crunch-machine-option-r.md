@@ -11,6 +11,7 @@ muscles:
   - Abs
 cables: []
 accessories:
+  - R
   - S1
 ---
 

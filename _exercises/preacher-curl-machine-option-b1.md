@@ -12,6 +12,7 @@ muscles:
 cables:
   - C2
 accessories:
+  - B1
   - S1
   - S7
   - S8
