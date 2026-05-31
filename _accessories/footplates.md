@@ -1,12 +1,13 @@
 ---
 title: "Footplates"
 code: "S4"
+owned: false
 description: "A left/right pair of footplates (S4-L and S4-R) that attach to the machine frame and serve as the pushing surface for leg press and calf raise exercises."
 photos:
   # - /assets/images/accessories/footplate-1.jpg
 videos:
   # - youtube_id: ""
-  #   title: "Footplate — Setup and Positioning"
+  #   title: "Footplate â€” Setup and Positioning"
 ---
 
 Footplates insert into attachment holes on the machine frame. The hole position controls which part of the quadriceps is emphasized:

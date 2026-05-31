@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Accessories
-description: Attachments and handles for the Titan T1 functional trainer.
+description: Attachments and handles for the Titan T1-X functional trainer.
 ---
 
 <div class="collection-header">
@@ -24,6 +24,11 @@ description: Attachments and handles for the Titan T1 functional trainer.
     <div class="item-card__body">
       <div class="item-card__meta">
         {% if accessory.code %}<span class="item-code">{{ accessory.code }}</span>{% endif %}
+        {% if accessory.owned %}
+          <span class="owned-badge owned-badge--yes">&#10003; Owned</span>
+        {% else %}
+          <span class="owned-badge owned-badge--no">Not owned</span>
+        {% endif %}
       </div>
       <div class="item-card__title">
         <a href="{{ accessory.url | relative_url }}">{{ accessory.title }}</a>

@@ -1,2 +1,2 @@
 # titan-t1
-Instructional website for Titan T1 exercise machine
+Instructional website for Titan T1-X exercise machine

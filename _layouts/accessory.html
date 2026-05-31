@@ -11,6 +11,11 @@ layout: default
     </nav>
     <div class="detail-header__meta">
       {% if page.code %}<span class="item-code">{{ page.code }}</span>{% endif %}
+      {% if page.owned %}
+        <span class="owned-badge owned-badge--yes">&#10003; Owned</span>
+      {% else %}
+        <span class="owned-badge owned-badge--no">Not owned</span>
+      {% endif %}
     </div>
     <h1>{{ page.title }}</h1>
     {% if page.description %}<p class="detail-description">{{ page.description }}</p>{% endif %}

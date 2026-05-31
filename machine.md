@@ -8,13 +8,14 @@ permalink: /machine/
 
 <header class="detail-header">
   <h1>The Machine</h1>
-  <p class="detail-description">Documentation, history, and resources for the Titan T1 functional trainer.</p>
+  <p class="detail-description">Documentation, history, and resources for the Titan T1-X functional trainer.</p>
 </header>
 
 <section class="detail-section">
   <h2>About the Machine</h2>
-  <p>The Titan T1 is a multi-functional home gym machine originally designed and manufactured in Poland by Szultka. It was initially sold in the United States under the <strong>Titan</strong> brand name. Following a trademark dispute over the Titan name, the company rebranded as <strong>Tytax</strong>. Newer generations of the machine continue to be sold by Tytax, LLC.</p>
+  <p>The Titan T1-X is a multi-functional home gym machine originally designed and manufactured in Poland by Szultka. It was initially sold in the United States under the <strong>Titan</strong> brand name. Following a trademark dispute over the Titan name, the company rebranded as <strong>Tytax</strong>. Newer generations of the machine continue to be sold by Tytax, LLC.</p>
   <p>The machine combines a Smith machine, cable system, and functional trainer into a single unit, supporting a wide range of exercises for the full body.</p>
+  <p>The Counter-Balance System allows resistance for most exercises to be reduced down to as low as 1&nbsp;kg and can be used with attachments for assisted exercises including Assisted Pull-Ups and Assisted Dips. The Counter-Balance System makes the Titan T1-X ideal for beginners, youth, or some female exercisers.</p>
 </section>
 
 <section class="detail-section">
