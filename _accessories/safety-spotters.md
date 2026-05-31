@@ -1,7 +1,7 @@
 ---
 title: "Safety Spotters"
 code: "S2"
-owned: false
+owned: true
 description: "A pair of adjustable safety bars (S2) that attach to the machine hooks and act as lower stops for the olympic bar, limiting its lowest safe travel point."
 photos:
   # - /assets/images/accessories/safety-spotters-1.jpg

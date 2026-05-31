@@ -1,7 +1,7 @@
 ---
 title: "Shoulder Pads"
 code: "S5"
-owned: true
+owned: false
 description: "A left/right pair of padded shoulder supports (S5-L and S5-R) that attach to the smith carriage crossbar, allowing the carriage to rest on the shoulders for squat and lunge variations."
 photos:
   - /assets/images/accessories/s5-1.png

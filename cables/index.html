@@ -24,6 +24,11 @@ description: Cable types and configuration reference for the Titan T1-X.
     <div class="item-card__body">
       <div class="item-card__meta">
         {% if cable.code %}<span class="item-code">{{ cable.code }}</span>{% endif %}
+        {% if cable.owned %}
+          <span class="owned-badge owned-badge--yes">&#10003; Owned</span>
+        {% else %}
+          <span class="owned-badge owned-badge--no">Not owned</span>
+        {% endif %}
       </div>
       <div class="item-card__title">
         <a href="{{ cable.url | relative_url }}">{{ cable.title }}</a>

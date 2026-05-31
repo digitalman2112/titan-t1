@@ -1,6 +1,7 @@
 ---
 title: "Multi-Purpose Cable"
 code: "C10"
+owned: false
 description: "A cable (C10) used to extend cable runs for standing cable curls, upright rows (Option F), and abductor/adductor exercises. Attaches between other cables and the final handle or strap."
 photos:
   # - /assets/images/cables/multi-purpose-cable-1.jpg

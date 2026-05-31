@@ -4,7 +4,7 @@ code: "S10"
 owned: false
 description: "A pair of pull-up handles (S10-R and S10-L) that insert into the machine frame for pull-up and assisted pull-up exercises. Can be configured in multiple orientations for grip variation."
 photos:
-  # - /assets/images/accessories/pull-up-handles-1.jpg
+-  /assets/images/accessories/s10-1.png
 videos:
   # - youtube_id: ""
   #   title: "Pull-Up Handles â€” Setup"

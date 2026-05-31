@@ -1,6 +1,7 @@
 ---
 title: "Extension Cable"
 code: "C4"
+owned: false
 description: "An extension cable (C4) that clips onto the end of the lat pulley cable (C3) and provides the attachment point for low row handles."
 photos:
   # - /assets/images/cables/extension-cable-1.jpg

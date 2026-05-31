@@ -1,6 +1,7 @@
 ---
 title: "Counter-Balance Cable"
 code: "C2"
+owned: false
 description: "A cable (C2) that inserts into hole 18 to offset the weight of the smith carriage, used when the carriage alone is too heavy for squats, lunges, or other smith machine exercises."
 photos:
   # - /assets/images/cables/counter-balance-cable-1.jpg

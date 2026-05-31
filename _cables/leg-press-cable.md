@@ -1,6 +1,7 @@
 ---
 title: "Leg Press Cables"
 code: "C1"
+owned: true
 description: "A left/right pair of cables (C1-L and C1-R) that connect the weight stack to the smith carriage for the leg press and calf raise exercises."
 photos:
   # - /assets/images/cables/leg-press-cable-1.jpg

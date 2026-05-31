@@ -1,7 +1,7 @@
 ---
 title: "Ab Station Attachment (Option C)"
 code: "C"
-owned: false
+owned: true
 description: "Option C package including the C-1 back rest pad and the C2-R / C2-L forearm pads for hanging leg raises."
 photos: []
 # photos:

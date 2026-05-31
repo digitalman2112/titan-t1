@@ -1,6 +1,7 @@
 ---
 title: "Low Pulley Extension Cable"
 code: "C7"
+owned: false
 description: "A left/right pair of extension cables (C7-L and C7-R) that clip to the C9 crossover cables to extend their reach for the Option A1 low pulley exercises."
 photos:
   # - /assets/images/cables/low-pulley-extension-cable-1.jpg

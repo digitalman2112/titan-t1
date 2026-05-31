@@ -1,7 +1,7 @@
 ---
 title: "Counter-Balance Pulley Attachment (Option F)"
 code: "F"
-owned: false
+owned: true
 description: "Option F counter-balance pulley (F-1) used with cables C8, C9, and C10 for cable exercises."
 photos: []
 # photos:

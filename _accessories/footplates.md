@@ -1,7 +1,7 @@
 ---
 title: "Footplates"
 code: "S4"
-owned: false
+owned: true
 description: "A left/right pair of footplates (S4-L and S4-R) that attach to the machine frame and serve as the pushing surface for leg press and calf raise exercises."
 photos:
   # - /assets/images/accessories/footplate-1.jpg

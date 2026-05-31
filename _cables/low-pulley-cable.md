@@ -1,6 +1,7 @@
 ---
 title: "Low Pulley Cable"
 code: "C6"
+owned: false
 description: "A left/right pair of cables (C6-L and C6-R) that run from the cable crossover arms to the low pulley for the Option A1 low pulley exercises."
 photos:
   # - /assets/images/cables/low-pulley-cable-1.jpg

@@ -5,7 +5,7 @@ title: Home
 
 <div class="home-hero">
   <h1>Titan T1-X Guide</h1>
-  <p>Exercise instructions, accessory reference, and cable configuration for the Titan T1-X functional trainer.</p>
+  <p>Exercise instructions, accessory reference, and cable configuration for the Titan T1-X multi-functional home gym machine.</p>
 </div>
 
 {% assign favorites = site.data.settings.favorited_exercises %}
