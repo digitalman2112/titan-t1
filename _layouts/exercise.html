@@ -53,7 +53,17 @@ layout: default
           {% for cable_code in page.cables %}
             {% assign cable = site.cables | where: "code", cable_code | first %}
             {% if cable %}
-              <li><a href="{{ cable.url | relative_url }}">{{ cable.title }}</a> <span class="ref-cable">{{ cable_code }}</span></li>
+              <li>
+                <a href="{{ cable.url | relative_url }}" class="equipment-thumb">
+                  {% if cable.photos and cable.photos.size > 0 %}
+                    <img src="{{ cable.photos[0] | relative_url }}" alt="{{ cable.title }}">
+                  {% else %}
+                    <span class="equipment-thumb__placeholder">&#9634;</span>
+                  {% endif %}
+                </a>
+                <a href="{{ cable.url | relative_url }}">{{ cable.title }}</a>
+                <span class="ref-cable">{{ cable_code }}</span>
+              </li>
             {% else %}
               <li><span class="ref-cable">{{ cable_code }}</span></li>
             {% endif %}
@@ -68,7 +78,17 @@ layout: default
           {% for acc_code in page.accessories %}
             {% assign acc = site.accessories | where: "code", acc_code | first %}
             {% if acc %}
-              <li><a href="{{ acc.url | relative_url }}">{{ acc.title }}</a> <span class="ref-accessory">{{ acc_code }}</span></li>
+              <li>
+                <a href="{{ acc.url | relative_url }}" class="equipment-thumb">
+                  {% if acc.photos and acc.photos.size > 0 %}
+                    <img src="{{ acc.photos[0] | relative_url }}" alt="{{ acc.title }}">
+                  {% else %}
+                    <span class="equipment-thumb__placeholder">&#9634;</span>
+                  {% endif %}
+                </a>
+                <a href="{{ acc.url | relative_url }}">{{ acc.title }}</a>
+                <span class="ref-accessory">{{ acc_code }}</span>
+              </li>
             {% else %}
               <li><span class="ref-accessory">{{ acc_code }}</span></li>
             {% endif %}

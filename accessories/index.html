@@ -14,13 +14,13 @@ description: Attachments and handles for the Titan T1 functional trainer.
 <div class="collection-grid">
   {% for accessory in accessories %}
   <div class="item-card">
-    <div class="item-card__image{% unless accessory.photos and accessory.photos.size > 0 %} item-card__image--placeholder{% endunless %}">
+    <a href="{{ accessory.url | relative_url }}" class="item-card__image{% unless accessory.photos and accessory.photos.size > 0 %} item-card__image--placeholder{% endunless %}">
       {% if accessory.photos and accessory.photos.size > 0 %}
         <img src="{{ accessory.photos[0] | relative_url }}" alt="{{ accessory.title }}">
       {% else %}
         &#9634;
       {% endif %}
-    </div>
+    </a>
     <div class="item-card__body">
       <div class="item-card__meta">
         {% if accessory.code %}<span class="item-code">{{ accessory.code }}</span>{% endif %}

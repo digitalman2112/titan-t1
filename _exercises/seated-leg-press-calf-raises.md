@@ -3,7 +3,7 @@ title: "Seated Leg Press & Calf Raises"
 code: "EX-002"
 description: "Seated compound exercise using the smith machine carriage and footplates to train the lower body. Supports both leg press and calf raise variations."
 photos:
-  # - /assets/images/exercises/seated-leg-press-1.jpg
+  - /assets/images/exercises/exercise-2-1.png
 videos:
   # - youtube_id: ""
   #   title: "Seated Leg Press & Calf Raises — Tutorial"

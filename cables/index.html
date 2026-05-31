@@ -14,13 +14,13 @@ description: Cable types and configuration reference for the Titan T1.
 <div class="collection-grid">
   {% for cable in cables %}
   <div class="item-card">
-    <div class="item-card__image{% unless cable.photos and cable.photos.size > 0 %} item-card__image--placeholder{% endunless %}">
+    <a href="{{ cable.url | relative_url }}" class="item-card__image{% unless cable.photos and cable.photos.size > 0 %} item-card__image--placeholder{% endunless %}">
       {% if cable.photos and cable.photos.size > 0 %}
         <img src="{{ cable.photos[0] | relative_url }}" alt="{{ cable.title }}">
       {% else %}
         &#9634;
       {% endif %}
-    </div>
+    </a>
     <div class="item-card__body">
       <div class="item-card__meta">
         {% if cable.code %}<span class="item-code">{{ cable.code }}</span>{% endif %}

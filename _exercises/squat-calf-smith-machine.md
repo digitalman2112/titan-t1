@@ -3,7 +3,7 @@ title: "Squat & Calf with Smith Machine"
 code: "EX-003"
 description: "A compound lower body exercise using the smith machine carriage and shoulder pads to perform squats and calf raises. Trains the hamstrings, quads, glutes, and calves."
 photos:
-  # - /assets/images/exercises/squat-calf-smith-machine-1.jpg
+  - /assets/images/exercises/exercise-3-1.png
 videos:
   # - youtube_id: ""
   #   title: "Squat & Calf with Smith Machine — Tutorial"
@@ -24,7 +24,7 @@ accessories:
 1. Slide the bench completely forward to position **1** and incline the backrest to the high position.
 2. Insert <span class="ref-accessory">exercise handle</span> <span class="ref-accessory">S1-R</span> into hole **10-L** and handle <span class="ref-accessory">S1-L</span> into hole **10-R** on the back side of the smith carriage.
 3. Lift the smith carriage and lock both <span class="ref-accessory">handles</span> onto hooks <span class="ref-hook">H-10</span> or <span class="ref-hook">H-11</span>.
-4. Insert <span class="ref-accessory">shoulder pad</span> <span class="ref-accessory">S5-L</span> into hole **17-L** and pad <span class="ref-accessory">S5-R</span> into hole **17-R**. Ensure both are fully seated and will not slide out.
+4. Insert <span class="ref-accessory">shoulder pad</span> <span class="ref-accessory">S5-L</span> into hole **16-L** and pad <span class="ref-accessory">S5-R</span> into hole **16-R**. Ensure both are fully seated and will not slide out.
 5. If the smith carriage is too heavy without added weight, insert <span class="ref-cable">counter-balance cable</span> <span class="ref-cable">C2</span> into hole **18** and add the desired counter weight.
 6. Select the desired weight.
 

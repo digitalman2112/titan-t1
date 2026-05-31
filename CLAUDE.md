@@ -16,6 +16,19 @@ favorited_exercises:
 
 ## Exercise markdown conventions
 
+### Photos
+
+Photos must be a proper YAML list with `- ` prefixes and a leading `/` on each path:
+
+```yaml
+photos:
+  - /assets/images/exercises/titan-t1-2.png
+```
+
+A plain string (missing `- `) will appear to work on the exercise detail page but will break on the homepage and exercises index, which use `exercise.photos[0]`.
+
+
+
 Exercise files live in `_exercises/`. Each file has YAML front matter listing the exercise's `cables` and `accessories` by code, and the body contains setup and instruction sections written in markdown.
 
 ### Equipment color coding
