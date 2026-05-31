@@ -12,13 +12,13 @@ title: Home
 {% if favorites and favorites.size > 0 %}
 <section class="home-favorites">
   <div class="home-section-header">
-    <h2>Exercises</h2>
+    <h2>Featured Exercises</h2>
     <a href="{{ '/exercises/' | relative_url }}" class="home-section-link">All {{ site.exercises | size }} exercises &rsaquo;</a>
   </div>
   <div class="collection-grid">
-    {% for code in favorites %}
-      {% assign exercise = site.exercises | where: "code", code | first %}
-      {% if exercise %}
+    {% assign sorted_exercises = site.exercises | sort: "code" %}
+    {% for exercise in sorted_exercises %}
+      {% if favorites contains exercise.code %}
       <div class="item-card">
         <a href="{{ exercise.url | relative_url }}" class="item-card__image{% unless exercise.photos and exercise.photos.size > 0 %} item-card__image--placeholder{% endunless %}">
           {% if exercise.photos and exercise.photos.size > 0 %}

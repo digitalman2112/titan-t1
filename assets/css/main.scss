@@ -749,6 +749,130 @@ hr {
 }
 
 /* ============================================================
+   Spec Table (Machine page)
+   ============================================================ */
+
+.spec-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+
+  th, td {
+    padding: 0.5rem 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid var(--color-border-light);
+    vertical-align: top;
+  }
+
+  th {
+    font-weight: 500;
+    color: var(--color-text-muted);
+    width: 55%;
+  }
+
+  td {
+    font-variant-numeric: tabular-nums;
+  }
+
+  tr:last-child th,
+  tr:last-child td {
+    border-bottom: none;
+  }
+}
+
+/* ============================================================
+   Resource List (Machine page)
+   ============================================================ */
+
+.resource-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+    padding: 0.4rem 0;
+    border-bottom: 1px solid var(--color-border-light);
+    font-size: 0.95rem;
+    margin: 0;
+
+    &:last-child { border-bottom: none; }
+  }
+}
+
+.resource-list__label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-faint);
+  white-space: nowrap;
+  min-width: 7rem;
+}
+
+.resource-list__thumb {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid var(--color-border-light);
+  border-radius: 4px;
+  overflow: hidden;
+  text-decoration: none;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &:hover { border-color: var(--color-text-muted); }
+}
+
+/* ============================================================
+   Doc Grid (Machine page)
+   ============================================================ */
+
+.doc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+.doc-card__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.25rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  text-decoration: none;
+  color: var(--color-text);
+  transition: border-color 0.15s;
+
+  &:hover {
+    border-color: var(--color-text-muted);
+    text-decoration: none;
+  }
+}
+
+.doc-card__icon {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.doc-card__title {
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* ============================================================
    Empty State
    ============================================================ */
 

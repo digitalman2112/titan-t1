@@ -4,6 +4,7 @@ code: "EX-003"
 description: "A compound lower body exercise using the smith machine carriage and shoulder pads to perform squats and calf raises. Trains the hamstrings, quads, glutes, and calves."
 photos:
   - /assets/images/exercises/exercise-3-1.png
+  - /assets/images/exercises/exercise-3-2.png
 videos:
   # - youtube_id: ""
   #   title: "Squat & Calf with Smith Machine — Tutorial"

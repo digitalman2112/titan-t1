@@ -9,7 +9,7 @@ description: Attachments and handles for the Titan T1 functional trainer.
   <p>{{ site.accessories | size }} accessories &mdash; handles, bars, and attachments.</p>
 </div>
 
-{% assign accessories = site.accessories | sort: "title" %}
+{% assign accessories = site.accessories | sort: "code" %}
 {% if accessories.size > 0 %}
 <div class="collection-grid">
   {% for accessory in accessories %}

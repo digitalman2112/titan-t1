@@ -9,7 +9,7 @@ description: Cable types and configuration reference for the Titan T1.
   <p>{{ site.cables | size }} cables &mdash; lengths, connectors, and usage.</p>
 </div>
 
-{% assign cables = site.cables | sort: "title" %}
+{% assign cables = site.cables | sort: "code" %}
 {% if cables.size > 0 %}
 <div class="collection-grid">
   {% for cable in cables %}

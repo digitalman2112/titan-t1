@@ -14,7 +14,7 @@ description: All exercises for the Titan T1 functional trainer.
   <a href="{{ '/exercises/' | relative_url }}" class="filter-clear">&times; Clear</a>
 </div>
 
-{% assign exercises = site.exercises | sort: "title" %}
+{% assign exercises = site.exercises | sort: "code" %}
 {% if exercises.size > 0 %}
 <div class="collection-grid" id="exercise-grid">
   {% for exercise in exercises %}
