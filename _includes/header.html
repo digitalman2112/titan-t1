@@ -1,0 +1,15 @@
+<header class="site-header">
+  <div class="container">
+    <div class="site-header__inner">
+      <a href="{{ '/' | relative_url }}" class="site-title">{{ site.title }}</a>
+      <nav class="site-nav">
+        <a href="{{ '/exercises/' | relative_url }}"{% if page.url contains '/exercises' %} class="active"{% endif %}>Exercises</a>
+        <a href="{{ '/accessories/' | relative_url }}"{% if page.url contains '/accessories' %} class="active"{% endif %}>Accessories</a>
+        <a href="{{ '/cables/' | relative_url }}"{% if page.url contains '/cables' %} class="active"{% endif %}>Cables</a>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode" title="Toggle dark/light mode">
+        <span class="theme-toggle__icon"></span>
+      </button>
+    </div>
+  </div>
+</header>

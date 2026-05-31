@@ -1,0 +1,87 @@
+---
+layout: default
+---
+<article class="detail-page">
+
+  <header class="detail-header">
+    <nav class="breadcrumb">
+      <a href="{{ '/exercises/' | relative_url }}">Exercises</a>
+      <span>&rsaquo;</span>
+      <span>{{ page.title }}</span>
+    </nav>
+    <div class="detail-header__meta">
+      {% if page.code %}<span class="item-code">{{ page.code }}</span>{% endif %}
+      {% for muscle in page.muscles %}
+        <a href="{{ '/exercises/' | relative_url }}?muscle={{ muscle | url_encode }}" class="tag">{{ muscle }}</a>
+      {% endfor %}
+    </div>
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}<p class="detail-description">{{ page.description }}</p>{% endif %}
+  </header>
+
+  {% if page.photos and page.photos.size > 0 %}
+  <section class="detail-section">
+    <div class="photo-grid">
+      {% for photo in page.photos %}
+        <figure class="photo-grid__item">
+          <img src="{{ photo | relative_url }}" alt="{{ page.title }}" loading="lazy">
+        </figure>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% if page.videos and page.videos.size > 0 %}
+  <section class="detail-section">
+    <h2>Videos</h2>
+    <div class="video-grid">
+      {% for video in page.videos %}
+        {% include youtube.html video=video %}
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% if page.cables and page.cables.size > 0 or page.accessories and page.accessories.size > 0 %}
+  <section class="detail-section equipment-section">
+    <h2>Required Equipment</h2>
+    <div class="equipment-grid">
+      {% if page.cables and page.cables.size > 0 %}
+      <div class="equipment-group">
+        <h3>Cables</h3>
+        <ul class="equipment-list">
+          {% for cable_code in page.cables %}
+            {% assign cable = site.cables | where: "code", cable_code | first %}
+            {% if cable %}
+              <li><a href="{{ cable.url | relative_url }}">{{ cable.title }}</a> <span class="ref-cable">{{ cable_code }}</span></li>
+            {% else %}
+              <li><span class="ref-cable">{{ cable_code }}</span></li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+      {% if page.accessories and page.accessories.size > 0 %}
+      <div class="equipment-group">
+        <h3>Accessories</h3>
+        <ul class="equipment-list">
+          {% for acc_code in page.accessories %}
+            {% assign acc = site.accessories | where: "code", acc_code | first %}
+            {% if acc %}
+              <li><a href="{{ acc.url | relative_url }}">{{ acc.title }}</a> <span class="ref-accessory">{{ acc_code }}</span></li>
+            {% else %}
+              <li><span class="ref-accessory">{{ acc_code }}</span></li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+    </div>
+  </section>
+  {% endif %}
+
+  <section class="detail-section detail-content">
+    {{ content }}
+  </section>
+
+</article>

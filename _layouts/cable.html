@@ -1,0 +1,63 @@
+---
+layout: default
+---
+<article class="detail-page">
+
+  <header class="detail-header">
+    <nav class="breadcrumb">
+      <a href="{{ '/cables/' | relative_url }}">Cables</a>
+      <span>&rsaquo;</span>
+      <span>{{ page.title }}</span>
+    </nav>
+    <div class="detail-header__meta">
+      {% if page.code %}<span class="item-code">{{ page.code }}</span>{% endif %}
+    </div>
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}<p class="detail-description">{{ page.description }}</p>{% endif %}
+  </header>
+
+  {% if page.photos and page.photos.size > 0 %}
+  <section class="detail-section">
+    <div class="photo-grid">
+      {% for photo in page.photos %}
+        <figure class="photo-grid__item">
+          <img src="{{ photo | relative_url }}" alt="{{ page.title }}" loading="lazy">
+        </figure>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% if page.videos and page.videos.size > 0 %}
+  <section class="detail-section">
+    <h2>Videos</h2>
+    <div class="video-grid">
+      {% for video in page.videos %}
+        {% include youtube.html video=video %}
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% if content and content != "" %}
+  <section class="detail-section detail-content">
+    {{ content }}
+  </section>
+  {% endif %}
+
+  {% assign related = site.exercises | where_exp: "ex", "ex.cables contains page.code" %}
+  {% if related.size > 0 %}
+  <section class="detail-section">
+    <h2>Used In</h2>
+    <ul class="related-list">
+      {% for ex in related %}
+        <li>
+          <a href="{{ ex.url | relative_url }}">{{ ex.title }}</a>
+          {% if ex.code %}<span class="item-code item-code--sm">{{ ex.code }}</span>{% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+</article>

@@ -1,0 +1,40 @@
+---
+layout: default
+title: Cables
+description: Cable types and configuration reference for the Titan T1.
+---
+
+<div class="collection-header">
+  <h1>Cables</h1>
+  <p>{{ site.cables | size }} cables &mdash; lengths, connectors, and usage.</p>
+</div>
+
+{% assign cables = site.cables | sort: "title" %}
+{% if cables.size > 0 %}
+<div class="collection-grid">
+  {% for cable in cables %}
+  <div class="item-card">
+    <div class="item-card__image{% unless cable.photos and cable.photos.size > 0 %} item-card__image--placeholder{% endunless %}">
+      {% if cable.photos and cable.photos.size > 0 %}
+        <img src="{{ cable.photos[0] | relative_url }}" alt="{{ cable.title }}">
+      {% else %}
+        &#9634;
+      {% endif %}
+    </div>
+    <div class="item-card__body">
+      <div class="item-card__meta">
+        {% if cable.code %}<span class="item-code">{{ cable.code }}</span>{% endif %}
+      </div>
+      <div class="item-card__title">
+        <a href="{{ cable.url | relative_url }}">{{ cable.title }}</a>
+      </div>
+      {% if cable.description %}
+        <p class="item-card__description">{{ cable.description }}</p>
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% else %}
+<div class="empty-state">No cables added yet.</div>
+{% endif %}

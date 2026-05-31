@@ -1,0 +1,76 @@
+---
+layout: default
+title: Exercises
+description: All exercises for the Titan T1 functional trainer.
+---
+
+<div class="collection-header">
+  <h1>Exercises</h1>
+  <p id="exercises-count">{{ site.exercises | size }} exercises &mdash; setup, photos, and step-by-step instructions.</p>
+</div>
+
+<div id="filter-banner" class="filter-banner" style="display:none">
+  <span>Muscle group: <strong id="filter-label"></strong></span>
+  <a href="{{ '/exercises/' | relative_url }}" class="filter-clear">&times; Clear</a>
+</div>
+
+{% assign exercises = site.exercises | sort: "title" %}
+{% if exercises.size > 0 %}
+<div class="collection-grid" id="exercise-grid">
+  {% for exercise in exercises %}
+  <div class="item-card" data-muscles="{{ exercise.muscles | join: '|' }}">
+    <a href="{{ exercise.url | relative_url }}" class="item-card__image{% unless exercise.photos and exercise.photos.size > 0 %} item-card__image--placeholder{% endunless %}">
+      {% if exercise.photos and exercise.photos.size > 0 %}
+        <img src="{{ exercise.photos[0] | relative_url }}" alt="{{ exercise.title }}">
+      {% else %}
+        &#9634;
+      {% endif %}
+    </a>
+    <div class="item-card__body">
+      <div class="item-card__meta">
+        {% if exercise.code %}<span class="item-code">{{ exercise.code }}</span>{% endif %}
+        {% for muscle in exercise.muscles %}
+          <a href="{{ '/exercises/' | relative_url }}?muscle={{ muscle | url_encode }}" class="tag">{{ muscle }}</a>
+        {% endfor %}
+      </div>
+      <div class="item-card__title">
+        <a href="{{ exercise.url | relative_url }}">{{ exercise.title }}</a>
+      </div>
+      {% if exercise.description %}
+        <p class="item-card__description">{{ exercise.description }}</p>
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
+<div id="no-results" class="empty-state" style="display:none">No exercises found for this muscle group.</div>
+{% else %}
+<div class="empty-state">No exercises added yet.</div>
+{% endif %}
+
+<script>
+(function () {
+  var muscle = new URLSearchParams(window.location.search).get('muscle');
+  if (!muscle) return;
+
+  document.getElementById('filter-label').textContent = muscle;
+  document.getElementById('filter-banner').style.display = '';
+
+  var found = 0;
+  document.querySelectorAll('#exercise-grid .item-card').forEach(function (card) {
+    if (card.dataset.muscles.split('|').indexOf(muscle) !== -1) {
+      found++;
+    } else {
+      card.style.display = 'none';
+    }
+  });
+
+  if (found === 0) {
+    document.getElementById('exercise-grid').style.display = 'none';
+    document.getElementById('no-results').style.display = '';
+  }
+
+  document.getElementById('exercises-count').textContent =
+    found + ' exercise' + (found !== 1 ? 's' : '') + ' — ' + muscle;
+})();
+</script>

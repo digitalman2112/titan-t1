@@ -1,0 +1,54 @@
+title: "Titan T1 Guide"
+description: "Exercise instructions, accessories, and cable reference for the Titan T1 functional trainer."
+url: "https://ianco.github.io"
+baseurl: "/titan-t1"
+lang: "en"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Collections
+collections:
+  exercises:
+    output: true
+    permalink: /exercises/:name/
+  accessories:
+    output: true
+    permalink: /accessories/:name/
+  cables:
+    output: true
+    permalink: /cables/:name/
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+      type: "exercises"
+    values:
+      layout: "exercise"
+  - scope:
+      path: ""
+      type: "accessories"
+    values:
+      layout: "accessory"
+  - scope:
+      path: ""
+      type: "cables"
+    values:
+      layout: "cable"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - "*.gemspec"
+  - vendor/
+  - .bundle/
+  - README.md

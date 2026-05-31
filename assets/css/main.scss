@@ -1,0 +1,765 @@
+---
+---
+
+/* ============================================================
+   CSS Custom Properties — light / dark themes
+   ============================================================ */
+
+:root,
+[data-theme="light"] {
+  --color-bg:           #f7f7f7;
+  --color-surface:      #ffffff;
+  --color-surface-alt:  #f0f0f0;
+  --color-border:       #dedede;
+  --color-border-light: #ebebeb;
+  --color-text:         #1a1a1a;
+  --color-text-muted:   #666666;
+  --color-text-faint:   #999999;
+  --color-link:         #1a1a1a;
+  --color-link-hover:   #444444;
+  --color-tag-bg:       #e8e8e8;
+  --color-tag-text:     #444444;
+  --color-code-bg:      #e8e8e8;
+  --color-code-text:    #1a1a1a;
+  --toggle-icon:        "☀";
+
+  --color-ref-cable-bg:        #dbeafe;
+  --color-ref-cable-text:      #1d4ed8;
+  --color-ref-accessory-bg:    #fef3c7;
+  --color-ref-accessory-text:  #b45309;
+  --color-ref-hook-bg:         #dcfce7;
+  --color-ref-hook-text:       #15803d;
+}
+
+[data-theme="dark"] {
+  --color-bg:           #0d0d0d;
+  --color-surface:      #1a1a1a;
+  --color-surface-alt:  #222222;
+  --color-border:       #2e2e2e;
+  --color-border-light: #252525;
+  --color-text:         #e6e6e6;
+  --color-text-muted:   #999999;
+  --color-text-faint:   #666666;
+  --color-link:         #e6e6e6;
+  --color-link-hover:   #bbbbbb;
+  --color-tag-bg:       #2e2e2e;
+  --color-tag-text:     #aaaaaa;
+  --color-code-bg:      #2e2e2e;
+  --color-code-text:    #e6e6e6;
+  --toggle-icon:        "☾";
+
+  --color-ref-cable-bg:        #1e3a5f;
+  --color-ref-cable-text:      #93c5fd;
+  --color-ref-accessory-bg:    #3d2d00;
+  --color-ref-accessory-text:  #fcd34d;
+  --color-ref-hook-bg:         #14330a;
+  --color-ref-hook-text:       #86efac;
+}
+
+/* ============================================================
+   Reset & Base
+   ============================================================ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+               "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  transition: background-color 0.2s ease, color 0.2s ease;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-color: var(--color-border);
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+
+a:hover {
+  color: var(--color-link-hover);
+  text-decoration-color: var(--color-link-hover);
+}
+
+/* ============================================================
+   Typography
+   ============================================================ */
+
+h1, h2, h3, h4 {
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--color-text);
+}
+
+h1 { font-size: 2rem;   margin-bottom: 0.5rem; }
+h2 { font-size: 1.375rem; margin-bottom: 0.5rem; }
+h3 { font-size: 1.125rem; margin-bottom: 0.35rem; }
+
+p { margin-bottom: 1rem; }
+
+ul, ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+
+  li { margin-bottom: 0.3rem; }
+}
+
+code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 0.875em;
+  background: var(--color-code-bg);
+  color: var(--color-code-text);
+  padding: 0.1em 0.35em;
+  border-radius: 3px;
+}
+
+strong { font-weight: 600; }
+
+hr {
+  border: none;
+  border-top: 1px solid var(--color-border);
+  margin: 2rem 0;
+}
+
+/* ============================================================
+   Layout
+   ============================================================ */
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2.5rem 0 4rem;
+}
+
+/* ============================================================
+   Site Header
+   ============================================================ */
+
+.site-header {
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.site-header__inner {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  height: 3.5rem;
+}
+
+.site-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  color: var(--color-text);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.site-title:hover {
+  color: var(--color-text-muted);
+  text-decoration: none;
+}
+
+.site-nav {
+  display: flex;
+  gap: 1.5rem;
+  flex: 1;
+
+  a {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--color-text-muted);
+    transition: color 0.15s ease;
+
+    &:hover,
+    &.active {
+      color: var(--color-text);
+    }
+  }
+}
+
+/* ============================================================
+   Theme Toggle
+   ============================================================ */
+
+.theme-toggle {
+  background: none;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  font-size: 0.85rem;
+  padding: 0.3rem 0.6rem;
+  transition: border-color 0.15s, color 0.15s;
+  flex-shrink: 0;
+  line-height: 1;
+
+  &:hover {
+    border-color: var(--color-text-muted);
+    color: var(--color-text);
+  }
+}
+
+.theme-toggle__icon::before {
+  content: var(--toggle-icon, "☀");
+}
+
+/* ============================================================
+   Site Footer
+   ============================================================ */
+
+.site-footer {
+  background: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+  padding: 1.25rem 0;
+  font-size: 0.8rem;
+  color: var(--color-text-faint);
+}
+
+/* ============================================================
+   Page: Collection Index
+   ============================================================ */
+
+.collection-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--color-border);
+
+  h1 { margin-bottom: 0.35rem; }
+
+  p {
+    color: var(--color-text-muted);
+    margin: 0;
+    font-size: 0.95rem;
+  }
+}
+
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+/* Collection Card */
+
+.item-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.15s ease;
+
+  &:hover {
+    border-color: var(--color-text-muted);
+  }
+}
+
+.item-card__image {
+  aspect-ratio: 4 / 3;
+  background: var(--color-surface-alt);
+  overflow: hidden;
+  display: block;
+  text-decoration: none;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.item-card__image--placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: var(--color-border);
+}
+
+.item-card__body {
+  padding: 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.item-card__meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.item-card__title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+
+  a {
+    text-decoration: none;
+    color: var(--color-text);
+
+    &:hover { color: var(--color-text-muted); }
+  }
+}
+
+.item-card__description {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+  flex: 1;
+}
+
+/* ============================================================
+   Page: Detail (Exercise / Accessory / Cable)
+   ============================================================ */
+
+.detail-page { max-width: 800px; }
+
+.detail-header {
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.detail-header__meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.75rem;
+}
+
+.detail-description {
+  color: var(--color-text-muted);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+.detail-section {
+  margin-bottom: 2.5rem;
+
+  & > h2 {
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--color-border-light);
+  }
+}
+
+.detail-content {
+  h2 {
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--color-border-light);
+
+    &:first-child { margin-top: 0; }
+  }
+
+  h3 { margin-top: 1.25rem; }
+
+  ol, ul { margin-bottom: 1.25rem; }
+
+  li { margin-bottom: 0.4rem; }
+}
+
+/* ============================================================
+   Breadcrumb
+   ============================================================ */
+
+.breadcrumb {
+  font-size: 0.85rem;
+  color: var(--color-text-faint);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+
+  a {
+    color: var(--color-text-muted);
+    text-decoration: none;
+
+    &:hover { color: var(--color-text); }
+  }
+}
+
+/* ============================================================
+   Item Code Badge
+   ============================================================ */
+
+.item-code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 0.8rem;
+  background: var(--color-code-bg);
+  color: var(--color-text-muted);
+  padding: 0.2em 0.5em;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+.item-code--sm {
+  font-size: 0.7rem;
+}
+
+/* ============================================================
+   Equipment Reference Highlights (cable / accessory / hook)
+   ============================================================ */
+
+.ref-cable,
+.ref-accessory,
+.ref-hook {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 0.875em;
+  font-weight: 500;
+  padding: 0.1em 0.35em;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+.ref-cable {
+  background: var(--color-ref-cable-bg);
+  color: var(--color-ref-cable-text);
+}
+
+.ref-accessory {
+  background: var(--color-ref-accessory-bg);
+  color: var(--color-ref-accessory-text);
+}
+
+.ref-hook {
+  background: var(--color-ref-hook-bg);
+  color: var(--color-ref-hook-text);
+}
+
+/* ============================================================
+   Tag / Muscle Badge
+   ============================================================ */
+
+.tag {
+  font-size: 0.75rem;
+  font-weight: 500;
+  background: var(--color-tag-bg);
+  color: var(--color-tag-text);
+  padding: 0.2em 0.6em;
+  border-radius: 999px;
+  white-space: nowrap;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+
+  &:hover {
+    background: var(--color-text-muted);
+    color: var(--color-surface);
+    text-decoration: none;
+  }
+}
+
+/* ============================================================
+   Muscle Filter Banner
+   ============================================================ */
+
+.filter-banner {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.filter-clear {
+  font-size: 0.8rem;
+  color: var(--color-text-faint);
+  text-decoration: none;
+
+  &:hover { color: var(--color-text); text-decoration: none; }
+}
+
+/* ============================================================
+   Equipment Section
+   ============================================================ */
+
+.equipment-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.equipment-group h3 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-faint);
+  margin-bottom: 0.5rem;
+}
+
+.equipment-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.35rem 0;
+    border-bottom: 1px solid var(--color-border-light);
+    font-size: 0.9rem;
+    margin: 0;
+
+    &:last-child { border-bottom: none; }
+
+    a { text-decoration: none; &:hover { text-decoration: underline; } }
+  }
+}
+
+/* ============================================================
+   Related Items List
+   ============================================================ */
+
+.related-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0;
+    border-bottom: 1px solid var(--color-border-light);
+    font-size: 0.9rem;
+    margin: 0;
+
+    &:last-child { border-bottom: none; }
+
+    a { text-decoration: none; &:hover { text-decoration: underline; } }
+  }
+}
+
+/* ============================================================
+   Photo Grid
+   ============================================================ */
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 0.75rem;
+}
+
+.photo-grid__item {
+  margin: 0;
+  background: var(--color-surface-alt);
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid var(--color-border-light);
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+/* ============================================================
+   Video Embed
+   ============================================================ */
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1rem;
+}
+
+.video-embed {
+  margin: 0;
+
+  figcaption {
+    font-size: 0.8rem;
+    color: var(--color-text-faint);
+    margin-top: 0.4rem;
+    padding-left: 0.25rem;
+  }
+}
+
+.video-embed__wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  background: var(--color-surface-alt);
+  border-radius: 4px;
+  border: 1px solid var(--color-border-light);
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+}
+
+/* ============================================================
+   Home Page
+   ============================================================ */
+
+.home-hero {
+  padding: 3rem 0 2rem;
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: 3rem;
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    color: var(--color-text-muted);
+    max-width: 600px;
+    margin-bottom: 0;
+  }
+}
+
+.home-favorites {
+  margin-bottom: 2.5rem;
+}
+
+.home-section-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--color-border-light);
+
+  h2 { margin: 0; border: none; padding: 0; }
+}
+
+.home-section-link {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  text-decoration: none;
+
+  &:hover { color: var(--color-text); text-decoration: none; }
+}
+
+.home-sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.home-section-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  padding: 1.5rem;
+  text-decoration: none;
+  display: block;
+  transition: border-color 0.15s ease;
+
+  &:hover { border-color: var(--color-text-muted); text-decoration: none; }
+
+  h2 {
+    font-size: 1.15rem;
+    margin-bottom: 0.4rem;
+    color: var(--color-text);
+  }
+
+  p {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+    margin-bottom: 0.75rem;
+  }
+
+  .home-section-card__count {
+    font-size: 0.8rem;
+    color: var(--color-text-faint);
+    font-family: "SFMono-Regular", Consolas, monospace;
+  }
+}
+
+/* ============================================================
+   Empty State
+   ============================================================ */
+
+.empty-state {
+  padding: 3rem 1rem;
+  text-align: center;
+  color: var(--color-text-faint);
+  font-size: 0.9rem;
+  border: 1px dashed var(--color-border);
+  border-radius: 6px;
+}
+
+/* ============================================================
+   Responsive
+   ============================================================ */
+
+@media (max-width: 900px) {
+  .collection-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+  h1 { font-size: 1.6rem; }
+
+  .site-header__inner { gap: 1rem; }
+  .site-nav { gap: 1rem; }
+
+  .collection-grid { grid-template-columns: 1fr; }
+
+  .video-grid { grid-template-columns: 1fr; }
+  .photo-grid { grid-template-columns: 1fr; }
+
+  .equipment-grid { grid-template-columns: 1fr; }
+
+  .home-hero h1 { font-size: 1.9rem; }
+
+  .main-content { padding: 1.5rem 0 3rem; }
+}
+
+@media (max-width: 420px) {
+  .site-nav a { font-size: 0.8rem; }
+}
