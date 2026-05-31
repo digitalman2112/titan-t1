@@ -174,7 +174,16 @@ hr {
   display: flex;
   align-items: center;
   gap: 2rem;
-  height: 3.5rem;
+  min-height: 3.5rem;
+  flex-wrap: wrap;
+}
+
+.site-header__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: auto;
+  flex-shrink: 0;
 }
 
 .site-title {
@@ -214,6 +223,40 @@ hr {
 /* ============================================================
    Theme Toggle
    ============================================================ */
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 0.3rem 0.4rem;
+  flex-shrink: 0;
+
+  span {
+    display: block;
+    width: 18px;
+    height: 2px;
+    background: var(--color-text-muted);
+    border-radius: 2px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+
+  &:hover span { background: var(--color-text); }
+}
+
+.nav-open .nav-toggle span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.nav-open .nav-toggle span:nth-child(2) {
+  opacity: 0;
+}
+.nav-open .nav-toggle span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
 
 .theme-toggle {
   background: none;
@@ -897,7 +940,27 @@ hr {
   h1 { font-size: 1.6rem; }
 
   .site-header__inner { gap: 1rem; }
-  .site-nav { gap: 1rem; }
+
+  .nav-toggle { display: flex; }
+
+  .site-nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 0;
+    padding: 0.5rem 0 0.75rem;
+    border-top: 1px solid var(--color-border-light);
+
+    a {
+      padding: 0.6rem 0;
+      font-size: 1rem;
+      border-bottom: 1px solid var(--color-border-light);
+
+      &:last-child { border-bottom: none; }
+    }
+  }
+
+  .nav-open .site-nav { display: flex; }
 
   .collection-grid { grid-template-columns: 1fr; }
 
