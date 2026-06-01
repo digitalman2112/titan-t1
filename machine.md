@@ -50,7 +50,7 @@ permalink: /machine/
   <ul class="resource-list">
     <li>
       <span class="resource-list__label">Website</span>
-      <a href="https://www.tytax.com/en/" target="_blank" rel="noopener">tytax.com</a> formerly Szultka
+      <a href="https://www.tytax.com/en/" target="_blank" rel="noopener">tytax.com</a>
     </li>
     <li>
       <span class="resource-list__label">History</span>
@@ -109,19 +109,19 @@ permalink: /machine/
       </a>
     </div>
     <div class="doc-card">
-      <a href="{{ '/assets/docs/titan-exercise-instructions1.pdf' | relative_url }}" class="doc-card__link" target="_blank">
+      <a href="{{ '/assets/docs/titan-exercise-instructions-manual1.pdf' | relative_url }}" class="doc-card__link" target="_blank">
         <div class="doc-card__icon">&#128196;</div>
         <div class="doc-card__title">Exercise Instructions (Type 1)</div>
       </a>
     </div>
     <div class="doc-card">
-      <a href="{{ '/assets/docs/titan-exercise-instructions2.pdf' | relative_url }}" class="doc-card__link" target="_blank">
+      <a href="{{ '/assets/docs/titan-exercise-instructions-manual2.pdf' | relative_url }}" class="doc-card__link" target="_blank">
         <div class="doc-card__icon">&#128196;</div>
         <div class="doc-card__title">Exercise Instructions (Type 2)</div>
       </a>
     </div>
     <div class="doc-card">
-      <a href="{{ '/assets/docs/titan-exercise-instructions3.pdf' | relative_url }}" class="doc-card__link" target="_blank">
+      <a href="{{ '/assets/docs/titan-exercise-instructions-manual3.pdf' | relative_url }}" class="doc-card__link" target="_blank">
         <div class="doc-card__icon">&#128196;</div>
         <div class="doc-card__title">Exercise Instructions (Type 3)</div>
       </a>
