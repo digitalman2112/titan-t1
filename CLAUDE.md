@@ -6,12 +6,12 @@ Global settings live in `_data/settings.yaml` and are available in templates as 
 
 ### `favorited_exercises`
 
-A list of exercise codes (e.g. `EX-001`) that appear on the homepage as a card grid. The homepage shows only these exercises and links to the full exercises index for everything else. To feature an exercise on the homepage, add its code here.
+A list of exercise codes (e.g. `EX-1`) that appear on the homepage as a card grid. The homepage shows only these exercises and links to the full exercises index for everything else. To feature an exercise on the homepage, add its code here.
 
 ```yaml
 favorited_exercises:
-  - EX-001
-  - EX-002
+  - EX-1
+  - EX-2
 ```
 
 ## Exercise markdown conventions
