@@ -18,10 +18,24 @@ description: Accessories and attachments for the Titan T1-X functional trainer.
   </button>
 </div>
 
-{% assign accessories = site.accessories | sort: "code" %}
-{% if accessories.size > 0 %}
+{%- comment -%}
+Natural sort: split each code into its letter prefix and trailing number,
+zero-pad the number so it sorts numerically (C1, C2 … C11, not C1, C11, C2).
+{%- endcomment -%}
+{%- capture keyed_str -%}
+{%- for accessory in site.accessories -%}
+{%- assign prefix = accessory.code | remove: "0" | remove: "1" | remove: "2" | remove: "3" | remove: "4" | remove: "5" | remove: "6" | remove: "7" | remove: "8" | remove: "9" -%}
+{%- assign numpart = accessory.code | remove_first: prefix -%}
+{%- assign padded = "000" | append: numpart | slice: -3, 3 -%}
+{{- prefix }}{{ padded }}@@{{ accessory.code }}{% unless forloop.last %}|||{% endunless %}
+{%- endfor -%}
+{%- endcapture -%}
+{%- assign sorted_keys = keyed_str | split: "|||" | sort -%}
+{% if site.accessories.size > 0 %}
 <div class="collection-grid" id="item-grid">
-  {% for accessory in accessories %}
+  {% for key in sorted_keys %}
+  {% assign acode = key | split: "@@" | last %}
+  {% assign accessory = site.accessories | where: "code", acode | first %}
   <div class="item-card" data-owned="{% if accessory.owned %}true{% else %}false{% endif %}">
     <a href="{{ accessory.url | relative_url }}" class="item-card__image{% unless accessory.photos and accessory.photos.size > 0 %} item-card__image--placeholder{% endunless %}">
       {% if accessory.photos and accessory.photos.size > 0 %}

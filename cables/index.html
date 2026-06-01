@@ -18,10 +18,24 @@ description: Cables and pulleys for the Titan T1-X functional trainer.
   </button>
 </div>
 
-{% assign cables = site.cables | sort: "code" %}
-{% if cables.size > 0 %}
+{%- comment -%}
+Natural sort: split each code into its letter prefix and trailing number,
+zero-pad the number so it sorts numerically (C1, C2 … C11, not C1, C11, C2).
+{%- endcomment -%}
+{%- capture keyed_str -%}
+{%- for cable in site.cables -%}
+{%- assign prefix = cable.code | remove: "0" | remove: "1" | remove: "2" | remove: "3" | remove: "4" | remove: "5" | remove: "6" | remove: "7" | remove: "8" | remove: "9" -%}
+{%- assign numpart = cable.code | remove_first: prefix -%}
+{%- assign padded = "000" | append: numpart | slice: -3, 3 -%}
+{{- prefix }}{{ padded }}@@{{ cable.code }}{% unless forloop.last %}|||{% endunless %}
+{%- endfor -%}
+{%- endcapture -%}
+{%- assign sorted_keys = keyed_str | split: "|||" | sort -%}
+{% if site.cables.size > 0 %}
 <div class="collection-grid" id="item-grid">
-  {% for cable in cables %}
+  {% for key in sorted_keys %}
+  {% assign ccode = key | split: "@@" | last %}
+  {% assign cable = site.cables | where: "code", ccode | first %}
   <div class="item-card" data-owned="{% if cable.owned %}true{% else %}false{% endif %}">
     <a href="{{ cable.url | relative_url }}" class="item-card__image{% unless cable.photos and cable.photos.size > 0 %} item-card__image--placeholder{% endunless %}">
       {% if cable.photos and cable.photos.size > 0 %}

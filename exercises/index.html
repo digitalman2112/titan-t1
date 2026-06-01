@@ -26,10 +26,26 @@ description: All exercises for the Titan T1-X functional trainer.
   </button>
 </div>
 
-{% assign exercises = site.exercises | sort: "code" %}
-{% if exercises.size > 0 %}
+{%- comment -%}
+Natural sort: codes are EX-<number><optional letter> (e.g. EX-2, EX-35a, EX-41b).
+Zero-pad the number and re-append the letter so they order numerically
+(EX-2 … EX-35a, EX-35b … EX-41a, EX-41b) instead of lexicographically.
+{%- endcomment -%}
+{%- capture keyed_str -%}
+{%- for exercise in site.exercises -%}
+{%- assign rest = exercise.code | remove_first: "EX-" -%}
+{%- assign letter = rest | remove: "0" | remove: "1" | remove: "2" | remove: "3" | remove: "4" | remove: "5" | remove: "6" | remove: "7" | remove: "8" | remove: "9" -%}
+{%- if letter == "" -%}{%- assign number = rest -%}{%- else -%}{%- assign number = rest | remove: letter -%}{%- endif -%}
+{%- assign padded = "000" | append: number | slice: -3, 3 -%}
+EX-{{ padded }}{{ letter }}@@{{ exercise.code }}{% unless forloop.last %}|||{% endunless %}
+{%- endfor -%}
+{%- endcapture -%}
+{%- assign sorted_keys = keyed_str | split: "|||" | sort -%}
+{% if site.exercises.size > 0 %}
 <div class="collection-grid" id="exercise-grid">
-  {% for exercise in exercises %}
+  {% for key in sorted_keys %}
+  {% assign xcode = key | split: "@@" | last %}
+  {% assign exercise = site.exercises | where: "code", xcode | first %}
   {% comment %} An exercise is "owned" only if every accessory and cable it needs is owned. {% endcomment %}
   {% assign owned_all = true %}
   {% for acode in exercise.accessories %}
