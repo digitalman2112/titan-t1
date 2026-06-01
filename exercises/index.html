@@ -14,11 +14,35 @@ description: All exercises for the Titan T1-X functional trainer.
   <a href="{{ '/exercises/' | relative_url }}" class="filter-clear">&times; Clear</a>
 </div>
 
+<div class="filter-tabs" id="filter-tabs" role="tablist">
+  <button type="button" class="filter-tab is-active" data-filter="all" role="tab" aria-selected="true">
+    All <span class="filter-tab__count" data-count="all"></span>
+  </button>
+  <button type="button" class="filter-tab" data-filter="featured" role="tab" aria-selected="false">
+    Featured <span class="filter-tab__count" data-count="featured"></span>
+  </button>
+  <button type="button" class="filter-tab" data-filter="owned" role="tab" aria-selected="false">
+    Equipment owned <span class="filter-tab__count" data-count="owned"></span>
+  </button>
+</div>
+
 {% assign exercises = site.exercises | sort: "code" %}
 {% if exercises.size > 0 %}
 <div class="collection-grid" id="exercise-grid">
   {% for exercise in exercises %}
-  <div class="item-card" data-muscles="{{ exercise.muscles | join: '|' }}">
+  {% comment %} An exercise is "owned" only if every accessory and cable it needs is owned. {% endcomment %}
+  {% assign owned_all = true %}
+  {% for acode in exercise.accessories %}
+    {% assign acc = site.accessories | where: "code", acode | first %}
+    {% if acc and acc.owned != true %}{% assign owned_all = false %}{% endif %}
+  {% endfor %}
+  {% for ccode in exercise.cables %}
+    {% assign cab = site.cables | where: "code", ccode | first %}
+    {% if cab and cab.owned != true %}{% assign owned_all = false %}{% endif %}
+  {% endfor %}
+  {% assign featured = false %}
+  {% if site.data.settings.favorited_exercises contains exercise.code %}{% assign featured = true %}{% endif %}
+  <div class="item-card" data-muscles="{{ exercise.muscles | join: '|' }}" data-featured="{{ featured }}" data-owned="{{ owned_all }}">
     <a href="{{ exercise.url | relative_url }}" class="item-card__image{% unless exercise.photos and exercise.photos.size > 0 %} item-card__image--placeholder{% endunless %}">
       {% if exercise.photos and exercise.photos.size > 0 %}
         <img src="{{ exercise.photos[0] | relative_url }}" alt="{{ exercise.title }}">
@@ -43,7 +67,7 @@ description: All exercises for the Titan T1-X functional trainer.
   </div>
   {% endfor %}
 </div>
-<div id="no-results" class="empty-state" style="display:none">No exercises found for this muscle group.</div>
+<div id="no-results" class="empty-state" style="display:none">No exercises match the current filter.</div>
 {% else %}
 <div class="empty-state">No exercises added yet.</div>
 {% endif %}
@@ -51,26 +75,68 @@ description: All exercises for the Titan T1-X functional trainer.
 <script>
 (function () {
   var muscle = new URLSearchParams(window.location.search).get('muscle');
-  if (!muscle) return;
+  var cards = Array.prototype.slice.call(document.querySelectorAll('#exercise-grid .item-card'));
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('#filter-tabs .filter-tab'));
+  var grid = document.getElementById('exercise-grid');
+  var noResults = document.getElementById('no-results');
+  var countEl = document.getElementById('exercises-count');
+  var activeFilter = 'all';
 
-  document.getElementById('filter-label').textContent = muscle;
-  document.getElementById('filter-banner').style.display = '';
-
-  var found = 0;
-  document.querySelectorAll('#exercise-grid .item-card').forEach(function (card) {
-    if (card.dataset.muscles.split('|').indexOf(muscle) !== -1) {
-      found++;
-    } else {
-      card.style.display = 'none';
-    }
-  });
-
-  if (found === 0) {
-    document.getElementById('exercise-grid').style.display = 'none';
-    document.getElementById('no-results').style.display = '';
+  if (muscle) {
+    document.getElementById('filter-label').textContent = muscle;
+    document.getElementById('filter-banner').style.display = '';
   }
 
-  document.getElementById('exercises-count').textContent =
-    found + ' exercise' + (found !== 1 ? 's' : '') + ' — ' + muscle;
+  function matchesMuscle(card) {
+    if (!muscle) return true;
+    return card.dataset.muscles.split('|').indexOf(muscle) !== -1;
+  }
+
+  function matchesFilter(card, filter) {
+    if (filter === 'featured') return card.dataset.featured === 'true';
+    if (filter === 'owned') return card.dataset.owned === 'true';
+    return true;
+  }
+
+  function countFor(filter) {
+    return cards.filter(function (c) {
+      return matchesMuscle(c) && matchesFilter(c, filter);
+    }).length;
+  }
+
+  function apply() {
+    var found = 0;
+    cards.forEach(function (card) {
+      var show = matchesMuscle(card) && matchesFilter(card, activeFilter);
+      card.style.display = show ? '' : 'none';
+      if (show) found++;
+    });
+
+    grid.style.display = found === 0 ? 'none' : '';
+    noResults.style.display = found === 0 ? '' : 'none';
+
+    var suffix = muscle ? ' — ' + muscle : '';
+    countEl.textContent = found + ' exercise' + (found !== 1 ? 's' : '') + suffix;
+  }
+
+  // Populate per-tab counts (respecting the active muscle filter).
+  tabs.forEach(function (tab) {
+    var span = tab.querySelector('.filter-tab__count');
+    if (span) span.textContent = countFor(tab.dataset.filter);
+  });
+
+  tabs.forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      activeFilter = tab.dataset.filter;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.classList.toggle('is-active', on);
+        t.setAttribute('aria-selected', on ? 'true' : 'false');
+      });
+      apply();
+    });
+  });
+
+  apply();
 })();
 </script>

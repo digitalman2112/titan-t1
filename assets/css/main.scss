@@ -579,6 +579,71 @@ hr {
 }
 
 /* ============================================================
+   Filter Tabs (all / featured / equipment owned)
+   ============================================================ */
+
+.filter-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.filter-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: var(--color-surface-alt);
+  color: var(--color-text-muted);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  padding: 0.4rem 0.9rem;
+  transition: color 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+
+  &:hover {
+    color: var(--color-text);
+    border-color: var(--color-link);
+  }
+
+  &.is-active {
+    background: var(--color-link);
+    border-color: var(--color-link);
+    color: #fff;
+  }
+}
+
+.filter-tab__count {
+  font-size: 0.78rem;
+  font-weight: 700;
+  background: var(--color-tag-bg);
+  color: var(--color-tag-text);
+  border-radius: 999px;
+  padding: 0.05rem 0.45rem;
+  min-width: 1.4em;
+  text-align: center;
+
+  .filter-tab.is-active & {
+    background: rgba(255, 255, 255, 0.25);
+    color: #fff;
+  }
+}
+
+/* Dark mode: the active background (--color-link) is light blue, so use
+   dark text/badges for adequate contrast instead of white. */
+[data-theme="dark"] .filter-tab.is-active {
+  color: var(--color-bg);
+
+  .filter-tab__count {
+    background: rgba(0, 0, 0, 0.22);
+    color: var(--color-bg);
+  }
+}
+
+/* ============================================================
    Equipment Section
    ============================================================ */
 
