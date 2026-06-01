@@ -50,7 +50,7 @@ permalink: /machine/
   <ul class="resource-list">
     <li>
       <span class="resource-list__label">Website</span>
-      <a href="https://www.tytax.com/en/" target="_blank" rel="noopener">tytax.com</a>
+      <a href="https://www.tytax.com/en/" target="_blank" rel="noopener">tytax.com</a> formerly Szultka
     </li>
     <li>
       <span class="resource-list__label">History</span>
@@ -102,21 +102,36 @@ permalink: /machine/
   <h2>Printed Materials</h2>
   <p>Scans of the original printed documentation included with the machine.</p>
   <div class="doc-grid">
-    <!-- Exercise instructions -->
-    <!-- <div class="doc-card">
-      <a href="{{ '/assets/docs/exercise-instructions.pdf' | relative_url }}" class="doc-card__link" target="_blank">
-        <div class="doc-card__icon">&#128196;</div>
-        <div class="doc-card__title">Exercise Instructions</div>
-      </a>
-    </div> -->
-    <!-- Assembly instructions -->
-    <!-- <div class="doc-card">
-      <a href="{{ '/assets/docs/assembly-instructions.pdf' | relative_url }}" class="doc-card__link" target="_blank">
+    <div class="doc-card">
+      <a href="{{ '/assets/docs/titan-assembly-instructions.pdf' | relative_url }}" class="doc-card__link" target="_blank">
         <div class="doc-card__icon">&#128196;</div>
         <div class="doc-card__title">Assembly Instructions</div>
       </a>
-    </div> -->
-    <div class="empty-state">Scanned documents will be listed here once uploaded to <code>assets/docs/</code>.</div>
+    </div>
+    <div class="doc-card">
+      <a href="{{ '/assets/docs/titan-exercise-instructions1.pdf' | relative_url }}" class="doc-card__link" target="_blank">
+        <div class="doc-card__icon">&#128196;</div>
+        <div class="doc-card__title">Exercise Instructions (Type 1)</div>
+      </a>
+    </div>
+    <div class="doc-card">
+      <a href="{{ '/assets/docs/titan-exercise-instructions2.pdf' | relative_url }}" class="doc-card__link" target="_blank">
+        <div class="doc-card__icon">&#128196;</div>
+        <div class="doc-card__title">Exercise Instructions (Type 2)</div>
+      </a>
+    </div>
+    <div class="doc-card">
+      <a href="{{ '/assets/docs/titan-exercise-instructions3.pdf' | relative_url }}" class="doc-card__link" target="_blank">
+        <div class="doc-card__icon">&#128196;</div>
+        <div class="doc-card__title">Exercise Instructions (Type 3)</div>
+      </a>
+    </div>
+    <div class="doc-card">
+      <a href="{{ '/assets/docs/titan-diagrams.pdf' | relative_url }}" class="doc-card__link" target="_blank">
+        <div class="doc-card__icon">&#128196;</div>
+        <div class="doc-card__title">Diagrams</div>
+      </a>
+    </div>
   </div>
 </section>
 
