@@ -1,19 +1,28 @@
 ---
 layout: default
 title: Cables
-description: Cable types and configuration reference for the Titan T1-X.
+description: Cables and pulleys for the Titan T1-X functional trainer.
 ---
 
 <div class="collection-header">
   <h1>Cables</h1>
-  <p>{{ site.cables | size }} cables &mdash; lengths, connectors, and usage.</p>
+  <p id="cables-count">{{ site.cables | size }} cables &mdash; pulley and cable attachments.</p>
+</div>
+
+<div class="filter-tabs" id="filter-tabs" role="tablist">
+  <button type="button" class="filter-tab is-active" data-filter="all" role="tab" aria-selected="true">
+    All <span class="filter-tab__count" data-count="all"></span>
+  </button>
+  <button type="button" class="filter-tab" data-filter="owned" role="tab" aria-selected="false">
+    Owned <span class="filter-tab__count" data-count="owned"></span>
+  </button>
 </div>
 
 {% assign cables = site.cables | sort: "code" %}
 {% if cables.size > 0 %}
-<div class="collection-grid">
+<div class="collection-grid" id="item-grid">
   {% for cable in cables %}
-  <div class="item-card">
+  <div class="item-card" data-owned="{% if cable.owned %}true{% else %}false{% endif %}">
     <a href="{{ cable.url | relative_url }}" class="item-card__image{% unless cable.photos and cable.photos.size > 0 %} item-card__image--placeholder{% endunless %}">
       {% if cable.photos and cable.photos.size > 0 %}
         <img src="{{ cable.photos[0] | relative_url }}" alt="{{ cable.title }}">
@@ -24,11 +33,7 @@ description: Cable types and configuration reference for the Titan T1-X.
     <div class="item-card__body">
       <div class="item-card__meta">
         {% if cable.code %}<span class="item-code">{{ cable.code }}</span>{% endif %}
-        {% if cable.owned %}
-          <span class="owned-badge owned-badge--yes">&#10003; Owned</span>
-        {% else %}
-          <span class="owned-badge owned-badge--no">Not owned</span>
-        {% endif %}
+        {% if cable.owned %}<span class="owned-badge owned-badge--yes">&#10003; Owned</span>{% else %}<span class="owned-badge owned-badge--no">Not owned</span>{% endif %}
       </div>
       <div class="item-card__title">
         <a href="{{ cable.url | relative_url }}">{{ cable.title }}</a>
@@ -40,6 +45,51 @@ description: Cable types and configuration reference for the Titan T1-X.
   </div>
   {% endfor %}
 </div>
+<div id="no-results" class="empty-state" style="display:none">No cables match the current filter.</div>
 {% else %}
 <div class="empty-state">No cables added yet.</div>
 {% endif %}
+
+<script>
+(function () {
+  var cards = Array.prototype.slice.call(document.querySelectorAll('#item-grid .item-card'));
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('#filter-tabs .filter-tab'));
+  var grid = document.getElementById('item-grid');
+  var noResults = document.getElementById('no-results');
+  var countEl = document.getElementById('cables-count');
+  var activeFilter = 'all';
+
+  function matches(card, filter) {
+    if (filter === 'owned') return card.dataset.owned === 'true';
+    return true;
+  }
+
+  function apply() {
+    var found = 0;
+    cards.forEach(function (card) {
+      var show = matches(card, activeFilter);
+      card.style.display = show ? '' : 'none';
+      if (show) found++;
+    });
+    grid.style.display = found === 0 ? 'none' : '';
+    noResults.style.display = found === 0 ? '' : 'none';
+    countEl.textContent = found + ' cable' + (found !== 1 ? 's' : '');
+  }
+
+  tabs.forEach(function (tab) {
+    var span = tab.querySelector('.filter-tab__count');
+    if (span) {
+      span.textContent = cards.filter(function (c) { return matches(c, tab.dataset.filter); }).length;
+    }
+    tab.addEventListener('click', function () {
+      activeFilter = tab.dataset.filter;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.classList.toggle('is-active', on);
+        t.setAttribute('aria-selected', on ? 'true' : 'false');
+      });
+      apply();
+    });
+  });
+})();
+</script>

@@ -1,19 +1,28 @@
 ---
 layout: default
 title: Accessories
-description: Attachments and handles for the Titan T1-X functional trainer.
+description: Accessories and attachments for the Titan T1-X functional trainer.
 ---
 
 <div class="collection-header">
   <h1>Accessories</h1>
-  <p>{{ site.accessories | size }} accessories &mdash; handles, bars, and attachments.</p>
+  <p id="accessories-count">{{ site.accessories | size }} accessories &mdash; attachments, handles, and add-ons.</p>
+</div>
+
+<div class="filter-tabs" id="filter-tabs" role="tablist">
+  <button type="button" class="filter-tab is-active" data-filter="all" role="tab" aria-selected="true">
+    All <span class="filter-tab__count" data-count="all"></span>
+  </button>
+  <button type="button" class="filter-tab" data-filter="owned" role="tab" aria-selected="false">
+    Owned <span class="filter-tab__count" data-count="owned"></span>
+  </button>
 </div>
 
 {% assign accessories = site.accessories | sort: "code" %}
 {% if accessories.size > 0 %}
-<div class="collection-grid">
+<div class="collection-grid" id="item-grid">
   {% for accessory in accessories %}
-  <div class="item-card">
+  <div class="item-card" data-owned="{% if accessory.owned %}true{% else %}false{% endif %}">
     <a href="{{ accessory.url | relative_url }}" class="item-card__image{% unless accessory.photos and accessory.photos.size > 0 %} item-card__image--placeholder{% endunless %}">
       {% if accessory.photos and accessory.photos.size > 0 %}
         <img src="{{ accessory.photos[0] | relative_url }}" alt="{{ accessory.title }}">
@@ -24,11 +33,7 @@ description: Attachments and handles for the Titan T1-X functional trainer.
     <div class="item-card__body">
       <div class="item-card__meta">
         {% if accessory.code %}<span class="item-code">{{ accessory.code }}</span>{% endif %}
-        {% if accessory.owned %}
-          <span class="owned-badge owned-badge--yes">&#10003; Owned</span>
-        {% else %}
-          <span class="owned-badge owned-badge--no">Not owned</span>
-        {% endif %}
+        {% if accessory.owned %}<span class="owned-badge owned-badge--yes">&#10003; Owned</span>{% else %}<span class="owned-badge owned-badge--no">Not owned</span>{% endif %}
       </div>
       <div class="item-card__title">
         <a href="{{ accessory.url | relative_url }}">{{ accessory.title }}</a>
@@ -40,6 +45,53 @@ description: Attachments and handles for the Titan T1-X functional trainer.
   </div>
   {% endfor %}
 </div>
+<div id="no-results" class="empty-state" style="display:none">No accessories match the current filter.</div>
 {% else %}
 <div class="empty-state">No accessories added yet.</div>
 {% endif %}
+
+<script>
+(function () {
+  var cards = Array.prototype.slice.call(document.querySelectorAll('#item-grid .item-card'));
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('#filter-tabs .filter-tab'));
+  var grid = document.getElementById('item-grid');
+  var noResults = document.getElementById('no-results');
+  var countEl = document.getElementById('accessories-count');
+  var noun = 'accessory';
+  var nounPlural = 'accessories';
+  var activeFilter = 'all';
+
+  function matches(card, filter) {
+    if (filter === 'owned') return card.dataset.owned === 'true';
+    return true;
+  }
+
+  function apply() {
+    var found = 0;
+    cards.forEach(function (card) {
+      var show = matches(card, activeFilter);
+      card.style.display = show ? '' : 'none';
+      if (show) found++;
+    });
+    grid.style.display = found === 0 ? 'none' : '';
+    noResults.style.display = found === 0 ? '' : 'none';
+    countEl.textContent = found + ' ' + (found === 1 ? noun : nounPlural);
+  }
+
+  tabs.forEach(function (tab) {
+    var span = tab.querySelector('.filter-tab__count');
+    if (span) {
+      span.textContent = cards.filter(function (c) { return matches(c, tab.dataset.filter); }).length;
+    }
+    tab.addEventListener('click', function () {
+      activeFilter = tab.dataset.filter;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.classList.toggle('is-active', on);
+        t.setAttribute('aria-selected', on ? 'true' : 'false');
+      });
+      apply();
+    });
+  });
+})();
+</script>
