@@ -644,6 +644,46 @@ hr {
 }
 
 /* ============================================================
+   Muscle Group Filter Row
+   ============================================================ */
+
+.muscle-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.muscle-filter-btn {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 500;
+  background: var(--color-surface-alt);
+  color: var(--color-text-muted);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  padding: 0.25rem 0.75rem;
+  text-decoration: none;
+  transition: color 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+
+  &:hover {
+    color: var(--color-text);
+    border-color: var(--color-link);
+    text-decoration: none;
+  }
+
+  &.is-active {
+    background: var(--color-link);
+    border-color: var(--color-link);
+    color: #fff;
+  }
+}
+
+[data-theme="dark"] .muscle-filter-btn.is-active {
+  color: var(--color-bg);
+}
+
+/* ============================================================
    Equipment Section
    ============================================================ */
 
