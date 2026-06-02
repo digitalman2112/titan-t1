@@ -4,7 +4,9 @@ title: "Abductor and Adductor Exercise — Option F"
 code: "EX-42a"
 description: "A standing cable abductor/adductor exercise using the Option F counter-balance attachment with an ankle strap, targeting the quads and hamstrings."
 photos:
-  # - /assets/images/exercises/exercise-42a-1.png
+  - /assets/images/exercises/manual1/1-B-24-Hip-Abduction-1.jpg
+  - /assets/images/exercises/manual1/1-B-24-Hip-Abduction-2.jpg
+  - /assets/images/exercises/manual1/1-B-24-Hip-Abduction-3.jpg
 videos:
   # - youtube_id: ""
   #   title: "Abductor and Adductor Exercise — Option F Tutorial"

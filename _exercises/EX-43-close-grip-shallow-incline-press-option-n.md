@@ -4,7 +4,9 @@ title: "Close-Grip Shallow Incline Press — Option N"
 code: "EX-43"
 description: "A close-grip incline press using the Option N tube fitted over the smith machine exercise handles, targeting the chest and triceps."
 photos:
-  # - /assets/images/exercises/exercise-43-1.png
+  - /assets/images/exercises/manual1/1-N-02-Close-Grip-Machine-Incline-Bench-Press-1.jpg
+  - /assets/images/exercises/manual1/1-N-02-Close-Grip-Machine-Incline-Bench-Press-2.jpg
+  - /assets/images/exercises/manual1/1-N-02-Close-Grip-Machine-Incline-Bench-Press-3.jpg
 videos:
   # - youtube_id: ""
   #   title: "Close-Grip Shallow Incline Press — Option N Tutorial"

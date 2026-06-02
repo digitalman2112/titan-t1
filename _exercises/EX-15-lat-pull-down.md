@@ -4,7 +4,9 @@ title: "Lat Pull Down"
 code: "EX-15"
 description: "A lat pull down exercise using the lat pulley cable and lat pull down bar, performed from a seated position with thighs secured under the roller pads."
 photos:
-  # - /assets/images/exercises/exercise-15-1.png
+  - /assets/images/exercises/manual1/1-SV-45-Lat-Pulldown-1.jpg
+  - /assets/images/exercises/manual1/1-SV-45-Lat-Pulldown-2.jpg
+  - /assets/images/exercises/manual1/1-SV-45-Lat-Pulldown-3.jpg
 videos:
   # - youtube_id: ""
   #   title: "Lat Pull Down — Tutorial"

@@ -4,7 +4,9 @@ title: "Cable Cross Over — Option A"
 code: "EX-30"
 description: "A multi-exercise cable system using the crossover arms for chest, shoulders, and arms. Supports incline/decline/chest press, cable pec fly, and overhead triceps exercises."
 photos:
-  # - /assets/images/exercises/exercise-30-1.png
+  - /assets/images/exercises/manual1/1-A-01-Cable-Crossover-1.jpg
+  - /assets/images/exercises/manual1/1-A-01-Cable-Crossover-2.jpg
+  - /assets/images/exercises/manual1/1-A-01-Cable-Crossover-3.jpg
 videos:
   # - youtube_id: ""
   #   title: "Cable Cross Over — Tutorial"

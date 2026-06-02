@@ -4,7 +4,9 @@ title: "Preacher Curl"
 code: "EX-29"
 description: "A seated bicep curl using the preacher curl attachment mounted on the seat, targeting the biceps with the EZ curl bar."
 photos:
-  # - /assets/images/exercises/exercise-29-1.png
+  - /assets/images/exercises/manual1/1-SV-38-Preacher-Curl-1.jpg
+  - /assets/images/exercises/manual1/1-SV-38-Preacher-Curl-2.jpg
+  - /assets/images/exercises/manual1/1-SV-38-Preacher-Curl-3.jpg
 videos:
   # - youtube_id: ""
   #   title: "Preacher Curl — Tutorial"

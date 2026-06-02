@@ -4,7 +4,9 @@ title: "Assisted Dips"
 code: "EX-25"
 description: "A dip exercise using the smith machine counter-balance system to reduce effective bodyweight, allowing more reps or assisting beginners."
 photos:
-  # - /assets/images/exercises/exercise-25-1.png
+  - /assets/images/exercises/manual1/1-SV-31-Dips-1.jpg
+  - /assets/images/exercises/manual1/1-SV-31-Dips-2.jpg
+  - /assets/images/exercises/manual1/1-SV-31-Dips-3.jpg
 videos:
   # - youtube_id: ""
   #   title: "Assisted Dips — Tutorial"

@@ -4,7 +4,9 @@ title: "Ab Crunch Machine — Option R"
 code: "EX-46"
 description: "A weighted seated ab crunch using the Option R ABS attachment with the Option N tube as a foot anchor, targeting the abs."
 photos:
-  # - /assets/images/exercises/exercise-46-1.png
+  - /assets/images/exercises/manual1/1-R-01-Exercise-Data-1.jpg
+  - /assets/images/exercises/manual1/1-R-01-Exercise-Data-2.jpg
+  - /assets/images/exercises/manual1/1-R-01-Exercise-Data-3.jpg
 videos:
   # - youtube_id: ""
   #   title: "Ab Crunch Machine — Option R Tutorial"

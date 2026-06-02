@@ -4,7 +4,9 @@ title: "French Curl"
 code: "EX-24"
 description: "A triceps isolation exercise using an EZ curl bar rested on the safety spotters, performed from a seated position on the bench."
 photos:
-  # - /assets/images/exercises/exercise-24-1.png
+  - /assets/images/exercises/manual1/1-SV-04-Lying-Barbell-Triceps-Extension-1.jpg
+  - /assets/images/exercises/manual1/1-SV-04-Lying-Barbell-Triceps-Extension-2.jpg
+  - /assets/images/exercises/manual1/1-SV-04-Lying-Barbell-Triceps-Extension-3.jpg
 videos:
   # - youtube_id: ""
   #   title: "French Curl — Tutorial"

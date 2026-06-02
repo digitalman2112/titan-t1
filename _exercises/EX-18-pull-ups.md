@@ -4,7 +4,9 @@ title: "Pull Ups"
 code: "EX-18"
 description: "A bodyweight upper body exercise using the pull-up handles mounted on the machine frame. Targets the shoulders, lats, and biceps."
 photos:
-  # - /assets/images/exercises/exercise-18-1.png
+  - /assets/images/exercises/manual1/1-SV-50-Pullups-1.jpg
+  - /assets/images/exercises/manual1/1-SV-50-Pullups-2.jpg
+  - /assets/images/exercises/manual1/1-SV-50-Pullups-3.jpg
 videos:
   # - youtube_id: ""
   #   title: "Pull Ups — Tutorial"

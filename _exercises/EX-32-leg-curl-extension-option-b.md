@@ -4,7 +4,9 @@ title: "Leg Curl / Extension — Option B"
 code: "EX-32"
 description: "Leg curl and leg extension exercises using the Option B leg extension/curl attachment with the Olympic bar and smith carriage for resistance."
 photos:
-  # - /assets/images/exercises/exercise-32-1.png
+  - /assets/images/exercises/manual1/1-B-01-Leg-Curls-1.jpg
+  - /assets/images/exercises/manual1/1-B-01-Leg-Curls-2.jpg
+  - /assets/images/exercises/manual1/1-B-01-Leg-Curls-3.jpg
 videos:
   # - youtube_id: ""
   #   title: "Leg Curl / Extension — Option B Tutorial"

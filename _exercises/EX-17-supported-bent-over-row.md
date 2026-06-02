@@ -4,7 +4,9 @@ title: "Supported Bent Over Row"
 code: "EX-17"
 description: "A supported bent over row using the smith machine carriage, with the bench backrest serving as a chest pad. Targets the lats, middle back, and lower back."
 photos:
-  # - /assets/images/exercises/exercise-17-1.png
+  - /assets/images/exercises/manual1/1-A2-04-Assisted-Barbell-Row-1.jpg
+  - /assets/images/exercises/manual1/1-A2-04-Assisted-Barbell-Row-2.jpg
+  - /assets/images/exercises/manual1/1-A2-04-Assisted-Barbell-Row-3.jpg
 videos:
   # - youtube_id: ""
   #   title: "Supported Bent Over Row — Tutorial"

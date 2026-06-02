@@ -4,7 +4,9 @@ title: "Vertical Leg Press"
 code: "EX-5"
 description: "A vertical leg press using the smith machine carriage and footplates. The bench is positioned flat to push the load upward, emphasizing the quadriceps, glutes, and hamstrings."
 photos:
-  # - /assets/images/exercises/vertical-leg-press-1.jpg
+  - /assets/images/exercises/manual1/1-SV-10-Vertical-Leg-Press-1.jpg
+  - /assets/images/exercises/manual1/1-SV-10-Vertical-Leg-Press-2.jpg
+  - /assets/images/exercises/manual1/1-SV-10-Vertical-Leg-Press-3.jpg
 videos:
   # - youtube_id: ""
   #   title: "Vertical Leg Press — Tutorial"

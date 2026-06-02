@@ -4,7 +4,9 @@ title: "Pec Deck — Option P"
 code: "EX-44"
 description: "A seated pec deck fly using the Option P pec deck arms and seat attachment, targeting the chest."
 photos:
-  # - /assets/images/exercises/exercise-44-1.png
+  - /assets/images/exercises/manual1/1-P-01-Butterfly-1.jpg
+  - /assets/images/exercises/manual1/1-P-01-Butterfly-2.jpg
+  - /assets/images/exercises/manual1/1-P-01-Butterfly-3.jpg
 videos:
   # - youtube_id: ""
   #   title: "Pec Deck — Option P Tutorial"

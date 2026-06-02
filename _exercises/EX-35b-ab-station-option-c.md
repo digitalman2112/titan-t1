@@ -4,7 +4,9 @@ title: "Ab Station — Option C"
 code: "EX-35b"
 description: "A hanging knee/leg raise station using the Option C back pad and forearm pads mounted on the smith carriage, targeting the abs and glutes."
 photos:
-  # - /assets/images/exercises/exercise-35b-1.png
+  - /assets/images/exercises/manual1/1-C-01-Knee-Hip-Raise-1.jpg
+  - /assets/images/exercises/manual1/1-C-01-Knee-Hip-Raise-2.jpg
+  - /assets/images/exercises/manual1/1-C-01-Knee-Hip-Raise-3.jpg
 videos:
   # - youtube_id: ""
   #   title: "Ab Station — Option C Tutorial"

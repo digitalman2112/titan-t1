@@ -4,7 +4,9 @@ title: "Incline Dumbbell Press — Option S"
 code: "EX-47"
 description: "An incline dumbbell press using the Option S dumbbell hangers suspended from the Olympic bar for safe rack and un-rack, targeting the chest and triceps."
 photos:
-  # - /assets/images/exercises/exercise-47-1.png
+  - /assets/images/exercises/manual1/1-S-02-Dumbbell-Incline-Bench-Press-1.jpg
+  - /assets/images/exercises/manual1/1-S-02-Dumbbell-Incline-Bench-Press-2.jpg
+  - /assets/images/exercises/manual1/1-S-02-Dumbbell-Incline-Bench-Press-3.jpg
 videos:
   # - youtube_id: ""
   #   title: "Incline Dumbbell Press — Option S Tutorial"
