@@ -1044,6 +1044,37 @@ hr {
 }
 
 /* ============================================================
+   Manual References (Exercise detail page)
+   ============================================================ */
+
+.manual-refs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  li {
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  &__ref {
+    color: var(--color-text-muted);
+    font-size: 0.85rem;
+
+    strong {
+      font-family: var(--font-mono, monospace);
+      font-size: 0.82rem;
+      color: var(--color-accent);
+    }
+  }
+}
+
+/* ============================================================
    Cross-Reference Table (Machine page)
    ============================================================ */
 

@@ -100,6 +100,32 @@ layout: default
   </section>
   {% endif %}
 
+  {% if page.manual1_code or page.manual2_page or page.manual3_page %}
+  <section class="detail-section">
+    <h2>In the Printed Manuals</h2>
+    <ul class="manual-refs">
+      {% if page.manual1_code %}
+      <li>
+        <a href="{{ '/assets/docs/titan-exercise-instructions-manual1.pdf' | relative_url }}" target="_blank" rel="noopener">Exercise Instructions (Type&nbsp;1)</a>
+        <span class="manual-refs__ref">code&nbsp;<strong>{{ page.manual1_code }}</strong>, p.&nbsp;{{ page.manual1_page }}</span>
+      </li>
+      {% endif %}
+      {% if page.manual2_page %}
+      <li>
+        <a href="{{ '/assets/docs/titan-exercise-instructions-manual2.pdf' | relative_url }}" target="_blank" rel="noopener">Exercise Instructions (Type&nbsp;2)</a>
+        <span class="manual-refs__ref">p.&nbsp;{{ page.manual2_page }}</span>
+      </li>
+      {% endif %}
+      {% if page.manual3_page %}
+      <li>
+        <a href="{{ '/assets/docs/titan-exercise-instructions-manual3.pdf' | relative_url }}" target="_blank" rel="noopener">Exercise Instructions (Type&nbsp;3)</a>
+        <span class="manual-refs__ref">p.&nbsp;{{ page.manual3_page }}</span>
+      </li>
+      {% endif %}
+    </ul>
+  </section>
+  {% endif %}
+
   <section class="detail-section detail-content">
     {{ content }}
   </section>
