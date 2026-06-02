@@ -6,8 +6,8 @@ description: "An incline chest press using the smith machine carriage and lockin
 photos:
   # - /assets/images/exercises/exercise-12-1.png
 videos:
-  # - youtube_id: ""
-  #   title: "Incline Bench Press — Smith Machine — Tutorial"
+  - youtube_id: "msaHH6ix3-k"
+    title: "TYTAX T1-X — Smith Bar Bench Press"
 muscles:
   - Chest
   - Triceps

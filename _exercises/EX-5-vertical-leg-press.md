@@ -8,8 +8,8 @@ photos:
   - /assets/images/exercises/manual1/1-SV-10-Vertical-Leg-Press-2.jpg
   - /assets/images/exercises/manual1/1-SV-10-Vertical-Leg-Press-3.jpg
 videos:
-  # - youtube_id: ""
-  #   title: "Vertical Leg Press — Tutorial"
+  - youtube_id: "ika7IS5DwmQ"
+    title: "TYTAX T1-X — Sled Vertical Leg Press"
 muscles:
   - Quads
   - Glutes

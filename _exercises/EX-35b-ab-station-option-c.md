@@ -8,8 +8,8 @@ photos:
   - /assets/images/exercises/manual1/1-C-01-Knee-Hip-Raise-2.jpg
   - /assets/images/exercises/manual1/1-C-01-Knee-Hip-Raise-3.jpg
 videos:
-  # - youtube_id: ""
-  #   title: "Ab Station — Option C Tutorial"
+  - youtube_id: "2AtCOcaZC5c"
+    title: "TYTAX T1-X — Seated Lever Crunch"
 muscles:
   - Abs
   - Glutes

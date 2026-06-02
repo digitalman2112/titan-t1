@@ -8,8 +8,8 @@ photos:
   - /assets/images/exercises/manual1/1-A2-04-Assisted-Barbell-Row-2.jpg
   - /assets/images/exercises/manual1/1-A2-04-Assisted-Barbell-Row-3.jpg
 videos:
-  # - youtube_id: ""
-  #   title: "Supported Bent Over Row — Tutorial"
+  - youtube_id: "WpyVKbNNcF8"
+    title: "TYTAX T1-X — Incline Bench Cable Row"
 muscles:
   - Lats
   - Middle Back

@@ -8,8 +8,8 @@ photos:
   - /assets/images/exercises/manual1/1-SV-35-Standing-Biceps-Cable-Curls-2.jpg
   - /assets/images/exercises/manual1/1-SV-35-Standing-Biceps-Cable-Curls-3.jpg
 videos:
-  # - youtube_id: ""
-  #   title: "Standing Cable Curl — Tutorial"
+  - youtube_id: "gff-Nqp3mZU"
+    title: "TYTAX T1-X — Standing Alternating Cable Curl"
 muscles:
   - Biceps
 cables:

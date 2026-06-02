@@ -10,8 +10,8 @@ photos:
   - /assets/images/exercises/exercise-3-1.png
   - /assets/images/exercises/exercise-3-2.png
 videos:
-  # - youtube_id: ""
-  #   title: "Squat & Calf with Smith Machine — Tutorial"
+  - youtube_id: "7wtaQOJbLLw"
+    title: "TYTAX T1-X — Smith Machine Squat"
 muscles:
   - Hamstrings
   - Quads

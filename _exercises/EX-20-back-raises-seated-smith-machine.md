@@ -6,8 +6,8 @@ description: "A shrug-style exercise using the smith machine carriage from a sea
 photos:
   # - /assets/images/exercises/exercise-20-1.png
 videos:
-  # - youtube_id: ""
-  #   title: "Back Raises — Seated Smith Machine — Tutorial"
+  - youtube_id: "hILs808iT2s"
+    title: "TYTAX T1-X — Cable Seated Back Extension"
 muscles:
   - Traps
   - Shoulders

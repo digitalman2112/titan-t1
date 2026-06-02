@@ -8,8 +8,8 @@ photos:
   - /assets/images/exercises/manual1/1-JA-11-Seated-Machine-Shoulder-Press-2.jpg
   - /assets/images/exercises/manual1/1-JA-11-Seated-Machine-Shoulder-Press-3.jpg
 videos:
-  # - youtube_id: ""
-  #   title: "Shoulder Press — Smith Machine — Tutorial"
+  - youtube_id: "zL7qWvGxbfA"
+    title: "TYTAX T1-X — Seated Smith Shoulder Press"
 muscles:
   - Chest
   - Shoulders

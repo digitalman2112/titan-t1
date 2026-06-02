@@ -8,8 +8,8 @@ photos:
   - /assets/images/exercises/manual1/1-SV-45-Lat-Pulldown-2.jpg
   - /assets/images/exercises/manual1/1-SV-45-Lat-Pulldown-3.jpg
 videos:
-  # - youtube_id: ""
-  #   title: "Lat Pull Down — Tutorial"
+  - youtube_id: "NW17G59djVQ"
+    title: "TYTAX T1-X — Full Range-of-Motion Lat Pulldown"
 muscles:
   - Shoulders
   - Lats

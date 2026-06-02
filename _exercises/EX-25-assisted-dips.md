@@ -8,8 +8,8 @@ photos:
   - /assets/images/exercises/manual1/1-SV-31-Dips-2.jpg
   - /assets/images/exercises/manual1/1-SV-31-Dips-3.jpg
 videos:
-  # - youtube_id: ""
-  #   title: "Assisted Dips — Tutorial"
+  - youtube_id: "OPcRu4ElurI"
+    title: "TYTAX T1-X — Cable Chest Dip"
 muscles:
   - Triceps
   - Shoulders

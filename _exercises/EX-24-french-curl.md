@@ -8,8 +8,8 @@ photos:
   - /assets/images/exercises/manual1/1-SV-04-Lying-Barbell-Triceps-Extension-2.jpg
   - /assets/images/exercises/manual1/1-SV-04-Lying-Barbell-Triceps-Extension-3.jpg
 videos:
-  # - youtube_id: ""
-  #   title: "French Curl — Tutorial"
+  - youtube_id: "UyV7NIMEQyY"
+    title: "TYTAX T1-X — Preacher Cable Triceps Extension"
 muscles:
   - Triceps
 cables: []

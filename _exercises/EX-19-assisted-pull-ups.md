@@ -6,8 +6,8 @@ description: "A pull-up variation using the smith machine counter-balance system
 photos:
   # - /assets/images/exercises/exercise-19-1.png
 videos:
-  # - youtube_id: ""
-  #   title: "Assisted Pull Ups — Tutorial"
+  - youtube_id: "mnELhTvfSTo"
+    title: "TYTAX T1-X — Assisted Pull-Up"
 muscles:
   - Shoulders
   - Lats

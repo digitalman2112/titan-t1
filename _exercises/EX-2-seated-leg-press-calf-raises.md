@@ -6,8 +6,8 @@ description: "Seated compound exercise using the smith machine carriage and foot
 photos:
   - /assets/images/exercises/exercise-2-1.png
 videos:
-  # - youtube_id: ""
-  #   title: "Seated Leg Press & Calf Raises — Tutorial"
+  - youtube_id: "wJVzJgW_pG4"
+    title: "TYTAX T1-X — Sled Seated Leg Press"
 muscles:
   - Quads
   - Glutes

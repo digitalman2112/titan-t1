@@ -8,8 +8,8 @@ photos:
   - /assets/images/exercises/manual1/1-SV-38-Preacher-Curl-2.jpg
   - /assets/images/exercises/manual1/1-SV-38-Preacher-Curl-3.jpg
 videos:
-  # - youtube_id: ""
-  #   title: "Preacher Curl — Tutorial"
+  - youtube_id: "F9rdruMpP70"
+    title: "TYTAX T1-X — Seated Cable Preacher Curl"
 muscles:
   - Biceps
 cables: []

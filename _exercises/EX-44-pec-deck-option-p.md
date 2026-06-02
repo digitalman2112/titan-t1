@@ -8,8 +8,8 @@ photos:
   - /assets/images/exercises/manual1/1-P-01-Butterfly-2.jpg
   - /assets/images/exercises/manual1/1-P-01-Butterfly-3.jpg
 videos:
-  # - youtube_id: ""
-  #   title: "Pec Deck — Option P Tutorial"
+  - youtube_id: "zDh18chFU9Q"
+    title: "TYTAX T1-X — Butterfly Arms (Option A/P)"
 muscles:
   - Chest
 cables:

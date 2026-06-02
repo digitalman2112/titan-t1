@@ -6,8 +6,8 @@ description: "An overhead press using the smith machine carriage from a standing
 photos:
   # - /assets/images/exercises/exercise-21-1.png
 videos:
-  # - youtube_id: ""
-  #   title: "Military Press — Smith Machine — Tutorial"
+  - youtube_id: "4tkFbfX2tJ8"
+    title: "TYTAX T1-X — Smith Machine Presses"
 muscles:
   - Traps
   - Shoulders

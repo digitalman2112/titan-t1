@@ -8,8 +8,8 @@ photos:
   - /assets/images/exercises/manual1/1-SV-50-Pullups-2.jpg
   - /assets/images/exercises/manual1/1-SV-50-Pullups-3.jpg
 videos:
-  # - youtube_id: ""
-  #   title: "Pull Ups — Tutorial"
+  - youtube_id: "NiecJupRyK8"
+    title: "TYTAX T1-X — Pull-Up"
 muscles:
   - Shoulders
   - Lats

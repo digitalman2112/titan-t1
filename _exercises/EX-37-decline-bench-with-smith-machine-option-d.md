@@ -6,8 +6,8 @@ description: "A declined press using the smith machine bar with the Option D dec
 photos:
   # - /assets/images/exercises/exercise-37-1.png
 videos:
-  # - youtube_id: ""
-  #   title: "Decline Bench with Smith Machine — Option D Tutorial"
+  - youtube_id: "sAWlNqyGw-0"
+    title: "TYTAX T1-X — Decline Sled Smith Machine Chest Press"
 muscles:
   - Chest
   - Shoulders

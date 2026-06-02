@@ -8,8 +8,8 @@ photos:
   - /assets/images/exercises/manual1/1-D-02-Decline-Crunch-2.jpg
   - /assets/images/exercises/manual1/1-D-02-Decline-Crunch-3.jpg
 videos:
-  # - youtube_id: ""
-  #   title: "Sit Ups / Crunches — Option D Tutorial"
+  - youtube_id: "eWtpS1AiOO8"
+    title: "TYTAX T1-X — Incline Crunch"
 muscles:
   - Abs
 cables: []

@@ -6,8 +6,8 @@ description: "A chest press exercise using the smith machine carriage and lockin
 photos:
   # - /assets/images/exercises/exercise-11-1.png
 videos:
-  # - youtube_id: ""
-  #   title: "Bench Press — Smith Machine — Tutorial"
+  - youtube_id: "eKJPfK_BEe4"
+    title: "Bench Press — Smith Machine — Tutorial"
 muscles:
   - Chest
   - Triceps

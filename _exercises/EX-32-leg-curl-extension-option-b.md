@@ -8,8 +8,8 @@ photos:
   - /assets/images/exercises/manual1/1-B-01-Leg-Curls-2.jpg
   - /assets/images/exercises/manual1/1-B-01-Leg-Curls-3.jpg
 videos:
-  # - youtube_id: ""
-  #   title: "Leg Curl / Extension — Option B Tutorial"
+  - youtube_id: "4xMMyRlLS2Y"
+    title: "TYTAX T1-X — Seated Lever Leg Curl"
 muscles:
   - Quads
   - Hamstrings

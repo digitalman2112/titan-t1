@@ -8,8 +8,8 @@ photos:
   - /assets/images/exercises/manual1/1-SV-32-Triceps-Pushdown-2.jpg
   - /assets/images/exercises/manual1/1-SV-32-Triceps-Pushdown-3.jpg
 videos:
-  # - youtube_id: ""
-  #   title: "Triceps Push Downs — Tutorial"
+  - youtube_id: "DYOVR_gCjoM"
+    title: "TYTAX T1-X — Cable Pushdown (with back support)"
 muscles:
   - Triceps
 cables:

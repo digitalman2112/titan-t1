@@ -8,8 +8,8 @@ photos:
   - /assets/images/exercises/manual1/1-SV-16-Barbell-Incline-Bench-Press-2.jpg
   - /assets/images/exercises/manual1/1-SV-16-Barbell-Incline-Bench-Press-3.jpg
 videos:
-  # - youtube_id: ""
-  #   title: "Incline Chest Press — Tutorial"
+  - youtube_id: "wxiIDWz-Jc0"
+    title: "TYTAX T1-X — Cable Incline Chest Press"
 muscles:
   - Chest
   - Triceps

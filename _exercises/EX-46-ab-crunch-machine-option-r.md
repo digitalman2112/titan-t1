@@ -8,8 +8,8 @@ photos:
   - /assets/images/exercises/manual1/1-R-01-Exercise-Data-2.jpg
   - /assets/images/exercises/manual1/1-R-01-Exercise-Data-3.jpg
 videos:
-  # - youtube_id: ""
-  #   title: "Ab Crunch Machine — Option R Tutorial"
+  - youtube_id: "m6QJ02VAnRk"
+    title: "TYTAX T1-X — Lever Seated Crunch"
 muscles:
   - Abs
 cables: []

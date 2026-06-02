@@ -8,8 +8,8 @@ photos:
   - /assets/images/exercises/manual1/1-B-24-Hip-Abduction-2.jpg
   - /assets/images/exercises/manual1/1-B-24-Hip-Abduction-3.jpg
 videos:
-  # - youtube_id: ""
-  #   title: "Abductor and Adductor Exercise — Option F Tutorial"
+  - youtube_id: "ierHCWdOU4U"
+    title: "TYTAX — Hip Abductor and Adductor Training"
 muscles:
   - Quads
   - Hamstrings
