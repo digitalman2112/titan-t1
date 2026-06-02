@@ -16,7 +16,7 @@ cables: []
 accessories:
   - E
   - S1
-manual1_code: "1-E-02"
+manual1_code: "E-02"
 manual1_page: 35
 manual2_page: 40
 manual3_page: 39

@@ -14,7 +14,7 @@ muscles:
 cables: []
 accessories:
   - G
-manual1_code: "1-G-01"
+manual1_code: "G-01"
 manual1_page: 39
 manual2_page: 42
 manual3_page: 41

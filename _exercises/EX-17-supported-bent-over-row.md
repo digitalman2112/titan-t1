@@ -16,7 +16,7 @@ cables:
   - C2
 accessories:
   - S1
-manual1_code: "1-A2-04"
+manual1_code: "A2-04"
 manual1_page: 26
 manual2_page: 17
 manual3_page: 27

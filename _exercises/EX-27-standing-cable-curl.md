@@ -17,7 +17,7 @@ cables:
   - C5
 accessories:
   - S8
-manual1_code: "1-SV-35"
+manual1_code: "SV-35"
 manual1_page: 14
 manual2_page: 27
 manual3_page: 17

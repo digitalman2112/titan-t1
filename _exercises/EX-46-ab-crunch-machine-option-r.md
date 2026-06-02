@@ -14,7 +14,7 @@ cables: []
 accessories:
   - R
   - S1
-manual1_code: "1-R-01"
+manual1_code: "R-01"
 manual1_page: 44
 manual2_page: 46
 manual3_page: null

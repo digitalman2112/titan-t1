@@ -19,7 +19,7 @@ cables:
 accessories:
   - S3
   - LRH
-manual1_code: "1-SV-44"
+manual1_code: "SV-44"
 manual1_page: 16
 manual2_page: 14
 manual3_page: 15

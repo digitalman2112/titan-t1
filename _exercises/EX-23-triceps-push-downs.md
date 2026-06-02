@@ -16,7 +16,7 @@ cables:
   - C5
 accessories:
   - S8
-manual1_code: "1-SV-32"
+manual1_code: "SV-32"
 manual1_page: 12
 manual2_page: 23
 manual3_page: 14

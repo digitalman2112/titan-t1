@@ -14,7 +14,7 @@ cables:
   - C2
 accessories:
   - P
-manual1_code: "1-P-01"
+manual1_code: "P-01"
 manual1_page: 43
 manual2_page: 44
 manual3_page: null

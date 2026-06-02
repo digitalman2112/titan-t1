@@ -17,7 +17,7 @@ cables:
 accessories:
   - F
   - S8
-manual1_code: "1-F-07"
+manual1_code: "F-07"
 manual1_page: 36
 manual2_page: 41
 manual3_page: 40

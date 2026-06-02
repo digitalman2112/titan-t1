@@ -17,7 +17,7 @@ cables:
 accessories:
   - B
   - S1
-manual1_code: "1-B-01"
+manual1_code: "B-01"
 manual1_page: 27
 manual2_page: 32
 manual3_page: 32

@@ -17,7 +17,7 @@ accessories:
   - S1
   - S7
   - S8
-manual1_code: "1-B-13"
+manual1_code: "B-13"
 manual1_page: 29
 manual2_page: 33
 manual3_page: 33
