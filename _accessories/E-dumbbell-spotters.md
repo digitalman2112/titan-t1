@@ -2,6 +2,7 @@
 permalink: /accessories/dumbbell-spotters/
 title: "Dumbbell Spotters (Option E)"
 code: "E"
+is_option: true
 owned: false
 description: "Option E dumbbell spotters (E-1) that mount on the smith carriage to safely rack and un-rack dumbbells."
 photos:

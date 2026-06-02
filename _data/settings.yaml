@@ -1,3 +1,12 @@
+# PDF page = printed page + offset
+# Manual 3 has two offsets because printed page 12 is absent from the PDF
+pdf_page_offsets:
+  manual1: 2
+  manual2: 3
+  manual3_low: -1    # printed pages 2–11
+  manual3_high: -2   # printed pages 13+
+  manual3_break: 11  # last printed page using the low offset
+
 favorited_exercises:
   - EX-2
   - EX-16

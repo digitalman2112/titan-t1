@@ -2,6 +2,7 @@
 permalink: /accessories/dumbbell-hangers/
 title: "Dumbbell Hangers (Option S)"
 code: "S"
+is_option: true
 owned: false
 description: "Option S dumbbell hangers that clamp to each dumbbell grip and hook over the Olympic bar to suspend the dumbbells."
 photos:

@@ -2,6 +2,7 @@
 permalink: /accessories/leg-curl-extension-attachment/
 title: "Leg Curl / Extension Attachment (Option B)"
 code: "B"
+is_option: true
 owned: true
 description: "Option B package for leg curls and leg extensions, including the B-1 seat attachment and the B-2 leg extension footpad / roller pad."
 photos:

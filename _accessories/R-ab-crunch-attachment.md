@@ -2,6 +2,7 @@
 permalink: /accessories/ab-crunch-attachment/
 title: "Ab Crunch Attachment (Option R)"
 code: "R"
+is_option: true
 owned: false
 description: "Option R ab crunch ABS attachment (R-1) providing a weighted, headrest-supported ab crunch station."
 photos:

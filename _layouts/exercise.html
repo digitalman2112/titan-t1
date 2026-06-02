@@ -105,21 +105,29 @@ layout: default
   <section class="detail-section">
     <h2>In the Printed Manuals</h2>
     <ul class="manual-refs">
+      {% assign offsets = site.data.settings.pdf_page_offsets %}
       {% if page.manual1_code %}
+        {% assign m1_pdf = page.manual1_page | plus: offsets.manual1 %}
       <li>
-        <a href="{{ '/assets/docs/titan-exercise-instructions-manual1.pdf' | relative_url }}" target="_blank" rel="noopener">Exercise Instructions (Type&nbsp;1)</a>
+        <a href="{{ '/assets/docs/titan-exercise-instructions-manual1.pdf' | relative_url }}#page={{ m1_pdf }}" target="_blank" rel="noopener">Exercise Instructions (Type&nbsp;1)</a>
         <span class="manual-refs__ref">code&nbsp;<strong>{{ page.manual1_code }}</strong>, p.&nbsp;{{ page.manual1_page }}</span>
       </li>
       {% endif %}
       {% if page.manual2_page %}
+        {% assign m2_pdf = page.manual2_page | plus: offsets.manual2 %}
       <li>
-        <a href="{{ '/assets/docs/titan-exercise-instructions-manual2.pdf' | relative_url }}" target="_blank" rel="noopener">Exercise Instructions (Type&nbsp;2)</a>
+        <a href="{{ '/assets/docs/titan-exercise-instructions-manual2.pdf' | relative_url }}#page={{ m2_pdf }}" target="_blank" rel="noopener">Exercise Instructions (Type&nbsp;2)</a>
         <span class="manual-refs__ref">p.&nbsp;{{ page.manual2_page }}</span>
       </li>
       {% endif %}
       {% if page.manual3_page %}
+        {% if page.manual3_page <= offsets.manual3_break %}
+          {% assign m3_pdf = page.manual3_page | plus: offsets.manual3_low %}
+        {% else %}
+          {% assign m3_pdf = page.manual3_page | plus: offsets.manual3_high %}
+        {% endif %}
       <li>
-        <a href="{{ '/assets/docs/titan-exercise-instructions-manual3.pdf' | relative_url }}" target="_blank" rel="noopener">Exercise Instructions (Type&nbsp;3)</a>
+        <a href="{{ '/assets/docs/titan-exercise-instructions-manual3.pdf' | relative_url }}#page={{ m3_pdf }}" target="_blank" rel="noopener">Exercise Instructions (Type&nbsp;3)</a>
         <span class="manual-refs__ref">p.&nbsp;{{ page.manual3_page }}</span>
       </li>
       {% endif %}

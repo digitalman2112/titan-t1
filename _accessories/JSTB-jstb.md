@@ -2,6 +2,7 @@
 permalink: /accessories/jstb/
 title: "JSTB"
 code: "JSTB"
+is_option: true
 owned: true
 description: "Optional Titan T1-X JSTB attachment."
 photos:
