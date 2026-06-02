@@ -8,8 +8,6 @@ photos:
   - /assets/images/exercises/manual1/1-A-01-Cable-Crossover-2.jpg
   - /assets/images/exercises/manual1/1-A-01-Cable-Crossover-3.jpg
 videos:
-  - youtube_id: "zDh18chFU9Q"
-    title: "TYTAX T1-X — Cable Crossover (Option A)"
 muscles:
   - Chest
   - Shoulders
