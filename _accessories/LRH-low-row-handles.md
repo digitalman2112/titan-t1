@@ -5,7 +5,7 @@ code: "LRH"
 owned: true
 description: "A pair of handles that attach to the end of the extension cable (C4) for the low row exercise."
 photos:
-  # - /assets/images/accessories/low-row-handles-1.jpg
+  - /assets/images/accessories/1-Low-Row-Handles.png
 videos:
   # - youtube_id: ""
   #   title: "Low Row Handles â€” Setup"

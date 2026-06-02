@@ -5,7 +5,7 @@ code: "S6"
 owned: true
 description: "A pair of dip bar handles (S6-R and S6-L) that attach to the machine frame, used for assisted dips, assisted pull-ups, and gravity boot exercises."
 photos:
-  # - /assets/images/accessories/dip-bar-handles-1.jpg
+  - /assets/images/accessories/1-Dip-Bar-Handles.png
 videos:
   # - youtube_id: ""
   #   title: "Dip Bar Handles â€” Setup"

@@ -1058,6 +1058,18 @@ hr {
    Manual References (Exercise detail page)
    ============================================================ */
 
+.text-center { text-align: center; }
+
+.owned-yes {
+  color: var(--color-success, #2d8a4e);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.owned-no {
+  color: var(--color-text-faint);
+}
+
 .manual-refs {
   list-style: none;
   margin: 0;
@@ -1157,6 +1169,15 @@ hr {
     color: var(--color-text-muted);
     font-size: 0.78rem;
     font-style: italic;
+  }
+
+  td a {
+    color: var(--color-accent);
+    text-decoration-color: transparent;
+
+    &:hover {
+      text-decoration-color: var(--color-accent);
+    }
   }
 }
 

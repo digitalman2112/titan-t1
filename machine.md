@@ -137,6 +137,51 @@ permalink: /machine/
 
 
 <section class="detail-section">
+  <h2>Machine Options Reference</h2>
+  <p>The Titan T1-X supports a number of optional attachments that expand the exercise range. Each option is identified by a letter code in the exercise instructions.</p>
+  <div class="table-scroll">
+  <table class="cross-ref-table">
+    <thead>
+      <tr>
+        <th>Option</th>
+        <th>Attachment</th>
+        <th>Owned</th>
+        <th>Exercises</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for option in site.data.options %}
+        {% assign acc_item = site.accessories | where: "code", option.code | first %}
+        {% assign owned = acc_item.owned %}
+      <tr>
+        <td>
+          {% if acc_item %}
+            <strong><a href="{{ acc_item.url | relative_url }}">{{ option.code }}</a></strong>
+          {% else %}
+            <strong>{{ option.code }}</strong>
+          {% endif %}
+        </td>
+        <td>
+          {% if acc_item %}
+            <a href="{{ acc_item.url | relative_url }}">{{ option.name }}</a>
+          {% else %}
+            {{ option.name }}
+          {% endif %}
+        </td>
+        <td class="text-center">{% if owned %}<span class="owned-yes" title="Owned">&#10003;</span>{% else %}<span class="owned-no" title="Not owned">&mdash;</span>{% endif %}</td>
+        <td>
+          {% for ex in option.exercises %}
+            <a href="{{ "/titan-t1/exercises/" | append: ex.slug | append: "/" }}">{{ ex.code }} {{ ex.title }}</a>{% unless forloop.last %}<br>{% endunless %}
+          {% endfor %}
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section class="detail-section">
   <h2>Exercise Instructions Cross Reference</h2>
   <p>Cross-reference of exercises across all three printed exercise instruction manuals. Manual&nbsp;1 (Type&nbsp;1) uses exercise codes; Manuals&nbsp;2 (Type&nbsp;2) and&nbsp;3 (Type&nbsp;3) use page numbers. Exercises with a page entry in only one manual are exclusive to that manual.</p>
   <div class="table-scroll">

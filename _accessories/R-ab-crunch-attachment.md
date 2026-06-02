@@ -4,7 +4,8 @@ title: "Ab Crunch Attachment (Option R)"
 code: "R"
 owned: false
 description: "Option R ab crunch ABS attachment (R-1) providing a weighted, headrest-supported ab crunch station."
-photos: []
+photos:
+  - /assets/images/accessories/1-ABS-Attachment.png
 # photos:
 #   - /assets/images/accessories/ab-crunch-attachment-1.png
 muscles: []

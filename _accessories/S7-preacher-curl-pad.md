@@ -5,7 +5,7 @@ code: "S7"
 owned: true
 description: "A padded arm support (S7) that attaches to the seat or chest pad attachment, used as an armrest for preacher curl exercises and as a support pad for assisted pull-ups."
 photos:
-  # - /assets/images/accessories/preacher-curl-pad-1.jpg
+  - /assets/images/accessories/1-Preacher-Curl-Pad.png
 videos:
   # - youtube_id: ""
   #   title: "Preacher Curl Pad â€” Setup"
