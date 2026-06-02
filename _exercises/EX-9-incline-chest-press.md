@@ -14,6 +14,10 @@ muscles:
 cables: []
 accessories:
   - S2
+manual1_code: "1-SV-16"
+manual1_page: 9
+manual2_page: 9
+manual3_page: 8
 ---
 
 ## Setup

@@ -18,6 +18,10 @@ cables:
   - C5
 accessories:
   - S9
+manual1_code: "1-SV-45"
+manual1_page: 17
+manual2_page: 15
+manual3_page: 13
 ---
 
 ## Setup

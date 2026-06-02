@@ -17,6 +17,10 @@ muscles:
 cables:
   - C2
 accessories: []
+manual1_code: null
+manual1_page: null
+manual2_page: 31
+manual3_page: 31
 ---
 
 ## Setup

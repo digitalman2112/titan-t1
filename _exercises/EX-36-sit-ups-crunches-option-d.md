@@ -14,6 +14,10 @@ cables: []
 accessories:
   - D
   - S1
+manual1_code: "1-D-02"
+manual1_page: 34
+manual2_page: 36
+manual3_page: null
 ---
 
 ## Setup

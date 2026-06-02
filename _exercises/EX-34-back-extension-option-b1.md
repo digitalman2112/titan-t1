@@ -17,6 +17,10 @@ accessories:
   - S1
   - S4
   - S8
+manual1_code: null
+manual1_page: null
+manual2_page: 34
+manual3_page: 34
 ---
 
 ## Setup

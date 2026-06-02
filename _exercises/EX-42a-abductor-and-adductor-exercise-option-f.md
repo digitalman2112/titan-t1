@@ -14,6 +14,10 @@ muscles:
 cables: []
 accessories:
   - F
+manual1_code: "1-B-24"
+manual1_page: 32
+manual2_page: 42
+manual3_page: 41
 ---
 
 ## Setup

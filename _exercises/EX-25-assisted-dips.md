@@ -15,6 +15,10 @@ cables:
   - C2
 accessories:
   - S6
+manual1_code: "1-SV-31"
+manual1_page: 11
+manual2_page: 25
+manual3_page: 24
 ---
 
 ## Setup

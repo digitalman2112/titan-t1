@@ -17,6 +17,10 @@ cables:
 accessories:
   - D
   - S1
+manual1_code: null
+manual1_page: null
+manual2_page: 37
+manual3_page: 36
 ---
 
 ## Setup

@@ -18,6 +18,10 @@ cables:
 accessories:
   - S1
   - S4
+manual1_code: null
+manual1_page: null
+manual2_page: 2
+manual3_page: 2
 ---
 
 ## Setup

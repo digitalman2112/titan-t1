@@ -19,6 +19,10 @@ cables:
 accessories:
   - S1
   - S5
+manual1_code: "1-SV-06"
+manual1_page: 7
+manual2_page: 3
+manual3_page: 3
 ---
 
 ## Setup

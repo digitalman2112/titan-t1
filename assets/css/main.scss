@@ -1044,6 +1044,81 @@ hr {
 }
 
 /* ============================================================
+   Cross-Reference Table (Machine page)
+   ============================================================ */
+
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.cross-ref-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+
+  th, td {
+    padding: 0.45rem 0.65rem;
+    text-align: left;
+    border: 1px solid var(--color-border-light);
+    vertical-align: top;
+  }
+
+  thead th {
+    background: var(--color-bg-alt);
+    font-weight: 600;
+    font-size: 0.8rem;
+    white-space: nowrap;
+  }
+
+  .col-sub {
+    font-weight: 400;
+    color: var(--color-text-muted);
+    font-size: 0.75rem;
+  }
+
+  tbody tr:hover td {
+    background: var(--color-bg-alt);
+  }
+
+  td:first-child {
+    font-weight: 500;
+    min-width: 220px;
+  }
+
+  td:not(:first-child) {
+    min-width: 130px;
+  }
+
+  .xref-none {
+    color: var(--color-text-faint);
+    text-align: center;
+  }
+
+  .xref-code {
+    font-family: var(--font-mono, monospace);
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--color-accent);
+  }
+
+  .xref-page {
+    color: var(--color-text-muted);
+    font-size: 0.8rem;
+  }
+
+  .xref-page-num {
+    font-variant-numeric: tabular-nums;
+  }
+
+  .xref-name {
+    color: var(--color-text-muted);
+    font-size: 0.78rem;
+    font-style: italic;
+  }
+}
+
+/* ============================================================
    Empty State
    ============================================================ */
 

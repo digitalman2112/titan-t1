@@ -19,6 +19,10 @@ accessories:
   - S6
   - S7
   - S10
+manual1_code: null
+manual1_page: null
+manual2_page: 19
+manual3_page: 29
 ---
 
 ## Setup

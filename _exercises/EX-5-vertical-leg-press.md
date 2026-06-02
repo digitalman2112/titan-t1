@@ -16,6 +16,10 @@ cables: []
 accessories:
   - S1
   - S3
+manual1_code: "1-SV-10"
+manual1_page: 8
+manual2_page: 5
+manual3_page: 18
 ---
 
 ## Setup

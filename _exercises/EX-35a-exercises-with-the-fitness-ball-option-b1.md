@@ -16,6 +16,10 @@ cables: []
 accessories:
   - B1
   - S3
+manual1_code: null
+manual1_page: null
+manual2_page: 35
+manual3_page: 42
 ---
 
 ## Setup

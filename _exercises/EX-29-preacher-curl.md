@@ -13,6 +13,10 @@ muscles:
 cables: []
 accessories:
   - S7
+manual1_code: "1-SV-38"
+manual1_page: 15
+manual2_page: 29
+manual3_page: 25
 ---
 
 ## Setup

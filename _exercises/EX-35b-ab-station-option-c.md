@@ -15,6 +15,10 @@ cables: []
 accessories:
   - C
   - S1
+manual1_code: "1-C-01"
+manual1_page: 33
+manual2_page: 35
+manual3_page: 35
 ---
 
 ## Setup

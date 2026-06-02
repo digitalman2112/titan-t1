@@ -17,6 +17,10 @@ cables:
   - C2
 accessories:
   - S1
+manual1_code: "1-JA-11"
+manual1_page: 40
+manual2_page: 13
+manual3_page: null
 ---
 
 ## Setup

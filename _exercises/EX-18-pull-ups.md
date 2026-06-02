@@ -15,6 +15,10 @@ muscles:
 cables: []
 accessories:
   - S10
+manual1_code: "1-SV-50"
+manual1_page: 20
+manual2_page: 18
+manual3_page: 28
 ---
 
 ## Setup

@@ -16,6 +16,10 @@ cables:
 accessories:
   - N
   - S1
+manual1_code: "1-N-02"
+manual1_page: 42
+manual2_page: 43
+manual3_page: null
 ---
 
 ## Setup

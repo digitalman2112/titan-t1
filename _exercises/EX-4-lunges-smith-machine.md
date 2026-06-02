@@ -17,6 +17,10 @@ cables:
 accessories:
   - S1
   - S5
+manual1_code: null
+manual1_page: null
+manual2_page: 4
+manual3_page: 4
 ---
 
 ## Setup

@@ -15,6 +15,10 @@ cables:
   - C2
 accessories:
   - P
+manual1_code: null
+manual1_page: null
+manual2_page: 45
+manual3_page: null
 ---
 
 ## Setup
