@@ -151,355 +151,355 @@ permalink: /machine/
     </thead>
     <tbody>
       <tr>
-        <td><a href="/exercises/seated-leg-press-calf-raises/">Seated Leg Press & Calf Raises</a></td>
+        <td><a href="/titan-t1/exercises/seated-leg-press-calf-raises/">Seated Leg Press & Calf Raises</a></td>
         <td class="xref-none">&mdash;</td>
         <td class="xref-page-num">p.&nbsp;2</td>
         <td class="xref-page-num">p.&nbsp;2</td>
       </tr>
       <tr>
-        <td><a href="/exercises/squat-calf-smith-machine/">Squat & Calf with Smith Machine</a></td>
+        <td><a href="/titan-t1/exercises/squat-calf-smith-machine/">Squat & Calf with Smith Machine</a></td>
         <td><span class="xref-code">SV-06</span> <span class="xref-page">p.&nbsp;7</span><br><span class="xref-name">Smith Machine Squat</span><br><br><span class="xref-code">SV-47</span> <span class="xref-page">p.&nbsp;19</span><br><span class="xref-name">Smith Machine Squats</span><br><br><span class="xref-code">SV-61</span> <span class="xref-page">p.&nbsp;21</span><br><span class="xref-name">Smith Machine Squats</span></td>
         <td class="xref-page-num">p.&nbsp;3</td>
         <td class="xref-page-num">p.&nbsp;3</td>
       </tr>
       <tr>
-        <td><a href="/exercises/lunges-smith-machine/">Lunges with Smith Machine</a></td>
+        <td><a href="/titan-t1/exercises/lunges-smith-machine/">Lunges with Smith Machine</a></td>
         <td class="xref-none">&mdash;</td>
         <td class="xref-page-num">p.&nbsp;4</td>
         <td class="xref-page-num">p.&nbsp;4</td>
       </tr>
       <tr>
-        <td><a href="/exercises/vertical-leg-press/">Vertical Leg Press</a></td>
+        <td><a href="/titan-t1/exercises/vertical-leg-press/">Vertical Leg Press</a></td>
         <td><span class="xref-code">SV-10</span> <span class="xref-page">p.&nbsp;8</span><br><span class="xref-name">Vertical Leg Press</span></td>
         <td class="xref-page-num">p.&nbsp;5</td>
         <td class="xref-page-num">p.&nbsp;18</td>
       </tr>
       <tr>
-        <td><a href="/exercises/free-weights-standing/">Free Weight Exercises &mdash; Standing</a></td>
+        <td><a href="/titan-t1/exercises/free-weights-standing/">Free Weight Exercises &mdash; Standing</a></td>
         <td class="xref-none">&mdash;</td>
         <td class="xref-page-num">p.&nbsp;6</td>
         <td class="xref-page-num">p.&nbsp;5<br><span class="xref-name">Exercises with Free Weights in Standing Position</span></td>
       </tr>
       <tr>
-        <td><a href="/exercises/free-weights-seated/">Free Weight Exercises &mdash; Seated</a></td>
+        <td><a href="/titan-t1/exercises/free-weights-seated/">Free Weight Exercises &mdash; Seated</a></td>
         <td class="xref-none">&mdash;</td>
         <td class="xref-page-num">p.&nbsp;7</td>
         <td class="xref-page-num">p.&nbsp;6<br><span class="xref-name">Exercises with Free Weights in Seated Position</span></td>
       </tr>
       <tr>
-        <td><a href="/exercises/chest-press/">Chest Press</a></td>
+        <td><a href="/titan-t1/exercises/chest-press/">Chest Press</a></td>
         <td class="xref-none">&mdash;</td>
         <td class="xref-page-num">p.&nbsp;8</td>
         <td class="xref-page-num">p.&nbsp;7</td>
       </tr>
       <tr>
-        <td><a href="/exercises/incline-chest-press/">Incline Chest Press</a></td>
+        <td><a href="/titan-t1/exercises/incline-chest-press/">Incline Chest Press</a></td>
         <td><span class="xref-code">SV-16</span> <span class="xref-page">p.&nbsp;9</span><br><span class="xref-name">Barbell Incline Bench Press</span></td>
         <td class="xref-page-num">p.&nbsp;9</td>
         <td class="xref-page-num">p.&nbsp;8</td>
       </tr>
       <tr>
-        <td><a href="/exercises/shoulder-press/">Shoulder Press</a></td>
+        <td><a href="/titan-t1/exercises/shoulder-press/">Shoulder Press</a></td>
         <td class="xref-none">&mdash;</td>
         <td class="xref-page-num">p.&nbsp;10</td>
         <td class="xref-page-num">p.&nbsp;9</td>
       </tr>
       <tr>
-        <td><a href="/exercises/bench-press-smith-machine/">Bench Press &mdash; Smith Machine</a></td>
+        <td><a href="/titan-t1/exercises/bench-press-smith-machine/">Bench Press &mdash; Smith Machine</a></td>
         <td class="xref-none">&mdash;</td>
         <td class="xref-page-num">p.&nbsp;11</td>
         <td class="xref-page-num">p.&nbsp;10</td>
       </tr>
       <tr>
-        <td><a href="/exercises/incline-bench-press-smith-machine/">Incline Bench Press &mdash; Smith Machine</a></td>
+        <td><a href="/titan-t1/exercises/incline-bench-press-smith-machine/">Incline Bench Press &mdash; Smith Machine</a></td>
         <td class="xref-none">&mdash;</td>
         <td class="xref-page-num">p.&nbsp;12</td>
         <td class="xref-page-num">p.&nbsp;11</td>
       </tr>
       <tr>
-        <td><a href="/exercises/shoulder-press-smith-machine/">Shoulder Press &mdash; Smith Machine</a></td>
+        <td><a href="/titan-t1/exercises/shoulder-press-smith-machine/">Shoulder Press &mdash; Smith Machine</a></td>
         <td><span class="xref-code">JA-11</span> <span class="xref-page">p.&nbsp;40</span><br><span class="xref-name">Seated Machine Shoulder Press</span></td>
         <td class="xref-page-num">p.&nbsp;13</td>
         <td class="xref-none">&mdash;</td>
       </tr>
       <tr>
-        <td><a href="/exercises/low-row/">Low Row</a></td>
+        <td><a href="/titan-t1/exercises/low-row/">Low Row</a></td>
         <td><span class="xref-code">SV-44</span> <span class="xref-page">p.&nbsp;16</span><br><span class="xref-name">Cable Straight Back Seated Row</span></td>
         <td class="xref-page-num">p.&nbsp;14</td>
         <td class="xref-page-num">p.&nbsp;15</td>
       </tr>
       <tr>
-        <td><a href="/exercises/lat-pull-down/">Lat Pull Down</a></td>
+        <td><a href="/titan-t1/exercises/lat-pull-down/">Lat Pull Down</a></td>
         <td><span class="xref-code">SV-45</span> <span class="xref-page">p.&nbsp;17</span><br><span class="xref-name">Lat Pulldown</span></td>
         <td class="xref-page-num">p.&nbsp;15</td>
         <td class="xref-page-num">p.&nbsp;13</td>
       </tr>
       <tr>
-        <td><a href="/exercises/lat-pull-down-smith-machine/">Lat Pull Down &mdash; Smith Machine</a></td>
+        <td><a href="/titan-t1/exercises/lat-pull-down-smith-machine/">Lat Pull Down &mdash; Smith Machine</a></td>
         <td class="xref-none">&mdash;</td>
         <td class="xref-page-num">p.&nbsp;16</td>
         <td class="xref-page-num">p.&nbsp;26<br><span class="xref-name">Lat Pull Down with Smith Machine</span></td>
       </tr>
       <tr>
-        <td><a href="/exercises/supported-bent-over-row/">Supported Bent Over Row</a></td>
+        <td><a href="/titan-t1/exercises/supported-bent-over-row/">Supported Bent Over Row</a></td>
         <td><span class="xref-code">A2-04</span> <span class="xref-page">p.&nbsp;26</span><br><span class="xref-name">Assisted Barbell Row</span></td>
         <td class="xref-page-num">p.&nbsp;17</td>
         <td class="xref-page-num">p.&nbsp;27</td>
       </tr>
       <tr>
-        <td><a href="/exercises/pull-ups/">Pull Ups</a></td>
+        <td><a href="/titan-t1/exercises/pull-ups/">Pull Ups</a></td>
         <td><span class="xref-code">SV-50</span> <span class="xref-page">p.&nbsp;20</span><br><span class="xref-name">Pullups</span><br><br><span class="xref-code">SV-79</span> <span class="xref-page">p.&nbsp;22</span><br><span class="xref-name">Pull-Ups</span></td>
         <td class="xref-page-num">p.&nbsp;18</td>
         <td class="xref-page-num">p.&nbsp;28</td>
       </tr>
       <tr>
-        <td><a href="/exercises/assisted-pull-ups/">Assisted Pull Ups</a></td>
+        <td><a href="/titan-t1/exercises/assisted-pull-ups/">Assisted Pull Ups</a></td>
         <td class="xref-none">&mdash;</td>
         <td class="xref-page-num">p.&nbsp;19</td>
         <td class="xref-page-num">p.&nbsp;29</td>
       </tr>
       <tr>
-        <td><a href="/exercises/back-raises-seated-smith-machine/">Back Raises &mdash; Seated, Smith Machine</a></td>
+        <td><a href="/titan-t1/exercises/back-raises-seated-smith-machine/">Back Raises &mdash; Seated, Smith Machine</a></td>
         <td class="xref-none">&mdash;</td>
         <td class="xref-page-num">p.&nbsp;20<br><span class="xref-name">Back Raises &mdash; Seated Smith Machine</span></td>
         <td class="xref-page-num">p.&nbsp;19<br><span class="xref-name">Back Raises with Smith Machine in Seated Position</span></td>
       </tr>
       <tr>
-        <td><a href="/exercises/military-press-smith-machine/">Military Press &mdash; Smith Machine</a></td>
+        <td><a href="/titan-t1/exercises/military-press-smith-machine/">Military Press &mdash; Smith Machine</a></td>
         <td class="xref-none">&mdash;</td>
         <td class="xref-page-num">p.&nbsp;21</td>
         <td class="xref-page-num">p.&nbsp;21<br><span class="xref-name">Military Press with Smith Machine</span></td>
       </tr>
       <tr>
-        <td><a href="/exercises/back-raises-standing-smith-machine/">Back Raises &mdash; Standing, Smith Machine</a></td>
+        <td><a href="/titan-t1/exercises/back-raises-standing-smith-machine/">Back Raises &mdash; Standing, Smith Machine</a></td>
         <td class="xref-none">&mdash;</td>
         <td class="xref-page-num">p.&nbsp;22<br><span class="xref-name">Back Raises &mdash; Standing Smith Machine</span></td>
         <td class="xref-page-num">p.&nbsp;20<br><span class="xref-name">Back Raises with Smith Machine in Standing Position</span></td>
       </tr>
       <tr>
-        <td><a href="/exercises/triceps-push-downs/">Triceps Push Downs</a></td>
+        <td><a href="/titan-t1/exercises/triceps-push-downs/">Triceps Push Downs</a></td>
         <td><span class="xref-code">SV-32</span> <span class="xref-page">p.&nbsp;12</span><br><span class="xref-name">Triceps Pushdown</span></td>
         <td class="xref-page-num">p.&nbsp;23</td>
         <td class="xref-page-num">p.&nbsp;14</td>
       </tr>
       <tr>
-        <td><a href="/exercises/french-curl/">French Curl</a></td>
+        <td><a href="/titan-t1/exercises/french-curl/">French Curl</a></td>
         <td><span class="xref-code">SV-04</span> <span class="xref-page">p.&nbsp;6</span><br><span class="xref-name">Lying Barbell Triceps Extension</span><br><br><span class="xref-code">SV-80</span> <span class="xref-page">p.&nbsp;23</span><br><span class="xref-name">Barbell Triceps Extension</span></td>
         <td class="xref-page-num">p.&nbsp;24</td>
         <td class="xref-page-num">p.&nbsp;22</td>
       </tr>
       <tr>
-        <td><a href="/exercises/assisted-dips/">Assisted Dips</a></td>
+        <td><a href="/titan-t1/exercises/assisted-dips/">Assisted Dips</a></td>
         <td><span class="xref-code">SV-31</span> <span class="xref-page">p.&nbsp;11</span><br><span class="xref-name">Dips</span></td>
         <td class="xref-page-num">p.&nbsp;25</td>
         <td class="xref-page-num">p.&nbsp;24</td>
       </tr>
       <tr>
-        <td><a href="/exercises/standing-bar-curl/">Standing Bar Curl</a></td>
+        <td><a href="/titan-t1/exercises/standing-bar-curl/">Standing Bar Curl</a></td>
         <td class="xref-none">&mdash;</td>
         <td class="xref-page-num">p.&nbsp;26</td>
         <td class="xref-page-num">p.&nbsp;23</td>
       </tr>
       <tr>
-        <td><a href="/exercises/standing-cable-curl/">Standing Cable Curl</a></td>
+        <td><a href="/titan-t1/exercises/standing-cable-curl/">Standing Cable Curl</a></td>
         <td><span class="xref-code">SV-35</span> <span class="xref-page">p.&nbsp;14</span><br><span class="xref-name">Standing Biceps Cable Curls</span><br><br><span class="xref-code">F-07</span> <span class="xref-page">p.&nbsp;36</span><br><span class="xref-name">Standing Biceps Cable Curl</span></td>
         <td class="xref-page-num">p.&nbsp;27</td>
         <td class="xref-page-num">p.&nbsp;17</td>
       </tr>
       <tr>
-        <td><a href="/exercises/lying-cable-curl/">Lying Cable Curl</a></td>
+        <td><a href="/titan-t1/exercises/lying-cable-curl/">Lying Cable Curl</a></td>
         <td class="xref-none">&mdash;</td>
         <td class="xref-page-num">p.&nbsp;28</td>
         <td class="xref-page-num">p.&nbsp;16</td>
       </tr>
       <tr>
-        <td><a href="/exercises/preacher-curl/">Preacher Curl</a></td>
+        <td><a href="/titan-t1/exercises/preacher-curl/">Preacher Curl</a></td>
         <td><span class="xref-code">SV-38</span> <span class="xref-page">p.&nbsp;15</span><br><span class="xref-name">Preacher Curl</span></td>
         <td class="xref-page-num">p.&nbsp;29</td>
         <td class="xref-page-num">p.&nbsp;25</td>
       </tr>
       <tr>
-        <td><a href="/exercises/cable-cross-over-option-a/">Cable Cross Over &mdash; Option A</a></td>
+        <td><a href="/titan-t1/exercises/cable-cross-over-option-a/">Cable Cross Over &mdash; Option A</a></td>
         <td><span class="xref-code">A-01</span> <span class="xref-page">p.&nbsp;24</span><br><span class="xref-name">Cable Crossover</span><br><br><span class="xref-code">A1-20</span> <span class="xref-page">p.&nbsp;25</span><br><span class="xref-name">Cable Crossover</span></td>
         <td class="xref-page-num">p.&nbsp;30</td>
         <td class="xref-page-num">p.&nbsp;30<br><span class="xref-name">Cable Cross Over</span></td>
       </tr>
       <tr>
-        <td><a href="/exercises/low-pulley-option-a1/">Low Pulley &mdash; Option A1</a></td>
+        <td><a href="/titan-t1/exercises/low-pulley-option-a1/">Low Pulley &mdash; Option A1</a></td>
         <td class="xref-none">&mdash;</td>
         <td class="xref-page-num">p.&nbsp;31</td>
         <td class="xref-page-num">p.&nbsp;31<br><span class="xref-name">Low Pulley</span></td>
       </tr>
       <tr>
-        <td><a href="/exercises/leg-curl-extension-option-b/">Leg Curl / Extension &mdash; Option B</a></td>
+        <td><a href="/titan-t1/exercises/leg-curl-extension-option-b/">Leg Curl / Extension &mdash; Option B</a></td>
         <td><span class="xref-code">B-01</span> <span class="xref-page">p.&nbsp;27</span><br><span class="xref-name">Leg Curls</span><br><br><span class="xref-code">B-02</span> <span class="xref-page">p.&nbsp;28</span><br><span class="xref-name">Lying Leg Curls</span><br><br><span class="xref-code">B-14</span> <span class="xref-page">p.&nbsp;30</span><br><span class="xref-name">Triceps Extension</span><br><br><span class="xref-code">B-17</span> <span class="xref-page">p.&nbsp;31</span><br><span class="xref-name">Decline Leg Curls</span></td>
         <td class="xref-page-num">p.&nbsp;32</td>
         <td class="xref-page-num">p.&nbsp;32<br><span class="xref-name">Leg Curl/Extension</span></td>
       </tr>
       <tr>
-        <td><a href="/exercises/preacher-curl-machine-option-b1/">Preacher Curl Machine &mdash; Option B1</a></td>
+        <td><a href="/titan-t1/exercises/preacher-curl-machine-option-b1/">Preacher Curl Machine &mdash; Option B1</a></td>
         <td><span class="xref-code">B-13</span> <span class="xref-page">p.&nbsp;29</span><br><span class="xref-name">Biceps Curl</span></td>
         <td class="xref-page-num">p.&nbsp;33</td>
         <td class="xref-page-num">p.&nbsp;33<br><span class="xref-name">Preacher Curl Machine</span></td>
       </tr>
       <tr>
-        <td><a href="/exercises/back-extension-option-b1/">Back Extension &mdash; Option B1</a></td>
+        <td><a href="/titan-t1/exercises/back-extension-option-b1/">Back Extension &mdash; Option B1</a></td>
         <td class="xref-none">&mdash;</td>
         <td class="xref-page-num">p.&nbsp;34</td>
         <td class="xref-page-num">p.&nbsp;34<br><span class="xref-name">Back Extension</span></td>
       </tr>
       <tr>
-        <td><a href="/exercises/exercises-with-the-fitness-ball-option-b1/">Exercises with the Fitness Ball &mdash; Option B1</a></td>
+        <td><a href="/titan-t1/exercises/exercises-with-the-fitness-ball-option-b1/">Exercises with the Fitness Ball &mdash; Option B1</a></td>
         <td class="xref-none">&mdash;</td>
         <td class="xref-page-num">p.&nbsp;35</td>
         <td class="xref-page-num">p.&nbsp;42<br><span class="xref-name">Exercises with the Fitness Ball</span></td>
       </tr>
       <tr>
-        <td><a href="/exercises/ab-station-option-c/">Ab Station &mdash; Option C</a></td>
+        <td><a href="/titan-t1/exercises/ab-station-option-c/">Ab Station &mdash; Option C</a></td>
         <td><span class="xref-code">C-01</span> <span class="xref-page">p.&nbsp;33</span><br><span class="xref-name">Knee/Hip Raise</span></td>
         <td class="xref-page-num">p.&nbsp;35</td>
         <td class="xref-page-num">p.&nbsp;35<br><span class="xref-name">Ab Station</span></td>
       </tr>
       <tr>
-        <td><a href="/exercises/sit-ups-crunches-option-d/">Sit Ups / Crunches &mdash; Option D</a></td>
+        <td><a href="/titan-t1/exercises/sit-ups-crunches-option-d/">Sit Ups / Crunches &mdash; Option D</a></td>
         <td><span class="xref-code">D-02</span> <span class="xref-page">p.&nbsp;34</span><br><span class="xref-name">Decline Crunch</span></td>
         <td class="xref-page-num">p.&nbsp;36</td>
         <td class="xref-none">&mdash;</td>
       </tr>
       <tr>
-        <td><a href="/exercises/decline-bench-with-smith-machine-option-d/">Decline Bench with Smith Machine &mdash; Option D</a></td>
+        <td><a href="/titan-t1/exercises/decline-bench-with-smith-machine-option-d/">Decline Bench with Smith Machine &mdash; Option D</a></td>
         <td class="xref-none">&mdash;</td>
         <td class="xref-page-num">p.&nbsp;37</td>
         <td class="xref-page-num">p.&nbsp;36<br><span class="xref-name">Decline Bench with Smith Machine</span></td>
       </tr>
       <tr>
-        <td><a href="/exercises/decline-bench-with-olympic-bar-option-d/">Decline Bench with Olympic Bar &mdash; Option D</a></td>
+        <td><a href="/titan-t1/exercises/decline-bench-with-olympic-bar-option-d/">Decline Bench with Olympic Bar &mdash; Option D</a></td>
         <td class="xref-none">&mdash;</td>
         <td class="xref-page-num">p.&nbsp;38</td>
         <td class="xref-page-num">p.&nbsp;37<br><span class="xref-name">Decline Bench with Olympic Bar</span></td>
       </tr>
       <tr>
-        <td><a href="/exercises/dumbbell-press-with-dumbbell-spotters-option-e/">Dumbbell Press with Dumbbell Spotters &mdash; Option E</a></td>
+        <td><a href="/titan-t1/exercises/dumbbell-press-with-dumbbell-spotters-option-e/">Dumbbell Press with Dumbbell Spotters &mdash; Option E</a></td>
         <td class="xref-none">&mdash;</td>
         <td class="xref-page-num">p.&nbsp;39</td>
         <td class="xref-page-num">p.&nbsp;38<br><span class="xref-name">Dumbell Press with Dumbell Spotters</span></td>
       </tr>
       <tr>
-        <td><a href="/exercises/incline-dumbbell-press-with-dumbbell-spotters-option-e/">Incline Dumbbell Press with Dumbbell Spotters &mdash; Option E</a></td>
+        <td><a href="/titan-t1/exercises/incline-dumbbell-press-with-dumbbell-spotters-option-e/">Incline Dumbbell Press with Dumbbell Spotters &mdash; Option E</a></td>
         <td><span class="xref-code">E-02</span> <span class="xref-page">p.&nbsp;35</span><br><span class="xref-name">Dumbbell Incline Bench Press</span></td>
         <td class="xref-page-num">p.&nbsp;40</td>
         <td class="xref-page-num">p.&nbsp;39<br><span class="xref-name">Incline Dumbell Press with Dumbell Spotters</span></td>
       </tr>
       <tr>
-        <td><a href="/exercises/tricep-push-downs-option-f/">Tricep Push Downs &mdash; Option F</a></td>
+        <td><a href="/titan-t1/exercises/tricep-push-downs-option-f/">Tricep Push Downs &mdash; Option F</a></td>
         <td class="xref-none">&mdash;</td>
         <td class="xref-page-num">p.&nbsp;41</td>
         <td class="xref-page-num">p.&nbsp;40<br><span class="xref-name">Tricep Push Downs</span></td>
       </tr>
       <tr>
-        <td><a href="/exercises/standing-cable-curls-and-upright-rows-with-cable-option-f/">Standing Cable Curls and Upright Rows &mdash; Option F</a></td>
+        <td><a href="/titan-t1/exercises/standing-cable-curls-and-upright-rows-with-cable-option-f/">Standing Cable Curls and Upright Rows &mdash; Option F</a></td>
         <td><span class="xref-code">F-07</span> <span class="xref-page">p.&nbsp;36</span><br><span class="xref-name">Standing Biceps Cable Curl</span></td>
         <td class="xref-page-num">p.&nbsp;41<br><span class="xref-name">Standing Cable Curls and Upright Rows with Cable &mdash; Option F</span></td>
         <td class="xref-page-num">p.&nbsp;40<br><span class="xref-name">Standing Cable Curls and Upright Rows with Cable</span></td>
       </tr>
       <tr>
-        <td><a href="/exercises/abductor-and-adductor-exercise-option-f/">Abductor and Adductor Exercise &mdash; Option F</a></td>
+        <td><a href="/titan-t1/exercises/abductor-and-adductor-exercise-option-f/">Abductor and Adductor Exercise &mdash; Option F</a></td>
         <td><span class="xref-code">B-24</span> <span class="xref-page">p.&nbsp;32</span><br><span class="xref-name">Hip Abduction</span></td>
         <td class="xref-page-num">p.&nbsp;42</td>
         <td class="xref-page-num">p.&nbsp;41<br><span class="xref-name">Abductor and Aductor Exercise</span></td>
       </tr>
       <tr>
-        <td><a href="/exercises/gravity-boots-option-g/">Gravity Boots &mdash; Option G</a></td>
+        <td><a href="/titan-t1/exercises/gravity-boots-option-g/">Gravity Boots &mdash; Option G</a></td>
         <td><span class="xref-code">G-01</span> <span class="xref-page">p.&nbsp;39</span><br><span class="xref-name">Hanging Crunch</span></td>
         <td class="xref-page-num">p.&nbsp;42</td>
         <td class="xref-page-num">p.&nbsp;41<br><span class="xref-name">Gravity Boots</span></td>
       </tr>
       <tr>
-        <td><a href="/exercises/close-grip-shallow-incline-press-option-n/">Close-Grip Shallow Incline Press &mdash; Option N</a></td>
+        <td><a href="/titan-t1/exercises/close-grip-shallow-incline-press-option-n/">Close-Grip Shallow Incline Press &mdash; Option N</a></td>
         <td><span class="xref-code">N-02</span> <span class="xref-page">p.&nbsp;42</span><br><span class="xref-name">Close-Grip Machine Incline Bench Press</span></td>
         <td class="xref-page-num">p.&nbsp;43</td>
         <td class="xref-none">&mdash;</td>
       </tr>
       <tr>
-        <td><a href="/exercises/pec-deck-option-p/">Pec Deck &mdash; Option P</a></td>
+        <td><a href="/titan-t1/exercises/pec-deck-option-p/">Pec Deck &mdash; Option P</a></td>
         <td><span class="xref-code">P-01</span> <span class="xref-page">p.&nbsp;43</span><br><span class="xref-name">Butterfly</span></td>
         <td class="xref-page-num">p.&nbsp;44</td>
         <td class="xref-none">&mdash;</td>
       </tr>
       <tr>
-        <td><a href="/exercises/rear-deltoid-option-p/">Rear Deltoid &mdash; Option P</a></td>
+        <td><a href="/titan-t1/exercises/rear-deltoid-option-p/">Rear Deltoid &mdash; Option P</a></td>
         <td class="xref-none">&mdash;</td>
         <td class="xref-page-num">p.&nbsp;45</td>
         <td class="xref-none">&mdash;</td>
       </tr>
       <tr>
-        <td><a href="/exercises/ab-crunch-machine-option-r/">Ab Crunch Machine &mdash; Option R</a></td>
+        <td><a href="/titan-t1/exercises/ab-crunch-machine-option-r/">Ab Crunch Machine &mdash; Option R</a></td>
         <td><span class="xref-code">R-01</span> <span class="xref-page">p.&nbsp;44</span><br><span class="xref-name">Exercise Data (Ab Crunch Machine)</span></td>
         <td class="xref-page-num">p.&nbsp;46</td>
         <td class="xref-none">&mdash;</td>
       </tr>
       <tr>
-        <td><a href="/exercises/incline-dumbbell-press-option-s/">Incline Dumbbell Press &mdash; Option S</a></td>
+        <td><a href="/titan-t1/exercises/incline-dumbbell-press-option-s/">Incline Dumbbell Press &mdash; Option S</a></td>
         <td><span class="xref-code">S-02</span> <span class="xref-page">p.&nbsp;45</span><br><span class="xref-name">Dumbbell Incline Bench Press</span></td>
         <td class="xref-page-num">p.&nbsp;47</td>
         <td class="xref-none">&mdash;</td>
       </tr>
       <tr>
-        <td>Leg Press High Position</td>
+        <td><a href="/titan-t1/exercises/leg-press-high-position/">Leg Press High Position</a></td>
         <td><span class="xref-code">SV-01</span> <span class="xref-page">p.&nbsp;5</span><br><span class="xref-name">Leg Press High Position</span></td>
         <td class="xref-none">&mdash;</td>
         <td class="xref-none">&mdash;</td>
       </tr>
       <tr>
-        <td>Wide-Grip Pulldown Behind The Neck</td>
+        <td><a href="/titan-t1/exercises/wide-grip-pulldown-behind-the-neck/">Wide-Grip Pulldown Behind The Neck</a></td>
         <td><span class="xref-code">SV-30</span> <span class="xref-page">p.&nbsp;10</span><br><span class="xref-name">Wide-Grip Pulldown Behind The Neck</span></td>
         <td class="xref-none">&mdash;</td>
         <td class="xref-none">&mdash;</td>
       </tr>
       <tr>
-        <td>Triceps Press</td>
+        <td><a href="/titan-t1/exercises/triceps-press/">Triceps Press</a></td>
         <td><span class="xref-code">SV-34</span> <span class="xref-page">p.&nbsp;13</span><br><span class="xref-name">Triceps Press</span></td>
         <td class="xref-none">&mdash;</td>
         <td class="xref-none">&mdash;</td>
       </tr>
       <tr>
-        <td>Lying Rear Lateral Raise</td>
+        <td><a href="/titan-t1/exercises/lying-rear-lateral-raise/">Lying Rear Lateral Raise</a></td>
         <td><span class="xref-code">SV-46</span> <span class="xref-page">p.&nbsp;18</span><br><span class="xref-name">Lying Rear Lateral Raise</span></td>
         <td class="xref-none">&mdash;</td>
         <td class="xref-none">&mdash;</td>
       </tr>
       <tr>
-        <td>Titan T1 Press</td>
+        <td><a href="/titan-t1/exercises/titan-t1-press/">Titan T1 Press</a></td>
         <td><span class="xref-code">FA-01</span> <span class="xref-page">p.&nbsp;37</span><br><span class="xref-name">Titan T1 Press</span></td>
         <td class="xref-none">&mdash;</td>
         <td class="xref-none">&mdash;</td>
       </tr>
       <tr>
-        <td>Titan&rsquo;s Shoulders Press</td>
+        <td><a href="/titan-t1/exercises/titans-shoulders-press/">Titan&rsquo;s Shoulders Press</a></td>
         <td><span class="xref-code">FA-02</span> <span class="xref-page">p.&nbsp;38</span><br><span class="xref-name">Titan&rsquo;s Shoulders Press</span></td>
         <td class="xref-none">&mdash;</td>
         <td class="xref-none">&mdash;</td>
       </tr>
       <tr>
-        <td>Machine Bent-Over Row</td>
+        <td><a href="/titan-t1/exercises/machine-bent-over-row/">Machine Bent-Over Row</a></td>
         <td><span class="xref-code">JSTB-01</span> <span class="xref-page">p.&nbsp;41</span><br><span class="xref-name">Machine Bent-Over Row</span></td>
         <td class="xref-none">&mdash;</td>
         <td class="xref-none">&mdash;</td>
       </tr>
       <tr>
-        <td>Machine Seated Calf Raise</td>
+        <td><a href="/titan-t1/exercises/machine-seated-calf-raise/">Machine Seated Calf Raise</a></td>
         <td><span class="xref-code">T-01</span> <span class="xref-page">p.&nbsp;46</span><br><span class="xref-name">Machine Seated Calf Raise</span></td>
         <td class="xref-none">&mdash;</td>
         <td class="xref-none">&mdash;</td>
       </tr>
       <tr>
-        <td>Machine Rear Delt Row</td>
+        <td><a href="/titan-t1/exercises/machine-rear-delt-row/">Machine Rear Delt Row</a></td>
         <td><span class="xref-code">TB-01</span> <span class="xref-page">p.&nbsp;47</span><br><span class="xref-name">Machine Rear Delt Row</span></td>
         <td class="xref-none">&mdash;</td>
         <td class="xref-none">&mdash;</td>
       </tr>
       <tr>
-        <td>Cable Triceps Extension</td>
+        <td><a href="/titan-t1/exercises/cable-triceps-extension/">Cable Triceps Extension</a></td>
         <td><span class="xref-code">W-06</span> <span class="xref-page">p.&nbsp;48</span><br><span class="xref-name">Cable Triceps Extension</span></td>
         <td class="xref-none">&mdash;</td>
         <td class="xref-none">&mdash;</td>
