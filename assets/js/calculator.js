@@ -8,6 +8,16 @@
   const PLATE_SIZES     = [45, 35, 25, 10, 5, 2.5];
   const STORAGE_KEY     = 'titan-calc-v2';
 
+  // Limits from _data/settings.yaml (output by default.html as JSON)
+  const siteSettings = (function () {
+    try {
+      const el = document.getElementById('calc-site-settings');
+      return el ? JSON.parse(el.textContent) : {};
+    } catch (_) { return {}; }
+  }());
+  const MAIN_MAX_PER_SIDE = siteSettings.main_max_plates_per_side || 6;
+  const OFFSET_MAX_PLATES = siteSettings.offset_max_plates        || 10;
+
   // ── State ─────────────────────────────────────────────────────────────────
 
   function defaultState() {
@@ -50,16 +60,22 @@
   // Greedy largest-first plate fill.
   // pairs=true  → each plate counted × 2 (one per side), so step = size × 2
   // pairs=false → single increments, step = size
-  function greedy(amount, pairs, maxPlate) {
+  // maxPlate  – largest plate size allowed (filters sizes)
+  // maxCount  – max plates per side (pairs=true) or total (pairs=false)
+  function greedy(amount, pairs, maxPlate, maxCount) {
     const sizes  = maxPlate ? PLATE_SIZES.filter(s => s <= maxPlate) : PLATE_SIZES;
     const plates = {};
-    let rem = Math.round(amount * 1000) / 1000;
+    let rem   = Math.round(amount * 1000) / 1000;
+    let count = 0;
     for (const s of sizes) {
+      if (maxCount !== undefined && count >= maxCount) break;
       const step = pairs ? s * 2 : s;
-      const qty  = Math.floor(rem / step + 1e-9);
+      let qty = Math.floor(rem / step + 1e-9);
+      if (maxCount !== undefined) qty = Math.min(qty, maxCount - count);
       if (qty > 0) {
         plates[String(s)] = qty;
-        rem = Math.round((rem - qty * step) * 1000) / 1000;
+        rem   = Math.round((rem - qty * step) * 1000) / 1000;
+        count += qty;
       }
     }
     return { plates, rem };
@@ -95,7 +111,7 @@
     const noCBNeeded = target - CARRIAGE - a;
     if (noCBNeeded >= -0.001 && isMultOf(Math.max(0, noCBNeeded), 5)) {
       const needed = Math.max(0, noCBNeeded);
-      const { plates } = greedy(needed, true, state.mainMaxPlate);
+      const { plates } = greedy(needed, true, state.mainMaxPlate, MAIN_MAX_PER_SIDE);
       const mc = CARRIAGE + a + needed;
       return { useCB: false, mainPlates: plates, offsetPlates: {}, mc, oc: 0, effective: mc, note: note.join(' ') };
     }
@@ -120,8 +136,8 @@
       OP = Math.round(Math.abs(diff) * 1000) / 1000;
     }
 
-    const mainPlates   = MP > 0 ? greedy(MP, true, state.mainMaxPlate).plates          : {};
-    const offsetPlates = OP > 0 ? greedy(OP, false, state.offsetMaxPlate).plates : {};
+    const mainPlates   = MP > 0 ? greedy(MP, true,  state.mainMaxPlate,   MAIN_MAX_PER_SIDE).plates : {};
+    const offsetPlates = OP > 0 ? greedy(OP, false, state.offsetMaxPlate, OFFSET_MAX_PLATES).plates : {};
     const mc  = CARRIAGE + a + MP;
     const oc  = OFFSET_CARRIAGE + OP;
     return { useCB: true, mainPlates, offsetPlates, mc, oc, effective: mc - oc, note: note.join(' ') };
@@ -273,8 +289,8 @@
 
     if (r.note) html += `<div class="calc-note">${r.note}</div>`;
 
-    const mainPlateCount = PLATE_SIZES.reduce((n, s) => n + (r.mainPlates[String(s)] || 0) * 2, 0);
-    const mainOverload   = mainPlateCount > 6;
+    const mainPlateCount = PLATE_SIZES.reduce((n, s) => n + (r.mainPlates[String(s)] || 0), 0); // per side
+    const mainOverload   = mainPlateCount > MAIN_MAX_PER_SIDE;
 
     const mainMaxBtns = [45, 35, 25, 10].map(s =>
       `<button class="calc-max-btn${state.mainMaxPlate === s ? ' active' : ''}" data-section="main" data-max="${s}">${s}</button>`
@@ -301,7 +317,7 @@
       html += `<div class="calc-res-row calc-res-aside"><span>Per side</span><span>${fmt(perSide)} lbs</span></div>`;
     }
     if (mainOverload) {
-      html += `<div class="calc-overload-note">⚠ ${mainPlateCount} plates total — consider using larger plates</div>`;
+      html += `<div class="calc-overload-note">⚠ ${mainPlateCount} plates per side (max ${MAIN_MAX_PER_SIDE}) — consider using larger plates</div>`;
     }
     if (state.handles) html += `<div class="calc-res-row"><span>Handles</span><span>+15 lbs</span></div>`;
     if (state.pads)    html += `<div class="calc-res-row"><span>Squat Pads</span><span>+15 lbs</span></div>`;
@@ -310,7 +326,7 @@
 
     if (r.useCB) {
       const offsetPlateCount = PLATE_SIZES.reduce((n, s) => n + (r.offsetPlates[String(s)] || 0), 0);
-      const offsetOverload   = offsetPlateCount > 6;
+      const offsetOverload   = offsetPlateCount > OFFSET_MAX_PLATES;
       const maxBtns = [45, 35, 25, 10].map(s =>
         `<button class="calc-max-btn${state.offsetMaxPlate === s ? ' active' : ''}" data-section="offset" data-max="${s}">${s}</button>`
       ).join('');
@@ -330,7 +346,7 @@
         }
       });
       if (offsetOverload) {
-        html += `<div class="calc-overload-note">⚠ ${offsetPlateCount} plates — consider using larger plates or a lower max plate setting</div>`;
+        html += `<div class="calc-overload-note">⚠ ${offsetPlateCount} plates (max ${OFFSET_MAX_PLATES}) — consider using larger plates or a lower max plate setting</div>`;
       }
       html += `<div class="calc-res-row calc-res-total calc-res-deduct">
         <span>Offset total (deducted)</span><span>−${fmt(r.oc)} lbs</span>

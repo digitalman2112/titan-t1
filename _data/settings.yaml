@@ -7,6 +7,10 @@ pdf_page_offsets:
   manual3_high: -2   # printed pages 13+
   manual3_break: 11  # last printed page using the low offset
 
+calculator:
+  main_max_plates_per_side: 6
+  offset_max_plates: 6
+
 favorited_exercises:
   - EX-2
   - EX-16
