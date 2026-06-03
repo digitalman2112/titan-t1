@@ -6,19 +6,21 @@
   const HANDLES_WT      = 15;
   const PADS_WT         = 15;
   const PLATE_SIZES     = [45, 35, 25, 10, 5, 2.5];
-  const STORAGE_KEY     = 'titan-calc-v1';
+  const STORAGE_KEY     = 'titan-calc-v2';
 
   // ── State ─────────────────────────────────────────────────────────────────
 
   function defaultState() {
     return {
-      mode:         'build',
-      mainPlates:   { '45': 0, '25': 0, '10': 0, '5': 0, '2.5': 0 },
-      handles:      false,
-      pads:         false,
-      useCB:        false,
-      offsetPlates: { '45': 0, '25': 0, '10': 0, '5': 0, '2.5': 0 },
-      targetWeight: ''
+      mode:           'target',
+      mainPlates:     { '45': 0, '25': 0, '10': 0, '5': 0, '2.5': 0 },
+      handles:        false,
+      pads:           false,
+      useCB:          false,
+      offsetPlates:   { '45': 0, '25': 0, '10': 0, '5': 0, '2.5': 0 },
+      targetWeight:   '',
+      mainMaxPlate:   45,
+      offsetMaxPlate: 45
     };
   }
 
@@ -48,10 +50,11 @@
   // Greedy largest-first plate fill.
   // pairs=true  → each plate counted × 2 (one per side), so step = size × 2
   // pairs=false → single increments, step = size
-  function greedy(amount, pairs) {
+  function greedy(amount, pairs, maxPlate) {
+    const sizes  = maxPlate ? PLATE_SIZES.filter(s => s <= maxPlate) : PLATE_SIZES;
     const plates = {};
     let rem = Math.round(amount * 1000) / 1000;
-    for (const s of PLATE_SIZES) {
+    for (const s of sizes) {
       const step = pairs ? s * 2 : s;
       const qty  = Math.floor(rem / step + 1e-9);
       if (qty > 0) {
@@ -92,7 +95,7 @@
     const noCBNeeded = target - CARRIAGE - a;
     if (noCBNeeded >= -0.001 && isMultOf(Math.max(0, noCBNeeded), 5)) {
       const needed = Math.max(0, noCBNeeded);
-      const { plates } = greedy(needed, true);
+      const { plates } = greedy(needed, true, state.mainMaxPlate);
       const mc = CARRIAGE + a + needed;
       return { useCB: false, mainPlates: plates, offsetPlates: {}, mc, oc: 0, effective: mc, note: note.join(' ') };
     }
@@ -117,8 +120,8 @@
       OP = Math.round(Math.abs(diff) * 1000) / 1000;
     }
 
-    const mainPlates   = MP > 0 ? greedy(MP, true).plates  : {};
-    const offsetPlates = OP > 0 ? greedy(OP, false).plates : {};
+    const mainPlates   = MP > 0 ? greedy(MP, true, state.mainMaxPlate).plates          : {};
+    const offsetPlates = OP > 0 ? greedy(OP, false, state.offsetMaxPlate).plates : {};
     const mc  = CARRIAGE + a + MP;
     const oc  = OFFSET_CARRIAGE + OP;
     return { useCB: true, mainPlates, offsetPlates, mc, oc, effective: mc - oc, note: note.join(' ') };
@@ -146,12 +149,12 @@
     </div>
 
     <div class="calc-tabs" role="tablist">
-      <button class="calc-tab active" id="calc-tab-build" role="tab">Build Weight</button>
-      <button class="calc-tab" id="calc-tab-target" role="tab">Target Weight</button>
+      <button class="calc-tab active" id="calc-tab-target" role="tab">Target Weight</button>
+      <button class="calc-tab" id="calc-tab-build" role="tab">Build Weight</button>
     </div>
 
     <!-- ── Build panel ── -->
-    <div id="calc-panel-build" class="calc-panel">
+    <div id="calc-panel-build" class="calc-panel" style="display:none">
 
       <div class="calc-section">
         <div class="calc-section-head">Main Carriage</div>
@@ -183,6 +186,9 @@
         </div>
         <div class="calc-plates-head">Plates — single increments (each deducted)</div>
         ${plateRows('op')}
+        <div class="calc-sub-row" id="res-op-plates-row" style="display:none">
+          <span>Plates total</span><strong id="res-op-plates">–</strong>
+        </div>
         <div class="calc-sub-row">
           <span>Offset total</span><strong id="res-oc">–</strong>
         </div>
@@ -195,7 +201,7 @@
     </div>
 
     <!-- ── Target panel ── -->
-    <div id="calc-panel-target" class="calc-panel" style="display:none">
+    <div id="calc-panel-target" class="calc-panel">
       <div class="calc-section">
         <label class="calc-target-lbl" for="calc-target-inp">Target weight (lbs)</label>
         <input type="number" id="calc-target-inp" class="calc-target-inp"
@@ -222,11 +228,18 @@
       document.getElementById(`mp-n-${s}`).textContent   = qty;
       document.getElementById(`mp-sub-${s}`).textContent = qty > 0 ? `${fmt(qty * s * 2)} lbs` : '–';
     });
+    let opPlatesTotal = 0;
     PLATE_SIZES.forEach(s => {
       const qty = state.offsetPlates[String(s)] || 0;
       document.getElementById(`op-n-${s}`).textContent   = qty;
       document.getElementById(`op-sub-${s}`).textContent = qty > 0 ? `${fmt(qty * s)} lbs` : '–';
+      opPlatesTotal += qty * s;
     });
+    const opPlatesRow = document.getElementById('res-op-plates-row');
+    if (opPlatesRow) {
+      opPlatesRow.style.display = opPlatesTotal > 0 ? 'flex' : 'none';
+      document.getElementById('res-op-plates').textContent = `${fmt(opPlatesTotal)} lbs`;
+    }
 
     document.getElementById('b-handles').checked = state.handles;
     document.getElementById('b-pads').checked    = state.pads;
@@ -260,8 +273,17 @@
 
     if (r.note) html += `<div class="calc-note">${r.note}</div>`;
 
-    html += `<div class="calc-res-sec">
-      <div class="calc-res-head">Main Carriage</div>
+    const mainPlateCount = PLATE_SIZES.reduce((n, s) => n + (r.mainPlates[String(s)] || 0) * 2, 0);
+    const mainOverload   = mainPlateCount > 6;
+
+    const mainMaxBtns = [45, 35, 25, 10].map(s =>
+      `<button class="calc-max-btn${state.mainMaxPlate === s ? ' active' : ''}" data-section="main" data-max="${s}">${s}</button>`
+    ).join('');
+    html += `<div class="calc-res-sec${mainOverload ? ' calc-res-overload' : ''}">
+      <div class="calc-res-head">
+        Main Carriage
+        <span class="calc-max-plate-group">max plate: ${mainMaxBtns}</span>
+      </div>
       <div class="calc-res-row"><span>Base carriage</span><span>80 lbs</span></div>`;
 
     let perSide = 0;
@@ -278,14 +300,25 @@
     if (perSide > 0) {
       html += `<div class="calc-res-row calc-res-aside"><span>Per side</span><span>${fmt(perSide)} lbs</span></div>`;
     }
+    if (mainOverload) {
+      html += `<div class="calc-overload-note">⚠ ${mainPlateCount} plates total — consider using larger plates</div>`;
+    }
     if (state.handles) html += `<div class="calc-res-row"><span>Handles</span><span>+15 lbs</span></div>`;
     if (state.pads)    html += `<div class="calc-res-row"><span>Squat Pads</span><span>+15 lbs</span></div>`;
     html += `<div class="calc-res-row calc-res-total"><span>Main total</span><span>${fmt(r.mc)} lbs</span></div>
     </div>`;
 
     if (r.useCB) {
-      html += `<div class="calc-res-sec">
-        <div class="calc-res-head">Counter-Balance (C-2)</div>
+      const offsetPlateCount = PLATE_SIZES.reduce((n, s) => n + (r.offsetPlates[String(s)] || 0), 0);
+      const offsetOverload   = offsetPlateCount > 6;
+      const maxBtns = [45, 35, 25, 10].map(s =>
+        `<button class="calc-max-btn${state.offsetMaxPlate === s ? ' active' : ''}" data-section="offset" data-max="${s}">${s}</button>`
+      ).join('');
+      html += `<div class="calc-res-sec${offsetOverload ? ' calc-res-overload' : ''}">
+        <div class="calc-res-head">
+          Counter-Balance (C-2)
+          <span class="calc-max-plate-group">max plate: ${maxBtns}</span>
+        </div>
         <div class="calc-res-row"><span>Offset carriage</span><span>20 lbs</span></div>`;
       PLATE_SIZES.forEach(s => {
         const qty = r.offsetPlates[String(s)] || 0;
@@ -296,6 +329,9 @@
           </div>`;
         }
       });
+      if (offsetOverload) {
+        html += `<div class="calc-overload-note">⚠ ${offsetPlateCount} plates — consider using larger plates or a lower max plate setting</div>`;
+      }
       html += `<div class="calc-res-row calc-res-total calc-res-deduct">
         <span>Offset total (deducted)</span><span>−${fmt(r.oc)} lbs</span>
       </div></div>`;
@@ -362,6 +398,18 @@
 
     document.getElementById('calc-tab-build').addEventListener('click',  () => setMode('build'));
     document.getElementById('calc-tab-target').addEventListener('click', () => setMode('target'));
+
+    // Max-plate buttons (target mode)
+    body.addEventListener('click', e => {
+      const mb = e.target.closest('.calc-max-btn');
+      if (mb) {
+        const val = parseInt(mb.dataset.max, 10);
+        if (mb.dataset.section === 'main') state.mainMaxPlate   = val;
+        else                               state.offsetMaxPlate = val;
+        renderTarget();
+        return;
+      }
+    });
 
     // Stepper delegation
     body.addEventListener('click', e => {
