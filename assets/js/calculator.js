@@ -5,7 +5,7 @@
   const OFFSET_CARRIAGE = 20;
   const HANDLES_WT      = 15;
   const PADS_WT         = 15;
-  const PLATE_SIZES     = [45, 25, 10, 5, 2.5];
+  const PLATE_SIZES     = [45, 35, 25, 10, 5, 2.5];
   const STORAGE_KEY     = 'titan-calc-v1';
 
   // ── State ─────────────────────────────────────────────────────────────────
@@ -330,7 +330,19 @@
 
     body.innerHTML = MODAL_HTML;
 
+    function applyExerciseDefaults() {
+      const el = document.getElementById('calc-exercise-data');
+      if (!el) return;
+      try {
+        const data = JSON.parse(el.textContent);
+        const acc  = Array.isArray(data.accessories) ? data.accessories : [];
+        state.handles = acc.includes('S1');
+        state.pads    = acc.includes('S5');
+      } catch (_) {}
+    }
+
     function openCalc() {
+      applyExerciseDefaults();
       modal.classList.add('is-open');
       document.body.classList.add('calc-is-open');
       if (state.mode === 'target' && state.targetWeight) {
@@ -377,10 +389,6 @@
       setMode('build');
     });
 
-    // Restore last session if modal was previously open
-    if (state.mode === 'target' && state.targetWeight) {
-      openCalc();
-    }
   }
 
   document.addEventListener('DOMContentLoaded', init);
