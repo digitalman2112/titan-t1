@@ -15,6 +15,10 @@ cables:
 accessories:
   - F
   - S8
+manual1_code: null
+manual1_page: null
+manual2_page: 41
+manual3_page: 40
 ---
 
 ## Setup

@@ -4,10 +4,12 @@ title: "Assisted Dips"
 code: "EX-25"
 description: "A dip exercise using the smith machine counter-balance system to reduce effective bodyweight, allowing more reps or assisting beginners."
 photos:
-  # - /assets/images/exercises/exercise-25-1.png
+  - /assets/images/exercises/manual1/1-SV-31-Dips-1.jpg
+  - /assets/images/exercises/manual1/1-SV-31-Dips-2.jpg
+  - /assets/images/exercises/manual1/1-SV-31-Dips-3.jpg
 videos:
-  # - youtube_id: ""
-  #   title: "Assisted Dips — Tutorial"
+  - youtube_id: "OPcRu4ElurI"
+    title: "TYTAX T1-X — Cable Chest Dip"
 muscles:
   - Triceps
   - Shoulders
@@ -15,6 +17,10 @@ cables:
   - C2
 accessories:
   - S6
+manual1_code: "SV-31"
+manual1_page: 11
+manual2_page: 25
+manual3_page: 24
 ---
 
 ## Setup

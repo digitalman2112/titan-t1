@@ -6,8 +6,8 @@ description: "A multi-exercise cable system using the crossover arms and low pul
 photos:
   # - /assets/images/exercises/exercise-31-1.png
 videos:
-  # - youtube_id: ""
-  #   title: "Low Pulley — Option A1 Tutorial"
+  - youtube_id: "yz115LBxQ0o"
+    title: "TYTAX T1-X — Low Cable Crossover"
 muscles:
   - Traps
   - Chest
@@ -17,6 +17,10 @@ muscles:
 cables:
   - C2
 accessories: []
+manual1_code: null
+manual1_page: null
+manual2_page: 31
+manual3_page: 31
 ---
 
 ## Setup

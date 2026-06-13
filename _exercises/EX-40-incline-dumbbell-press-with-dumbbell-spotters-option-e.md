@@ -4,7 +4,9 @@ title: "Incline Dumbbell Press with Dumbbell Spotters — Option E"
 code: "EX-40"
 description: "An incline dumbbell press using the Option E dumbbell spotters mounted on the smith carriage for safe rack and un-rack, targeting the chest, traps, and shoulders."
 photos:
-  # - /assets/images/exercises/exercise-40-1.png
+  - /assets/images/exercises/manual1/1-E-02-Dumbbell-Incline-Bench-Press-1.jpg
+  - /assets/images/exercises/manual1/1-E-02-Dumbbell-Incline-Bench-Press-2.jpg
+  - /assets/images/exercises/manual1/1-E-02-Dumbbell-Incline-Bench-Press-3.jpg
 videos:
   # - youtube_id: ""
   #   title: "Incline Dumbbell Press with Dumbbell Spotters — Option E Tutorial"
@@ -16,6 +18,10 @@ cables: []
 accessories:
   - E
   - S1
+manual1_code: "E-02"
+manual1_page: 35
+manual2_page: 40
+manual3_page: 39
 ---
 
 ## Setup

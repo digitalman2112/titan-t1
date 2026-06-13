@@ -5,7 +5,7 @@ code: "S9"
 owned: true
 description: "The lat pull down bar (S9) that attaches via a clip to the lat pulley cable (C3) for lat pull down exercises."
 photos:
-  # - /assets/images/accessories/lat-pull-down-bar-1.jpg
+  - /assets/images/accessories/1-Lat-Pull-Down-Bar.png
 videos:
   # - youtube_id: ""
   #   title: "Lat Pull Down Bar â€” Setup"

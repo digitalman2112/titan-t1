@@ -2,6 +2,7 @@
 permalink: /accessories/gravity-boots/
 title: "Gravity Boots (Option G)"
 code: "G"
+is_option: true
 owned: false
 description: "Option G gravity boots for inverted hanging stretches and ab work; attach to each ankle and hook over the Olympic bar."
 photos: []

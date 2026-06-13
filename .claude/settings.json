@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(gh issue create --repo digitalman2112/titan-t1 --title \"Add muscle group filters to exhibit lists\" --body \"Exhibit lists should include filters for muscle groups, located below the existing filters. This allows users to filter exercises by the muscle groups they target.\")"
+    ]
+  }
+}

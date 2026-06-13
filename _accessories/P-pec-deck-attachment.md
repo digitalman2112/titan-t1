@@ -2,6 +2,7 @@
 permalink: /accessories/pec-deck-attachment/
 title: "Pec Deck Attachment (Option P)"
 code: "P"
+is_option: true
 owned: true
 description: "Option P package including the P-1 seat attachment; works with the pec deck arms and cable C11."
 photos: []

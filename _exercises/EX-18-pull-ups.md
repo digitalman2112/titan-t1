@@ -4,10 +4,12 @@ title: "Pull Ups"
 code: "EX-18"
 description: "A bodyweight upper body exercise using the pull-up handles mounted on the machine frame. Targets the shoulders, lats, and biceps."
 photos:
-  # - /assets/images/exercises/exercise-18-1.png
+  - /assets/images/exercises/manual1/1-SV-50-Pullups-1.jpg
+  - /assets/images/exercises/manual1/1-SV-50-Pullups-2.jpg
+  - /assets/images/exercises/manual1/1-SV-50-Pullups-3.jpg
 videos:
-  # - youtube_id: ""
-  #   title: "Pull Ups — Tutorial"
+  - youtube_id: "NiecJupRyK8"
+    title: "TYTAX T1-X — Pull-Up"
 muscles:
   - Shoulders
   - Lats
@@ -15,6 +17,10 @@ muscles:
 cables: []
 accessories:
   - S10
+manual1_code: "SV-50"
+manual1_page: 20
+manual2_page: 18
+manual3_page: 28
 ---
 
 ## Setup

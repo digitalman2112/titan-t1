@@ -4,16 +4,22 @@ title: "Incline Chest Press"
 code: "EX-9"
 description: "A chest press performed on an inclined bench using the olympic bar, emphasizing the upper chest and triceps."
 photos:
-  # - /assets/images/exercises/exercise-9-1.png
+  - /assets/images/exercises/manual1/1-SV-16-Barbell-Incline-Bench-Press-1.jpg
+  - /assets/images/exercises/manual1/1-SV-16-Barbell-Incline-Bench-Press-2.jpg
+  - /assets/images/exercises/manual1/1-SV-16-Barbell-Incline-Bench-Press-3.jpg
 videos:
-  # - youtube_id: ""
-  #   title: "Incline Chest Press — Tutorial"
+  - youtube_id: "wxiIDWz-Jc0"
+    title: "TYTAX T1-X — Cable Incline Chest Press"
 muscles:
   - Chest
   - Triceps
 cables: []
 accessories:
   - S2
+manual1_code: "SV-16"
+manual1_page: 9
+manual2_page: 9
+manual3_page: 8
 ---
 
 ## Setup

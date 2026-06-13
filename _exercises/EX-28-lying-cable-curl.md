@@ -18,6 +18,10 @@ cables:
 accessories:
   - S3
   - S8
+manual1_code: null
+manual1_page: null
+manual2_page: 28
+manual3_page: 16
 ---
 
 ## Setup

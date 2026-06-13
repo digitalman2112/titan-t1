@@ -4,7 +4,9 @@ title: "Gravity Boots — Option G"
 code: "EX-42b"
 description: "An inverted hanging stretch and ab exercise using gravity boots anchored to the Olympic bar, targeting flexibility and the abs."
 photos:
-  # - /assets/images/exercises/exercise-42b-1.png
+  - /assets/images/exercises/manual1/1-G-01-Hanging-Crunch-1.jpg
+  - /assets/images/exercises/manual1/1-G-01-Hanging-Crunch-2.jpg
+  - /assets/images/exercises/manual1/1-G-01-Hanging-Crunch-3.jpg
 videos:
   # - youtube_id: ""
   #   title: "Gravity Boots — Option G Tutorial"
@@ -14,6 +16,10 @@ muscles:
 cables: []
 accessories:
   - G
+manual1_code: "G-01"
+manual1_page: 39
+manual2_page: 42
+manual3_page: 41
 ---
 
 ## Setup

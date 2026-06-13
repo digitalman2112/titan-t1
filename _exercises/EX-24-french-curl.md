@@ -4,15 +4,21 @@ title: "French Curl"
 code: "EX-24"
 description: "A triceps isolation exercise using an EZ curl bar rested on the safety spotters, performed from a seated position on the bench."
 photos:
-  # - /assets/images/exercises/exercise-24-1.png
+  - /assets/images/exercises/manual1/1-SV-04-Lying-Barbell-Triceps-Extension-1.jpg
+  - /assets/images/exercises/manual1/1-SV-04-Lying-Barbell-Triceps-Extension-2.jpg
+  - /assets/images/exercises/manual1/1-SV-04-Lying-Barbell-Triceps-Extension-3.jpg
 videos:
-  # - youtube_id: ""
-  #   title: "French Curl — Tutorial"
+  - youtube_id: "UyV7NIMEQyY"
+    title: "TYTAX T1-X — Preacher Cable Triceps Extension"
 muscles:
   - Triceps
 cables: []
 accessories:
   - S2
+manual1_code: "SV-04"
+manual1_page: 6
+manual2_page: 24
+manual3_page: 22
 ---
 
 ## Setup

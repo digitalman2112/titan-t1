@@ -6,8 +6,8 @@ description: "A seated rear deltoid fly using the Option P pec deck arms locked 
 photos:
   # - /assets/images/exercises/exercise-45-1.png
 videos:
-  # - youtube_id: ""
-  #   title: "Rear Deltoid — Option P Tutorial"
+  - youtube_id: "3CnwKtMRk58"
+    title: "TYTAX T1-X — Lever Seated Reverse Fly"
 muscles:
   - Shoulders
   - Triceps
@@ -15,6 +15,10 @@ cables:
   - C2
 accessories:
   - P
+manual1_code: null
+manual1_page: null
+manual2_page: 45
+manual3_page: null
 ---
 
 ## Setup

@@ -4,16 +4,22 @@ title: "Abductor and Adductor Exercise — Option F"
 code: "EX-42a"
 description: "A standing cable abductor/adductor exercise using the Option F counter-balance attachment with an ankle strap, targeting the quads and hamstrings."
 photos:
-  # - /assets/images/exercises/exercise-42a-1.png
+  - /assets/images/exercises/manual1/1-B-24-Hip-Abduction-1.jpg
+  - /assets/images/exercises/manual1/1-B-24-Hip-Abduction-2.jpg
+  - /assets/images/exercises/manual1/1-B-24-Hip-Abduction-3.jpg
 videos:
-  # - youtube_id: ""
-  #   title: "Abductor and Adductor Exercise — Option F Tutorial"
+  - youtube_id: "ierHCWdOU4U"
+    title: "TYTAX — Hip Abductor and Adductor Training"
 muscles:
   - Quads
   - Hamstrings
 cables: []
 accessories:
   - F
+manual1_code: "B-24"
+manual1_page: 32
+manual2_page: 42
+manual3_page: 41
 ---
 
 ## Setup

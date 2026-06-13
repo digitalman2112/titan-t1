@@ -6,14 +6,18 @@ description: "A compound pressing exercise using the olympic bar on the machine'
 photos:
   # - /assets/images/exercises/exercise-8-1.png
 videos:
-  # - youtube_id: ""
-  #   title: "Chest Press — Tutorial"
+  - youtube_id: "kGQ0D4nSS8c"
+    title: "TYTAX T1-X — Sled Chest Press"
 muscles:
   - Chest
   - Triceps
 cables: []
 accessories:
   - S2
+manual1_code: null
+manual1_page: null
+manual2_page: 8
+manual3_page: 7
 ---
 
 ## Setup

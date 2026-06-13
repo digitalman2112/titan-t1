@@ -6,8 +6,8 @@ description: "A back extension exercise using the Option B1 extension bar attach
 photos:
   # - /assets/images/exercises/exercise-34-1.png
 videos:
-  # - youtube_id: ""
-  #   title: "Back Extension — Option B1 Tutorial"
+  - youtube_id: "OApto_Xx3Bk"
+    title: "TYTAX T1-X — Lever Back Extension (Station B)"
 muscles:
   - Lower back muscles
 cables:
@@ -17,6 +17,10 @@ accessories:
   - S1
   - S4
   - S8
+manual1_code: null
+manual1_page: null
+manual2_page: 34
+manual3_page: 34
 ---
 
 ## Setup

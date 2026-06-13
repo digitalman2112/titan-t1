@@ -11,6 +11,9 @@
     </div>
   </main>
   {% include footer.html %}
+  <script type="application/json" id="calc-site-settings">{{ site.data.settings.calculator | jsonify }}</script>
+  {% include calculator.html %}
   <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/calculator.js' | relative_url }}"></script>
 </body>
 </html>

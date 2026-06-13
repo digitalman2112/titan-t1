@@ -5,7 +5,7 @@ code: "S1"
 owned: true
 description: "A left/right pair of locking handles (S1-L and S1-R) that attach to the smith carriage. They lock the carriage in a raised position for loading and are released during the exercise to allow controlled movement."
 photos:
-  # - /assets/images/accessories/locking-exercise-handle-1.jpg
+  - /assets/images/accessories/1-Exercise-Handles-1.png
 videos:
   # - youtube_id: ""
   #   title: "Locking Exercise Handle â€” How to use"

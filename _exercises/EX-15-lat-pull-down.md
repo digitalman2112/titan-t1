@@ -4,10 +4,12 @@ title: "Lat Pull Down"
 code: "EX-15"
 description: "A lat pull down exercise using the lat pulley cable and lat pull down bar, performed from a seated position with thighs secured under the roller pads."
 photos:
-  # - /assets/images/exercises/exercise-15-1.png
+  - /assets/images/exercises/manual1/1-SV-45-Lat-Pulldown-1.jpg
+  - /assets/images/exercises/manual1/1-SV-45-Lat-Pulldown-2.jpg
+  - /assets/images/exercises/manual1/1-SV-45-Lat-Pulldown-3.jpg
 videos:
-  # - youtube_id: ""
-  #   title: "Lat Pull Down — Tutorial"
+  - youtube_id: "NW17G59djVQ"
+    title: "TYTAX T1-X — Full Range-of-Motion Lat Pulldown"
 muscles:
   - Shoulders
   - Lats
@@ -18,6 +20,10 @@ cables:
   - C5
 accessories:
   - S9
+manual1_code: "SV-45"
+manual1_page: 17
+manual2_page: 15
+manual3_page: 13
 ---
 
 ## Setup

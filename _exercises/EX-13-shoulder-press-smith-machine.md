@@ -4,10 +4,12 @@ title: "Shoulder Press — Smith Machine"
 code: "EX-13"
 description: "A shoulder press using the smith machine carriage and locking exercise handles, performed from an upright seated position with the handles pushed overhead."
 photos:
-  # - /assets/images/exercises/exercise-13-1.png
+  - /assets/images/exercises/manual1/1-JA-11-Seated-Machine-Shoulder-Press-1.jpg
+  - /assets/images/exercises/manual1/1-JA-11-Seated-Machine-Shoulder-Press-2.jpg
+  - /assets/images/exercises/manual1/1-JA-11-Seated-Machine-Shoulder-Press-3.jpg
 videos:
-  # - youtube_id: ""
-  #   title: "Shoulder Press — Smith Machine — Tutorial"
+  - youtube_id: "zL7qWvGxbfA"
+    title: "TYTAX T1-X — Seated Smith Shoulder Press"
 muscles:
   - Chest
   - Shoulders
@@ -17,6 +19,10 @@ cables:
   - C2
 accessories:
   - S1
+manual1_code: "JA-11"
+manual1_page: 40
+manual2_page: 13
+manual3_page: null
 ---
 
 ## Setup

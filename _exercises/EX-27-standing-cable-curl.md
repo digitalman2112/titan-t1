@@ -4,10 +4,12 @@ title: "Standing Cable Curl"
 code: "EX-27"
 description: "A standing bicep curl using the lat pulley cable system with the curl bar, performed facing the machine."
 photos:
-  # - /assets/images/exercises/exercise-27-1.png
+  - /assets/images/exercises/manual1/1-SV-35-Standing-Biceps-Cable-Curls-1.jpg
+  - /assets/images/exercises/manual1/1-SV-35-Standing-Biceps-Cable-Curls-2.jpg
+  - /assets/images/exercises/manual1/1-SV-35-Standing-Biceps-Cable-Curls-3.jpg
 videos:
-  # - youtube_id: ""
-  #   title: "Standing Cable Curl — Tutorial"
+  - youtube_id: "gff-Nqp3mZU"
+    title: "TYTAX T1-X — Standing Alternating Cable Curl"
 muscles:
   - Biceps
 cables:
@@ -17,6 +19,10 @@ cables:
   - C5
 accessories:
   - S8
+manual1_code: "SV-35"
+manual1_page: 14
+manual2_page: 27
+manual3_page: 17
 ---
 
 ## Setup

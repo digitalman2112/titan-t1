@@ -4,10 +4,12 @@ title: "Triceps Push Downs"
 code: "EX-23"
 description: "A cable triceps isolation exercise using the lat pulley cable and tricep push-down bar, performed standing facing the machine."
 photos:
-  # - /assets/images/exercises/exercise-23-1.png
+  - /assets/images/exercises/manual1/1-SV-32-Triceps-Pushdown-1.jpg
+  - /assets/images/exercises/manual1/1-SV-32-Triceps-Pushdown-2.jpg
+  - /assets/images/exercises/manual1/1-SV-32-Triceps-Pushdown-3.jpg
 videos:
-  # - youtube_id: ""
-  #   title: "Triceps Push Downs — Tutorial"
+  - youtube_id: "DYOVR_gCjoM"
+    title: "TYTAX T1-X — Cable Pushdown (with back support)"
 muscles:
   - Triceps
 cables:
@@ -16,6 +18,10 @@ cables:
   - C5
 accessories:
   - S8
+manual1_code: "SV-32"
+manual1_page: 12
+manual2_page: 23
+manual3_page: 14
 ---
 
 ## Setup

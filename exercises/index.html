@@ -9,11 +9,6 @@ description: All exercises for the Titan T1-X functional trainer.
   <p id="exercises-count">{{ site.exercises | size }} exercises &mdash; setup, photos, and step-by-step instructions.</p>
 </div>
 
-<div id="filter-banner" class="filter-banner" style="display:none">
-  <span>Muscle group: <strong id="filter-label"></strong></span>
-  <a href="{{ '/exercises/' | relative_url }}" class="filter-clear">&times; Clear</a>
-</div>
-
 <div class="filter-tabs" id="filter-tabs" role="tablist">
   <button type="button" class="filter-tab is-active" data-filter="all" role="tab" aria-selected="true">
     All <span class="filter-tab__count" data-count="all"></span>
@@ -26,6 +21,30 @@ description: All exercises for the Titan T1-X functional trainer.
   </button>
 </div>
 <div class="filter-tabs filter-tabs--muscles" id="muscle-tabs" role="tablist"></div>
+
+<div id="filter-banner" class="filter-banner" style="display:none">
+  <span>Muscle group: <strong id="filter-label"></strong></span>
+  <a href="{{ '/exercises/' | relative_url }}" class="filter-clear">&times; Clear</a>
+</div>
+
+{%- comment -%}Collect unique muscle names across all exercises for the muscle filter row.{%- endcomment -%}
+{%- assign all_muscles = "" | split: "" -%}
+{%- for exercise in site.exercises -%}
+  {%- for muscle in exercise.muscles -%}
+    {%- unless all_muscles contains muscle -%}
+      {%- assign all_muscles = all_muscles | push: muscle -%}
+    {%- endunless -%}
+  {%- endfor -%}
+{%- endfor -%}
+{%- assign all_muscles = all_muscles | sort -%}
+{%- if all_muscles.size > 0 -%}
+<div class="muscle-filters" id="muscle-filters">
+  <a href="{{ '/exercises/' | relative_url }}" class="muscle-filter-btn" id="muscle-btn-all">All muscles</a>
+  {%- for m in all_muscles -%}
+  <a href="{{ '/exercises/' | relative_url }}?muscle={{ m | url_encode }}" class="muscle-filter-btn" data-muscle="{{ m }}">{{ m }}</a>
+  {%- endfor -%}
+</div>
+{%- endif -%}
 
 {%- comment -%}
 Natural sort: codes are EX-<number><optional letter> (e.g. EX-2, EX-35a, EX-41b).
@@ -102,6 +121,11 @@ EX-{{ padded }}{{ letter }}@@{{ exercise.code }}{% unless forloop.last %}|||{% e
   if (muscle) {
     document.getElementById('filter-label').textContent = muscle;
     document.getElementById('filter-banner').style.display = '';
+    var activeBtn = document.querySelector('#muscle-filters [data-muscle="' + muscle + '"]');
+    if (activeBtn) activeBtn.classList.add('is-active');
+  } else {
+    var allBtn = document.getElementById('muscle-btn-all');
+    if (allBtn) allBtn.classList.add('is-active');
   }
 
   function matchesMuscle(card) {

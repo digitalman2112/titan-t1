@@ -6,8 +6,8 @@ description: "A pressing exercise using the olympic bar from an inclined seated 
 photos:
   # - /assets/images/exercises/exercise-10-1.png
 videos:
-  # - youtube_id: ""
-  #   title: "Shoulder Press — Tutorial"
+  - youtube_id: "Zm-h6ABqQiU"
+    title: "TYTAX T1-X — Prone High Cable Shoulder Press"
 muscles:
   - Chest
   - Shoulders
@@ -16,6 +16,10 @@ muscles:
 cables: []
 accessories:
   - S2
+manual1_code: null
+manual1_page: null
+manual2_page: 10
+manual3_page: 9
 ---
 
 ## Setup

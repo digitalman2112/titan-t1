@@ -4,7 +4,9 @@ title: "Preacher Curl Machine — Option B1"
 code: "EX-33"
 description: "A seated preacher curl using the Option B1 chest pad and curl bar attachments, targeting the biceps with the smith carriage for resistance."
 photos:
-  # - /assets/images/exercises/exercise-33-1.png
+  - /assets/images/exercises/manual1/1-B-13-Biceps-Curl-1.jpg
+  - /assets/images/exercises/manual1/1-B-13-Biceps-Curl-2.jpg
+  - /assets/images/exercises/manual1/1-B-13-Biceps-Curl-3.jpg
 videos:
   # - youtube_id: ""
   #   title: "Preacher Curl Machine — Option B1 Tutorial"
@@ -17,6 +19,10 @@ accessories:
   - S1
   - S7
   - S8
+manual1_code: "B-13"
+manual1_page: 29
+manual2_page: 33
+manual3_page: 33
 ---
 
 ## Setup

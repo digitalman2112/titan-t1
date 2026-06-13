@@ -4,16 +4,22 @@ title: "Sit Ups / Crunches — Option D"
 code: "EX-36"
 description: "Declined sit-ups and crunches using the Option D decline attachment with feet anchored beneath the rollers, targeting the abs."
 photos:
-  # - /assets/images/exercises/exercise-36-1.png
+  - /assets/images/exercises/manual1/1-D-02-Decline-Crunch-1.jpg
+  - /assets/images/exercises/manual1/1-D-02-Decline-Crunch-2.jpg
+  - /assets/images/exercises/manual1/1-D-02-Decline-Crunch-3.jpg
 videos:
-  # - youtube_id: ""
-  #   title: "Sit Ups / Crunches — Option D Tutorial"
+  - youtube_id: "eWtpS1AiOO8"
+    title: "TYTAX T1-X — Incline Crunch"
 muscles:
   - Abs
 cables: []
 accessories:
   - D
   - S1
+manual1_code: "D-02"
+manual1_page: 34
+manual2_page: 36
+manual3_page: null
 ---
 
 ## Setup

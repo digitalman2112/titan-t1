@@ -5,7 +5,7 @@ code: "S8"
 owned: true
 description: "A handle (S8) used for cable curl, tricep push-down, and preacher curl machine exercises. Attaches to cable ends via carabiner clip."
 photos:
-  # - /assets/images/accessories/curl-bar-handle-1.jpg
+  - /assets/images/accessories/1-Curl-Bar.png
 videos:
   # - youtube_id: ""
   #   title: "Curl Bar Handle â€” Setup"

@@ -4,7 +4,9 @@ title: "Low Row"
 code: "EX-14"
 description: "A seated low row exercise using the lat pulley cable system and low row handles, targeting the lats, middle back, and shoulders."
 photos:
-  # - /assets/images/exercises/exercise-14-1.png
+  - /assets/images/exercises/manual1/1-SV-44-Cable-Straight-Back-Seated-Row-1.jpg
+  - /assets/images/exercises/manual1/1-SV-44-Cable-Straight-Back-Seated-Row-2.jpg
+  - /assets/images/exercises/manual1/1-SV-44-Cable-Straight-Back-Seated-Row-3.jpg
 videos:
   # - youtube_id: ""
   #   title: "Low Row — Tutorial"
@@ -19,6 +21,10 @@ cables:
 accessories:
   - S3
   - LRH
+manual1_code: "SV-44"
+manual1_page: 16
+manual2_page: 14
+manual3_page: 15
 ---
 
 ## Setup

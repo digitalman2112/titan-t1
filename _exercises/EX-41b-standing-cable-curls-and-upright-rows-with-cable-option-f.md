@@ -4,7 +4,9 @@ title: "Standing Cable Curls and Upright Rows with Cable — Option F"
 code: "EX-41b"
 description: "Standing cable curls and upright rows using the Option F counter-balance attachment with the curl bar, targeting the biceps, shoulders, and lats."
 photos:
-  # - /assets/images/exercises/exercise-41b-1.png
+  - /assets/images/exercises/manual1/1-F-07-Standing-Biceps-Cable-Curl-1.jpg
+  - /assets/images/exercises/manual1/1-F-07-Standing-Biceps-Cable-Curl-2.jpg
+  - /assets/images/exercises/manual1/1-F-07-Standing-Biceps-Cable-Curl-3.jpg
 videos:
   # - youtube_id: ""
   #   title: "Standing Cable Curls and Upright Rows with Cable — Option F Tutorial"
@@ -17,6 +19,10 @@ cables:
 accessories:
   - F
   - S8
+manual1_code: "F-07"
+manual1_page: 36
+manual2_page: 41
+manual3_page: 40
 ---
 
 ## Setup

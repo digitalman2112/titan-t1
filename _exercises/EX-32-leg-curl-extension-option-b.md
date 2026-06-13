@@ -4,10 +4,12 @@ title: "Leg Curl / Extension — Option B"
 code: "EX-32"
 description: "Leg curl and leg extension exercises using the Option B leg extension/curl attachment with the Olympic bar and smith carriage for resistance."
 photos:
-  # - /assets/images/exercises/exercise-32-1.png
+  - /assets/images/exercises/manual1/1-B-01-Leg-Curls-1.jpg
+  - /assets/images/exercises/manual1/1-B-01-Leg-Curls-2.jpg
+  - /assets/images/exercises/manual1/1-B-01-Leg-Curls-3.jpg
 videos:
-  # - youtube_id: ""
-  #   title: "Leg Curl / Extension — Option B Tutorial"
+  - youtube_id: "4xMMyRlLS2Y"
+    title: "TYTAX T1-X — Seated Lever Leg Curl"
 muscles:
   - Quads
   - Hamstrings
@@ -17,6 +19,10 @@ cables:
 accessories:
   - B
   - S1
+manual1_code: "B-01"
+manual1_page: 27
+manual2_page: 32
+manual3_page: 32
 ---
 
 ## Setup

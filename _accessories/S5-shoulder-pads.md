@@ -7,7 +7,7 @@ description: "A left/right pair of padded shoulder supports (S5-L and S5-R) that
 photos:
   - /assets/images/accessories/s5-1.png
   - /assets/images/accessories/s5-2.png
-
+  - /assets/images/accessories/1-Shoulder-Pads.png
 videos:
   # - youtube_id: ""
   #   title: "Shoulder Pads â€” Setup"

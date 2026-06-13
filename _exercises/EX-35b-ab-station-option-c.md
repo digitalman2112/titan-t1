@@ -4,10 +4,12 @@ title: "Ab Station — Option C"
 code: "EX-35b"
 description: "A hanging knee/leg raise station using the Option C back pad and forearm pads mounted on the smith carriage, targeting the abs and glutes."
 photos:
-  # - /assets/images/exercises/exercise-35b-1.png
+  - /assets/images/exercises/manual1/1-C-01-Knee-Hip-Raise-1.jpg
+  - /assets/images/exercises/manual1/1-C-01-Knee-Hip-Raise-2.jpg
+  - /assets/images/exercises/manual1/1-C-01-Knee-Hip-Raise-3.jpg
 videos:
-  # - youtube_id: ""
-  #   title: "Ab Station — Option C Tutorial"
+  - youtube_id: "2AtCOcaZC5c"
+    title: "TYTAX T1-X — Seated Lever Crunch"
 muscles:
   - Abs
   - Glutes
@@ -15,6 +17,10 @@ cables: []
 accessories:
   - C
   - S1
+manual1_code: "C-01"
+manual1_page: 33
+manual2_page: 35
+manual3_page: 35
 ---
 
 ## Setup

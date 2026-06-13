@@ -18,6 +18,10 @@ accessories:
   - D
   - S1
   - S2
+manual1_code: null
+manual1_page: null
+manual2_page: 38
+manual3_page: 37
 ---
 
 ## Setup
