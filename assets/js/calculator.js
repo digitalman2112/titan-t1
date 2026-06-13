@@ -6,7 +6,7 @@
   const HANDLES_WT      = 15;
   const PADS_WT         = 15;
   const PLATE_SIZES     = [45, 35, 25, 10, 5, 2.5];
-  const STORAGE_KEY     = 'titan-calc-v2';
+  const GENERIC_KEY     = 'titan-calc-v2';
 
   // Limits from _data/settings.yaml (output by default.html as JSON)
   const siteSettings = (function () {
@@ -34,15 +34,11 @@
     };
   }
 
-  let state = (function () {
-    try {
-      const s = localStorage.getItem(STORAGE_KEY);
-      return s ? Object.assign(defaultState(), JSON.parse(s)) : defaultState();
-    } catch (_) { return defaultState(); }
-  }());
+  let state      = defaultState();
+  let storageKey = GENERIC_KEY;
 
   function save() {
-    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch (_) {}
+    try { localStorage.setItem(storageKey, JSON.stringify(state)); } catch (_) {}
   }
 
   // ── Math ──────────────────────────────────────────────────────────────────
@@ -380,21 +376,28 @@
     const backdrop = document.getElementById('calc-backdrop');
     if (!modal || !body || !openBtn) return;
 
+    // Determine per-exercise or generic storage key, then load state.
+    // On first visit for an exercise, pre-check accessories from exercise data.
+    (function () {
+      const exEl = document.getElementById('calc-exercise-data');
+      let exData = null;
+      if (exEl) { try { exData = JSON.parse(exEl.textContent); } catch (_) {} }
+      if (exData && exData.code) storageKey = 'titan-calc-ex-' + exData.code;
+      try {
+        const stored = localStorage.getItem(storageKey);
+        if (stored) {
+          state = Object.assign(defaultState(), JSON.parse(stored));
+        } else if (exData) {
+          const acc = Array.isArray(exData.accessories) ? exData.accessories : [];
+          state.handles = acc.includes('S1');
+          state.pads    = acc.includes('S5');
+        }
+      } catch (_) {}
+    }());
+
     body.innerHTML = MODAL_HTML;
 
-    function applyExerciseDefaults() {
-      const el = document.getElementById('calc-exercise-data');
-      if (!el) return;
-      try {
-        const data = JSON.parse(el.textContent);
-        const acc  = Array.isArray(data.accessories) ? data.accessories : [];
-        state.handles = acc.includes('S1');
-        state.pads    = acc.includes('S5');
-      } catch (_) {}
-    }
-
     function openCalc() {
-      applyExerciseDefaults();
       modal.classList.add('is-open');
       document.body.classList.add('calc-is-open');
       if (state.mode === 'target' && state.targetWeight) {
