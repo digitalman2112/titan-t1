@@ -2,7 +2,7 @@
 permalink: /cables/lat-pulley-cable/
 title: "Lat Pulley Cable"
 code: "C3"
-owned: false
+owned: true
 description: "The main overhead cable (C3) that hooks onto the locking pin at the center of the smith carriage crossbar, routing the weight stack load overhead for lat pull down and low row exercises."
 photos:
   # - /assets/images/cables/lat-pulley-cable-1.jpg

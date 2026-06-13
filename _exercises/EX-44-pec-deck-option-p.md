@@ -12,6 +12,7 @@ muscles:
   - Chest
 cables:
   - C2
+  - C11
 accessories:
   - P
 ---

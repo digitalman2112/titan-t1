@@ -2,7 +2,7 @@
 permalink: /cables/crossover-arm-cable/
 title: "Crossover Arm Cable"
 code: "A1"
-owned: false
+owned: true
 description: "A left/right pair of cables (A1-L and A1-R) that insert into the cable crossover arm holes to position the pulleys for the cable cross over and low pulley options."
 photos:
   # - /assets/images/cables/crossover-arm-cable-1.jpg

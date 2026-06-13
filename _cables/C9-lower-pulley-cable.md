@@ -2,7 +2,7 @@
 permalink: /cables/lower-pulley-cable/
 title: "Lower Pulley Cable"
 code: "C9"
-owned: false
+owned: true
 description: "A cable (C9) that attaches to hole 32 located by the lower pulley, used for abductor and adductor exercises with Option F."
 photos:
   # - /assets/images/cables/lower-pulley-cable-1.jpg
